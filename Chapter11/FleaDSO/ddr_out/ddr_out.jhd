@@ -1,0 +1,2 @@
+VHDL_ENTITY_ONLY ddr_out DEFIN ddr_out.vhd
+MODULE ddr_out DEFIN ddr_out.vhd

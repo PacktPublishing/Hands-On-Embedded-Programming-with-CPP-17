@@ -1,0 +1,18 @@
+C:\lscc\diamond\3.9_x64\synpbase\bin64\c_hdl.exe  -osyn  C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_comp.srs  -top  FleaFPGA_Ohm_A5  -hdllog  C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synlog\FleaDSO_FleaDSO_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -vhdl  -prodtype  synplify_pro  -dspmac -fixsmult -infer_seqShift -nram -sdff_counter -divnmod -nostructver  -dfltencoding onehot  -sm  -encrypt  -pro  -dmgen  C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\dm  -lite -ui -fid2 -ram -sharing on -ll 2000  -ignore_undefined_lib  -lib work C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\ecp5u.vhd -lib work C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\Simple_VGA_CRTC.vhd -lib work C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\TDMS_encoder.vhd -lib work C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\VGA.vhd -lib work C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\simple_uart.vhd -lib work C:\lscc\diamond\3.9_x64\examples\FleaDSO\DSO_RAMBUFFER_CH1\DSO_RAMBUFFER_CH1.vhd -lib work C:\lscc\diamond\3.9_x64\examples\FleaDSO\ADC_PLL\ADC_PLL.vhd -lib work C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd -lib work C:\lscc\diamond\3.9_x64\examples\FleaDSO\ddr_out\ddr_out.vhd -lib work C:\lscc\diamond\3.9_x64\examples\FleaDSO\DVI_clkgen\DVI_clkgen.vhd -lib work C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\DVI_D.vhd -lib work C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd 
+rc:0 success:1 runtime:3
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_comp.srs|io:o|time:1538489415|size:39664|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synlog\FleaDSO_FleaDSO_compiler.srr|io:o|time:1538489415|size:22916|exec:0
+file:C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\ecp5u.vhd|io:i|time:1480919226|size:95858|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\Simple_VGA_CRTC.vhd|io:i|time:1518851453|size:6076|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\TDMS_encoder.vhd|io:i|time:1471512560|size:4195|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\VGA.vhd|io:i|time:1518506423|size:3554|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\simple_uart.vhd|io:i|time:1538487178|size:5855|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\DSO_RAMBUFFER_CH1\DSO_RAMBUFFER_CH1.vhd|io:i|time:1518862498|size:11531|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\ADC_PLL\ADC_PLL.vhd|io:i|time:1519040247|size:3171|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd|io:i|time:1538489409|size:11318|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\ddr_out\ddr_out.vhd|io:i|time:1518506494|size:1942|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\DVI_clkgen\DVI_clkgen.vhd|io:i|time:1518866822|size:3702|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\DVI_D.vhd|io:i|time:1461295053|size:5188|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd|io:i|time:1538488194|size:6700|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\bin\c_hdl.exe|io:i|time:1489168768|size:1338368|exec:1
+file:C:\lscc\diamond\3.9_x64\synpbase\bin64\c_hdl.exe|io:i|time:1489168974|size:1754112|exec:1

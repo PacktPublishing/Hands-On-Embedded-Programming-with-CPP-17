@@ -1,0 +1,41 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CD720 :"C:\lscc\diamond\3.9_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ps
+@N:"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":19:7:19:21|Top entity is set to FleaFPGA_Ohm_A5.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":19:7:19:21|Synthesizing work.fleafpga_ohm_a5.arch.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\simple_uart.vhd":8:7:8:17|Synthesizing work.simple_uart.rtl.
+@N: CD231 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\simple_uart.vhd":44:14:44:15|Using onehot encoding for type rxstates. For example, enumeration idle is mapped to "10000".
+@N: CD231 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\simple_uart.vhd":51:14:51:15|Using onehot encoding for type txstates. For example, enumeration idle is mapped to "10".
+@N: CD604 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\simple_uart.vhd":172:4:172:17|OTHERS clause is not synthesized.
+@N: CD604 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\simple_uart.vhd":212:4:212:17|OTHERS clause is not synthesized.
+@N: CL189 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\simple_uart.vhd":185:2:185:3|Register bit txbuffer(18) is always 0.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\DVI_D.vhd":15:7:15:10|Synthesizing work.dvid.behavioral.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\ddr_out\ddr_out.vhd":12:7:12:13|Synthesizing work.ddr_out.structure.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\ecp5u.vhd":2007:10:2007:16|Synthesizing work.oddrx1f.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\ecp5u.vhd":1022:10:1022:11|Synthesizing work.ob.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\ecp5u.vhd":823:10:823:12|Synthesizing work.vhi.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\ecp5u.vhd":830:10:830:12|Synthesizing work.vlo.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\TDMS_encoder.vhd":14:7:14:18|Synthesizing work.tdms_encoder.behavioral.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\DVI_clkgen\DVI_clkgen.vhd":12:7:12:16|Synthesizing work.dvi_clkgen.structure.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\ecp5u.vhd":2081:10:2081:16|Synthesizing work.ehxplll.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":26:7:26:18|Synthesizing work.fleafpga_dso.behavior.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\DSO_RAMBUFFER_CH1\DSO_RAMBUFFER_CH1.vhd":12:7:12:23|Synthesizing work.dso_rambuffer_ch1.structure.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\ecp5u.vhd":1128:10:1128:15|Synthesizing work.dp16kd.syn_black_box.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\Simple_VGA_CRTC.vhd":40:7:40:20|Synthesizing work.vga_controller.behavior.
+@N: CD630 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\ADC_PLL\ADC_PLL.vhd":12:7:12:13|Synthesizing work.adc_pll.structure.
+@N: CL189 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":263:2:263:3|Register bit Blue_out(3) is always 0.
+@N: CL189 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\Simple_VGA_CRTC.vhd":80:4:80:5|Register bit row(9) is always 0.
+@N: CL189 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":263:2:263:3|Register bit gridrow(0) is always 0.
+@N: CL189 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":263:2:263:3|Register bit gridrow(1) is always 0.
+@N: CL189 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":263:2:263:3|Register bit gridrow(2) is always 0.
+@N: CL189 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":263:2:263:3|Register bit gridrow(3) is always 0.
+@N: CL189 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":263:2:263:3|Register bit gridrow(4) is always 1.
+@N: CL189 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":263:2:263:3|Register bit gridrow(5) is always 1.
+@N: CL189 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":163:3:163:4|Register bit ADC_lowspeed_raw(7) is always 0.
+@N: CL159 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\simple_uart.vhd":16:2:16:5|Input txgo is unused.
+@N: CL159 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":38:1:38:11|Input slave_cts_i is unused.
+@N: CL159 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":96:1:96:8|Input mmc_dat1 is unused.
+@N: CL159 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":97:1:97:8|Input mmc_dat2 is unused.
+@N: CL159 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":101:1:101:8|Input mmc_miso is unused.
+@N|Running in 64-bit mode
+

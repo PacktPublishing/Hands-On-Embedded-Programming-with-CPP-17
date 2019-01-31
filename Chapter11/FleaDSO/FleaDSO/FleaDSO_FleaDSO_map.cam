@@ -1,0 +1,362 @@
+[ START MERGED ]
+sys_reset_c_i sys_reset_c
+u100/u22/N_14_i u100/u22/dc_bias[3]
+user_module1.vga_disp_en_i user_module1.vga_disp_en
+u100/u21/N_7_0_i u100/u21/dc_bias[3]
+GPIO_21_c_i GPIO_21_c
+[ END MERGED ]
+[ START CLIPPED ]
+GND
+VCC
+user_module1/VCC
+user_module1/U2/VCC
+user_module1/U3/VCC
+user_module1/U3/GND
+myuart/VCC
+user_module1/un33_vga_disp_en_0_I_21_0_S1
+user_module1/un33_vga_disp_en_0_I_21_0_S0
+user_module1/un33_vga_disp_en_0_I_9_0_S1
+user_module1/un33_vga_disp_en_0_I_9_0_S0
+user_module1/un33_vga_disp_en_0_I_1_0_S1
+user_module1/un33_vga_disp_en_0_I_1_0_S0
+user_module1/N_1
+user_module1/un37_vga_disp_en_0_I_27_0_S1
+user_module1/un37_vga_disp_en_0_I_27_0_COUT
+user_module1/un37_vga_disp_en_0_I_21_0_S1
+user_module1/un37_vga_disp_en_0_I_21_0_S0
+user_module1/un37_vga_disp_en_0_I_9_0_S1
+user_module1/un37_vga_disp_en_0_I_9_0_S0
+user_module1/un37_vga_disp_en_0_I_1_0_S1
+user_module1/un37_vga_disp_en_0_I_1_0_S0
+user_module1/N_2
+user_module1/un1_adc_rawout_0_I_27_0_S1
+user_module1/un1_adc_rawout_0_I_27_0_COUT
+user_module1/un1_adc_rawout_0_I_21_0_S1
+user_module1/un1_adc_rawout_0_I_21_0_S0
+user_module1/un1_adc_rawout_0_I_9_0_S1
+user_module1/un1_adc_rawout_0_I_9_0_S0
+user_module1/un1_adc_rawout_0_I_1_0_S1
+user_module1/un1_adc_rawout_0_I_1_0_S0
+user_module1/N_3
+user_module1/un11_vga_disp_en_0_I_27_0_S1
+user_module1/un11_vga_disp_en_0_I_27_0_COUT
+user_module1/un11_vga_disp_en_0_I_21_0_S1
+user_module1/un11_vga_disp_en_0_I_21_0_S0
+user_module1/un11_vga_disp_en_0_I_9_0_S1
+user_module1/un11_vga_disp_en_0_I_9_0_S0
+user_module1/un11_vga_disp_en_0_I_1_0_S1
+user_module1/un11_vga_disp_en_0_I_1_0_S0
+user_module1/N_4
+user_module1/un6_adc_sample_divider_0_I_15_0_S1
+user_module1/un6_adc_sample_divider_0_I_15_0_COUT
+user_module1/un6_adc_sample_divider_0_I_9_0_S1
+user_module1/un6_adc_sample_divider_0_I_9_0_S0
+user_module1/un6_adc_sample_divider_0_I_33_0_S1
+user_module1/un6_adc_sample_divider_0_I_33_0_S0
+user_module1/un6_adc_sample_divider_0_I_21_0_S1
+user_module1/un6_adc_sample_divider_0_I_21_0_S0
+user_module1/un6_adc_sample_divider_0_I_1_0_S1
+user_module1/un6_adc_sample_divider_0_I_1_0_S0
+user_module1/N_5
+user_module1/un19_vga_disp_en_0_I_27_0_S1
+user_module1/un19_vga_disp_en_0_I_27_0_COUT
+user_module1/un19_vga_disp_en_0_I_21_0_S1
+user_module1/un19_vga_disp_en_0_I_21_0_S0
+user_module1/un19_vga_disp_en_0_I_9_0_S1
+user_module1/un19_vga_disp_en_0_I_9_0_S0
+user_module1/un19_vga_disp_en_0_I_1_0_S1
+user_module1/un19_vga_disp_en_0_I_1_0_S0
+user_module1/N_6
+user_module1/un2_trig_lower_cry_8_0_S1
+user_module1/un2_trig_lower_cry_8_0_COUT
+user_module1/un2_trig_lower_cry_7_0_S1
+user_module1/un2_trig_lower_cry_7_0_S0
+user_module1/un2_trig_lower_cry_5_0_S1
+user_module1/un2_trig_lower_cry_5_0_S0
+user_module1/un2_trig_lower_cry_3_0_S1
+user_module1/un2_trig_lower_cry_3_0_S0
+user_module1/un2_trig_lower_cry_1_0_S1
+user_module1/un2_trig_lower_cry_1_0_S0
+user_module1/un2_trig_lower_cry_0_0_S1
+user_module1/un2_trig_lower_cry_0_0_S0
+user_module1/N_7
+user_module1/un1_adc_rawout_1_cry_8_0_S1
+user_module1/un1_adc_rawout_1_cry_8_0_COUT
+user_module1/un1_adc_rawout_1_cry_7_0_S1
+user_module1/un1_adc_rawout_1_cry_7_0_S0
+user_module1/un1_adc_rawout_1_cry_5_0_S1
+user_module1/un1_adc_rawout_1_cry_5_0_S0
+user_module1/un1_adc_rawout_1_cry_3_0_S1
+user_module1/un1_adc_rawout_1_cry_3_0_S0
+user_module1/un1_adc_rawout_1_cry_1_0_S1
+user_module1/un1_adc_rawout_1_cry_1_0_S0
+user_module1/un1_adc_rawout_1_cry_0_0_S1
+user_module1/un1_adc_rawout_1_cry_0_0_S0
+user_module1/N_8
+user_module1/un5_adc_rawout_cry_11_0_COUT
+user_module1/un5_adc_rawout_cry_3_0_S1
+user_module1/un5_adc_rawout_cry_3_0_S0
+user_module1/un5_adc_rawout_cry_1_0_S1
+user_module1/un5_adc_rawout_cry_1_0_S0
+user_module1/un5_adc_rawout_cry_0_0_S1
+user_module1/un5_adc_rawout_cry_0_0_S0
+user_module1/N_9
+user_module1/mult1_un54_sum_s_5_0_S1
+user_module1/mult1_un54_sum_s_5_0_COUT
+user_module1/mult1_un54_sum_cry_0_0_S1
+user_module1/mult1_un54_sum_cry_0_0_S0
+user_module1/N_10
+user_module1/un1_trig_row_cry_10_0_S1
+user_module1/un1_trig_row_cry_10_0_COUT
+user_module1/un1_trig_row_cry_2_0_S1
+user_module1/un1_trig_row_cry_2_0_S0
+user_module1/N_11
+user_module1/mult1_un47_sum_s_5_0_S1
+user_module1/mult1_un47_sum_s_5_0_COUT
+user_module1/mult1_un47_sum_cry_0_0_S1
+user_module1/mult1_un47_sum_cry_0_0_S0
+user_module1/N_12
+user_module1/mult1_un40_sum_s_5_0_S1
+user_module1/mult1_un40_sum_s_5_0_COUT
+user_module1/mult1_un40_sum_cry_0_0_S1
+user_module1/mult1_un40_sum_cry_0_0_S0
+user_module1/N_13
+user_module1/mult1_un96_sum_cry_4_0_COUT
+user_module1/mult1_un96_sum_cry_1_0_S1
+user_module1/mult1_un96_sum_cry_1_0_S0
+user_module1/N_14
+user_module1/mult1_un61_sum_s_5_0_S1
+user_module1/mult1_un61_sum_s_5_0_COUT
+user_module1/mult1_un61_sum_cry_0_0_S1
+user_module1/mult1_un61_sum_cry_0_0_S0
+user_module1/N_15
+user_module1/mult1_un68_sum_s_5_0_S1
+user_module1/mult1_un68_sum_s_5_0_COUT
+user_module1/mult1_un68_sum_cry_0_0_S1
+user_module1/mult1_un68_sum_cry_0_0_S0
+user_module1/N_16
+user_module1/mult1_un75_sum_s_5_0_S1
+user_module1/mult1_un75_sum_s_5_0_COUT
+user_module1/mult1_un75_sum_cry_0_0_S1
+user_module1/mult1_un75_sum_cry_0_0_S0
+user_module1/N_17
+user_module1/mult1_un82_sum_s_5_0_S1
+user_module1/mult1_un82_sum_s_5_0_COUT
+user_module1/mult1_un82_sum_cry_0_0_S1
+user_module1/mult1_un82_sum_cry_0_0_S0
+user_module1/N_18
+user_module1/mult1_un89_sum_s_5_0_S1
+user_module1/mult1_un89_sum_s_5_0_COUT
+user_module1/mult1_un89_sum_cry_0_0_S1
+user_module1/mult1_un89_sum_cry_0_0_S0
+user_module1/N_20
+user_module1/mult1_un103_sum_cry_4_0_S0
+user_module1/mult1_un103_sum_cry_4_0_COUT
+user_module1/mult1_un103_sum_cry_2_0_S1
+user_module1/mult1_un103_sum_cry_2_0_S0
+user_module1/mult1_un103_sum_cry_1_0_S1
+user_module1/mult1_un103_sum_cry_1_0_S0
+user_module1/N_21
+user_module1/un1_vga_bufout_cry_10_0_S1
+user_module1/un1_vga_bufout_cry_10_0_COUT
+user_module1/un1_vga_bufout_cry_2_0_S1
+user_module1/un1_vga_bufout_cry_2_0_S0
+user_module1/N_22
+user_module1/mult1_un47_sum_s_5_0_S1_0
+user_module1/mult1_un47_sum_s_5_0_COUT_0
+user_module1/mult1_un47_sum_cry_0_0_S1_0
+user_module1/mult1_un47_sum_cry_0_0_S0_0
+user_module1/N_23
+user_module1/mult1_un40_sum_s_5_0_S1_0
+user_module1/mult1_un40_sum_s_5_0_COUT_0
+user_module1/mult1_un40_sum_cry_0_0_S1_0
+user_module1/mult1_un40_sum_cry_0_0_S0_0
+user_module1/N_24
+user_module1/mult1_un96_sum_cry_4_0_COUT_0
+user_module1/mult1_un96_sum_cry_1_0_S1_0
+user_module1/mult1_un96_sum_cry_1_0_S0_0
+user_module1/N_25
+user_module1/mult1_un61_sum_s_5_0_S1_0
+user_module1/mult1_un61_sum_s_5_0_COUT_0
+user_module1/mult1_un61_sum_cry_0_0_S1_0
+user_module1/mult1_un61_sum_cry_0_0_S0_0
+user_module1/N_26
+user_module1/mult1_un68_sum_s_5_0_S1_0
+user_module1/mult1_un68_sum_s_5_0_COUT_0
+user_module1/mult1_un68_sum_cry_0_0_S1_0
+user_module1/mult1_un68_sum_cry_0_0_S0_0
+user_module1/N_27
+user_module1/mult1_un75_sum_s_5_0_S1_0
+user_module1/mult1_un75_sum_s_5_0_COUT_0
+user_module1/mult1_un75_sum_cry_0_0_S1_0
+user_module1/mult1_un75_sum_cry_0_0_S0_0
+user_module1/N_28
+user_module1/mult1_un82_sum_s_5_0_S1_0
+user_module1/mult1_un82_sum_s_5_0_COUT_0
+user_module1/mult1_un82_sum_cry_0_0_S1_0
+user_module1/mult1_un82_sum_cry_0_0_S0_0
+user_module1/N_30
+user_module1/mult1_un89_sum_s_5_0_S1_0
+user_module1/mult1_un89_sum_s_5_0_COUT_0
+user_module1/mult1_un89_sum_cry_0_0_S1_0
+user_module1/mult1_un89_sum_cry_0_0_S0_0
+user_module1/N_31
+user_module1/mult1_un54_sum_s_5_0_S1_0
+user_module1/mult1_un54_sum_s_5_0_COUT_0
+user_module1/mult1_un54_sum_cry_0_0_S1_0
+user_module1/mult1_un54_sum_cry_0_0_S0_0
+user_module1/N_32
+user_module1/mult1_un103_sum_cry_4_0_S0_0
+user_module1/mult1_un103_sum_cry_4_0_COUT_0
+user_module1/mult1_un103_sum_cry_2_0_S1_0
+user_module1/mult1_un103_sum_cry_2_0_S0_0
+user_module1/mult1_un103_sum_cry_1_0_S1_0
+user_module1/mult1_un103_sum_cry_1_0_S0_0
+user_module1/N_33
+user_module1/un1_grid_column_1_cry_7_0_COUT
+user_module1/un1_grid_column_1_cry_0_0_S1
+user_module1/un1_grid_column_1_cry_0_0_S0
+user_module1/N_35
+user_module1/un2_trig_upper_cry_7_0_COUT
+user_module1/un2_trig_upper_cry_0_0_S1
+user_module1/un2_trig_upper_cry_0_0_S0
+user_module1/N_37
+user_module1/un1_trig_lower_cry_7_0_COUT
+user_module1/un1_trig_lower_cry_0_0_S1
+user_module1/un1_trig_lower_cry_0_0_S0
+user_module1/N_38
+user_module1/adc_rawout_5_cry_9_0_COUT
+user_module1/adc_rawout_5_cry_0_0_S1
+user_module1/adc_rawout_5_cry_0_0_S0
+user_module1/N_40
+user_module1/un2_trig_row_cry_7_0_COUT
+user_module1/un2_trig_row_cry_0_0_S1
+user_module1/un2_trig_row_cry_0_0_S0
+user_module1/N_41
+user_module1/ADC_buffer_addr_s_0_S1[9]
+user_module1/ADC_buffer_addr_s_0_COUT[9]
+user_module1/ADC_buffer_addr_cry_0_S0[0]
+user_module1/N_42
+user_module1/ADC_sample_divider_s_0_S1[13]
+user_module1/ADC_sample_divider_s_0_COUT[13]
+user_module1/ADC_sample_divider_cry_0_S0[0]
+user_module1/N_43
+user_module1/U1/CLKINTFB
+user_module1/U1/REFCLK
+user_module1/U1/INTLOCK
+user_module1/U1/LOCK
+user_module1/U1/CLKOS3
+user_module1/U1/CLKOS2
+user_module1/U2/un4_v_count_s_9_0_S1
+user_module1/U2/un4_v_count_s_9_0_COUT
+user_module1/U2/un4_v_count_cry_0_0_S1
+user_module1/U2/un4_v_count_cry_0_0_S0
+user_module1/U2/N_1
+user_module1/U2/un5_h_count_s_9_0_S1
+user_module1/U2/un5_h_count_s_9_0_COUT
+user_module1/U2/un5_h_count_cry_0_0_S1
+user_module1/U2/un5_h_count_cry_0_0_S0
+user_module1/U2/N_2
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB17
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB16
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB15
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB14
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB13
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB12
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB11
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB10
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB9
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA17
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA16
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA15
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA14
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA13
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA12
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA11
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA10
+user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA9
+user_module1/U3/QA_1[8]
+user_module1/U3/QA_1[7]
+user_module1/U3/QA_1[6]
+user_module1/U3/QA_1[5]
+user_module1/U3/QA_1[4]
+user_module1/U3/QA_1[3]
+user_module1/U3/QA_1[2]
+user_module1/U3/QA_1[1]
+user_module1/U3/QA_1[0]
+user_module1/un33_vga_disp_en_0_I_27_0_S1
+user_module1/un33_vga_disp_en_0_I_27_0_COUT
+u0/CLKINTFB_0
+u0/REFCLK
+u0/INTLOCK_0
+u0/LOCK
+u0/clk_dvin
+myuart/un3_txcounter_s_15_s0_0_S1
+myuart/un3_txcounter_s_15_s0_0_COUT
+myuart/un3_txcounter_cry_0_s0_0_S1
+myuart/un3_txcounter_cry_0_s0_0_S0
+myuart/N_2
+myuart/un3_txcounter_s_11_s1_0_S1
+myuart/un3_txcounter_s_11_s1_0_COUT
+myuart/un3_txcounter_cry_0_s1_0_S1
+myuart/un3_txcounter_cry_0_s1_0_S0
+myuart/N_3
+myuart/un3_txcounter_s_15_s1_0_S1
+myuart/un3_txcounter_s_15_s1_0_COUT
+myuart/un3_txcounter_cry_12_s1_0_S1
+myuart/un3_txcounter_cry_12_s1_0_S0
+myuart/N_4
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.9.1.119 -- WARNING: Map write only section -- Wed Oct 03 00:10:44 2018
+
+SYSCONFIG SLAVE_SPI_PORT=DISABLE MASTER_SPI_PORT=ENABLE SLAVE_PARALLEL_PORT=DISABLE BACKGROUND_RECONFIG=OFF DONE_EX=OFF DONE_OD=OFF DONE_PULL=ON MCCLK_FREQ=38.8 TRANSFR=ON CONFIG_IOVOLTAGE=3.3 CONFIG_SECURE=OFF WAKE_UP=21 COMPRESS_CONFIG=ON CONFIG_MODE=SPI_SERIAL ;
+LOCATE COMP "n_led1" SITE "P2" ;
+LOCATE COMP "sys_clock" SITE "H2" ;
+LOCATE COMP "LVDS_ck[0]" SITE "G2" ;
+LOCATE COMP "LVDS_Blue[0]" SITE "A4" ;
+LOCATE COMP "LVDS_Green[0]" SITE "A2" ;
+LOCATE COMP "LVDS_Red[0]" SITE "C1" ;
+LOCATE COMP "PS2_enable" SITE "N1" ;
+LOCATE COMP "mmc_mosi" SITE "B2" ;
+LOCATE COMP "mmc_clk" SITE "C3" ;
+LOCATE COMP "mmc_n_cs" SITE "B3" ;
+LOCATE COMP "ADC3_error" SITE "R20" ;
+LOCATE COMP "ADC3_input" SITE "T20" ;
+LOCATE COMP "GPIO_21" SITE "P16" ;
+LOCATE COMP "GPIO_20" SITE "N17" ;
+LOCATE COMP "Dram_DQML" SITE "A11" ;
+LOCATE COMP "Dram_DQMH" SITE "D16" ;
+LOCATE COMP "Dram_n_cs" SITE "C11" ;
+LOCATE COMP "Dram_Addr[12]" SITE "C14" ;
+LOCATE COMP "Dram_Addr[11]" SITE "C16" ;
+LOCATE COMP "Dram_Addr[10]" SITE "D9" ;
+LOCATE COMP "Dram_Addr[9]" SITE "A14" ;
+LOCATE COMP "Dram_Addr[8]" SITE "D14" ;
+LOCATE COMP "Dram_Addr[7]" SITE "D15" ;
+LOCATE COMP "Dram_Addr[6]" SITE "B13" ;
+LOCATE COMP "Dram_Addr[5]" SITE "C13" ;
+LOCATE COMP "Dram_Addr[4]" SITE "D13" ;
+LOCATE COMP "Dram_Addr[3]" SITE "A13" ;
+LOCATE COMP "Dram_Addr[2]" SITE "D8" ;
+LOCATE COMP "Dram_Addr[1]" SITE "C10" ;
+LOCATE COMP "Dram_Addr[0]" SITE "B12" ;
+LOCATE COMP "Dram_BA[1]" SITE "D11" ;
+LOCATE COMP "Dram_BA[0]" SITE "A12" ;
+LOCATE COMP "Dram_n_We" SITE "D12" ;
+LOCATE COMP "Dram_n_Cas" SITE "B11" ;
+LOCATE COMP "Dram_n_Ras" SITE "C12" ;
+LOCATE COMP "Dram_CKE" SITE "C15" ;
+LOCATE COMP "Dram_Clk" SITE "C17" ;
+LOCATE COMP "slave_tx_o" SITE "P1" ;
+LOCATE COMP "sys_reset" SITE "T17" ;
+FREQUENCY NET "sys_clock_c" 25.000000 MHz ;
+FREQUENCY NET "user_module1.ADC_clk" 300.000000 MHz ;
+FREQUENCY NET "clk_50" 50.000000 MHz ;
+FREQUENCY NET "clk_dvi" 125.000000 MHz ;
+FREQUENCY NET "clk_vga" 25.000000 MHz ;
+FREQUENCY NET "user_module1/VGA_25MHz" 25.000000 MHz ;
+FREQUENCY PORT "sys_clock" 25.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

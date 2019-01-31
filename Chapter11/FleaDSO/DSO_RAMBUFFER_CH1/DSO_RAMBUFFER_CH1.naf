@@ -1,0 +1,14 @@
+DataInA i
+DataInB i
+AddressA i
+AddressB i
+ClockA  i
+ClockB  i
+ClockEnA  i
+ClockEnB  i
+WrA  i
+WrB  i
+ResetA  i
+ResetB  i
+QA o
+QB o

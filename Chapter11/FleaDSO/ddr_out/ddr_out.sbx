@@ -1,0 +1,322 @@
+<!DOCTYPE ddr_out>
+<lattice:project mode="SingleComponent">
+    <spirit:component>
+        <spirit:vendor>Lattice Semiconductor Corporation</spirit:vendor>
+        <spirit:library>LEGACY</spirit:library>
+        <spirit:name>DDR_GENERIC</spirit:name>
+        <spirit:version>6.0</spirit:version>
+        <spirit:fileSets>
+            <spirit:fileset>
+                <spirit:name>Diamond_Simulation</spirit:name>
+                <spirit:group>simulation</spirit:group>
+                <spirit:file>
+                    <spirit:name>./ddr_out.vhd</spirit:name>
+                    <spirit:fileType>vhdlSource</spirit:fileType>
+                </spirit:file>
+            </spirit:fileset>
+            <spirit:fileset>
+                <spirit:name>Diamond_Synthesis</spirit:name>
+                <spirit:group>synthesis</spirit:group>
+                <spirit:file>
+                    <spirit:name>./ddr_out.vhd</spirit:name>
+                    <spirit:fileType>vhdlSource</spirit:fileType>
+                </spirit:file>
+            </spirit:fileset>
+        </spirit:fileSets>
+        <spirit:componentGenerators>
+            <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                <spirit:name>Configuration</spirit:name>
+                <spirit:apiType>none</spirit:apiType>
+                <spirit:generatorExe>${sbp_path}/generate_core.tcl</spirit:generatorExe>
+                <spirit:group>CONFIG</spirit:group>
+            </spirit:componentGenerator>
+            <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                <spirit:name>Generation</spirit:name>
+                <spirit:apiType>none</spirit:apiType>
+                <spirit:generatorExe>${sbp_path}/${instance}/generate_core.tcl</spirit:generatorExe>
+                <spirit:group>GENERATE</spirit:group>
+            </spirit:componentGenerator>
+        </spirit:componentGenerators>
+        <spirit:model>
+            <spirit:views/>
+            <spirit:ports/>
+        </spirit:model>
+        <spirit:vendorExtensions>
+            <lattice:device>LFE5U-25F-6BG381C</lattice:device>
+            <lattice:synthesis>synplify</lattice:synthesis>
+            <lattice:date>2017-03-17.21:11:06</lattice:date>
+            <lattice:modified>2018-02-13.18:21:34</lattice:modified>
+            <lattice:diamond>3.9.1.119</lattice:diamond>
+            <lattice:language>VHDL</lattice:language>
+            <lattice:attributes>
+                <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                <lattice:attribute lattice:name="BBox">false</lattice:attribute>
+                <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeDevice">true</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                <lattice:attribute lattice:name="CoreType">LPM</lattice:attribute>
+                <lattice:attribute lattice:name="DCU_RXREFCLK">PRIMARY</lattice:attribute>
+                <lattice:attribute lattice:name="DCU_TXREFCLK">PRIMARY</lattice:attribute>
+                <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
+            </lattice:attributes>
+            <lattice:elements/>
+            <lattice:lpc>
+                <lattice:lpcsection lattice:name="Device"/>
+                <lattice:lpcentry>
+                    <lattice:lpckey>Family</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">ecp5u</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>OperatingCondition</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">COM</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>Package</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">CABGA381</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>PartName</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">LFE5U-25F-6BG381C</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>PartType</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">LFE5U-25F</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>SpeedGrade</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">6</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>Status</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">S</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcsection lattice:name="IP"/>
+                <lattice:lpcentry>
+                    <lattice:lpckey>CoreName</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">DDR_GENERIC</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>CoreRevision</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">6.0</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>CoreStatus</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">Demo</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>CoreType</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">LPM</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>Date</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">02/13/2018</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>ModuleName</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">ddr_out</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>ParameterFileVersion</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">1.0</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>SourceFormat</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">vhdl</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>Time</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">18:21:32</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>VendorName</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">Lattice Semiconductor Corporation</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcsection lattice:name="Parameters"/>
+                <lattice:lpcentry>
+                    <lattice:lpckey>AFreq</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant"></lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>ClkIBuf</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">LVDS</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>DataLane</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">By Time</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>DelVal</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant"></lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>Delay</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">Bypass</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>Destination</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">Synplicity</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>DynamicAlign</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant"></lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>EDIF</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>EnDynamic</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>EnDynamicAlign</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant"></lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>EnECLK</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>EnInEdge</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant"></lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>Expression</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">BusA(0 to 7)</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>Freq</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant"></lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>GenPll</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>IO</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>IOBUF</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant"></lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>Interface</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">GDDRX1_TX.SCLK.Centered</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>MIPIFilter</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>NumEdge</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">BOTH</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>Order</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">Big Endian [MSB:LSB]</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>ReceiverSync</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>Reference</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>VHDL</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>Verilog</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>aligned</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">Centered</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>aligned2</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">Centered</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>bandwidth</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">200</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>enClkIBuf</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>freq_in</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">100</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>freq_in2</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">100</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>gear</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">2:1</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>io_type</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">LVCMOS25</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>io_type2</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">LVCMOS25</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>mode</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">Transmit</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>mode2</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">Transmit</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>pre-configuration</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">ENABLED</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>trioddr</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>trioddr2</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>width</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcentry>
+                    <lattice:lpckey>width2</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                </lattice:lpcentry>
+                <lattice:lpcsection lattice:name="Command"/>
+                <lattice:lpcentry>
+                    <lattice:lpckey>cmd_line</lattice:lpckey>
+                    <lattice:lpcvalue lattice:resolve="constant">-w -n ddr_out -lang vhdl -synth synplify -bus_exp 7 -bb -arch sa5p00 -type iol -mode Transmit -io_type LVCMOS25 -width 1 -freq_in 100 -gear 2 -del -1</lattice:lpcvalue>
+                </lattice:lpcentry>
+            </lattice:lpc>
+            <lattice:groups/>
+        </spirit:vendorExtensions>
+    </spirit:component>
+    <spirit:design>
+        <spirit:vendor>LATTICE</spirit:vendor>
+        <spirit:library>LOCAL</spirit:library>
+        <spirit:name>ddr_out</spirit:name>
+        <spirit:version>1.0</spirit:version>
+        <spirit:componentInstances/>
+        <spirit:adHocConnections/>
+    </spirit:design>
+</lattice:project>

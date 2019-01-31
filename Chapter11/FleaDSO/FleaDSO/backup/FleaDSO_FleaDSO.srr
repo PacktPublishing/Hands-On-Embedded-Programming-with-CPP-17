@@ -1,0 +1,915 @@
+#Build: Synplify Pro I-2013.09L , Build 064R, Nov 15 2013
+#install: C:\lscc\diamond\3.1_x64\synpbase
+#OS: Windows 7 6.1
+#Hostname: TINO-ALPHA1
+
+#Implementation: FleaDSO
+
+$ Start of Compile
+#Thu Jun 19 16:57:00 2014
+
+Synopsys VHDL Compiler, version comp201309rc, Build 136R, built Nov 18 2013
+@N|Running in 64-bit mode
+Copyright (C) 1994-2013 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+
+@N: CD720 :"C:\lscc\diamond\3.1_x64\synpbase\lib\vhd\std.vhd":123:18:123:21|Setting time resolution to ns
+@N:"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":18:7:18:18|Top entity is set to FleaFPGA_2v5.
+VHDL syntax check successful!
+@N: CD630 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":18:7:18:18|Synthesizing work.fleafpga_2v5.arch 
+@N: CD630 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":26:7:26:18|Synthesizing work.fleafpga_dso.behavior 
+@W: CD638 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":70:9:70:22|Signal adc_currentraw is undriven 
+@N: CD630 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\DSO_RAMBUFFER_CH1.vhd":14:7:14:23|Synthesizing work.dso_rambuffer_ch1.structure 
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":1699:10:1699:14|Synthesizing work.dp8kc.syn_black_box 
+Post processing for work.dp8kc.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":1483:10:1483:12|Synthesizing work.vhi.syn_black_box 
+Post processing for work.vhi.syn_black_box
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":1490:10:1490:12|Synthesizing work.vlo.syn_black_box 
+Post processing for work.vlo.syn_black_box
+Post processing for work.dso_rambuffer_ch1.structure
+@N: CD630 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\Simple_VGA_CRTC.vhd":40:7:40:20|Synthesizing work.vga_controller.behavior 
+Post processing for work.vga_controller.behavior
+@A: CL282 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\Simple_VGA_CRTC.vhd":80:4:80:5|Feedback mux created for signal row[9:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\Simple_VGA_CRTC.vhd":80:4:80:5|Feedback mux created for signal column[9:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@N: CD630 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\ADC_PLL.vhd":14:7:14:13|Synthesizing work.adc_pll.structure 
+@N: CD630 :"C:\lscc\diamond\3.1_x64\cae_library\synthesis\vhdl\machxo2.vhd":2221:10:2221:16|Synthesizing work.ehxpllj.syn_black_box 
+Post processing for work.ehxpllj.syn_black_box
+Post processing for work.adc_pll.structure
+Post processing for work.fleafpga_dso.behavior
+@W: CL271 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":262:2:262:3|Pruning bits 17 to 9 of vga_trigger_scaled_3(17 downto 0) -- not in use ... 
+@W: CL271 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":262:2:262:3|Pruning bits 17 to 9 of vga_bufout_scaled_3(17 downto 0) -- not in use ... 
+@W: CL189 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":262:2:262:3|Register bit Blue_out(3) is always 0, optimizing ...
+@W: CL260 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":262:2:262:3|Pruning register bit 3 of Blue_out(3 downto 0)  
+Post processing for work.fleafpga_2v5.arch
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":89:1:89:7|Audio_r is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":88:1:88:7|Audio_l is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":77:1:77:8|mmc_mosi is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":76:1:76:7|mmc_clk is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":63:1:63:9|Dram_DQML is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":62:1:62:9|Dram_DQMH is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":61:1:61:8|Dram_dqm is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":58:1:58:9|Dram_Addr is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":57:1:57:7|Dram_BA is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":56:1:56:9|Dram_n_We is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":55:1:55:10|Dram_n_Cas is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":54:1:54:10|Dram_n_Ras is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":53:1:53:8|Dram_Clk is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":45:1:45:10|slave_tx_o is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":41:1:41:9|host_tx_o is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":35:1:35:8|host_spi is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL240 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":34:1:34:10|host_reset is not assigned a value (floating) -- simulation mismatch possible. 
+@W: CL189 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\Simple_VGA_CRTC.vhd":80:4:80:5|Register bit row(9) is always 0, optimizing ...
+@W: CL260 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\Simple_VGA_CRTC.vhd":80:4:80:5|Pruning register bit 9 of row(9 downto 0)  
+@W: CL189 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":262:2:262:3|Register bit gridrow(0) is always 0, optimizing ...
+@W: CL189 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":262:2:262:3|Register bit gridrow(1) is always 0, optimizing ...
+@W: CL189 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":262:2:262:3|Register bit gridrow(2) is always 0, optimizing ...
+@W: CL189 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":262:2:262:3|Register bit gridrow(3) is always 0, optimizing ...
+@W: CL189 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":262:2:262:3|Register bit gridrow(4) is always 1, optimizing ...
+@W: CL189 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":262:2:262:3|Register bit gridrow(5) is always 1, optimizing ...
+@W: CL190 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":165:3:165:4|Optimizing register bit adc_rawout(13) to a constant 0
+@W: CL260 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":165:3:165:4|Pruning register bit 13 of adc_rawout(13 downto 0)  
+@W: CL279 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":262:2:262:3|Pruning register bits 5 to 0 of gridrow(8 downto 0)  
+@W: CL190 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":165:3:165:4|Optimizing register bit adc_rawout(12) to a constant 0
+@W: CL260 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":165:3:165:4|Pruning register bit 12 of adc_rawout(12 downto 0)  
+@W: CL190 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":165:3:165:4|Optimizing register bit adc_rawout(11) to a constant 0
+@W: CL260 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":165:3:165:4|Pruning register bit 11 of adc_rawout(11 downto 0)  
+@W: CL279 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":262:2:262:3|Pruning register bits 2 to 1 of Green_out(3 downto 0)  
+@W: CL279 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":262:2:262:3|Pruning register bits 2 to 1 of Red_out(3 downto 0)  
+@W: CL279 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":262:2:262:3|Pruning register bits 2 to 1 of Blue_out(2 downto 0)  
+@W: CL157 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":131:15:131:22|Output GPIO has undriven bits -- simulation mismatch possible.
+@W: CL159 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":36:1:36:9|Input host_nInt is unused
+@W: CL158 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":37:1:37:8|Inout host_sdi is unused
+@W: CL159 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":38:1:38:8|Input host_sdo is unused
+@W: CL158 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":39:1:39:8|Inout host_sck is unused
+@W: CL159 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":42:1:42:9|Input host_rx_i is unused
+@W: CL159 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":46:1:46:10|Input slave_rx_i is unused
+@W: CL158 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":59:1:59:9|Inout Dram_Data is unused
+@W: CL159 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":73:1:73:8|Input mmc_dat1 is unused
+@W: CL159 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":74:1:74:8|Input mmc_dat2 is unused
+@W: CL159 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":78:1:78:8|Input mmc_miso is unused
+@W: CL158 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":82:1:82:13|Inout spi_sram_hold is unused
+@W: CL158 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":83:1:83:12|Inout spi_sram_clk is unused
+@W: CL158 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":84:1:84:13|Inout spi_sram_miso is unused
+@W: CL158 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":85:1:85:13|Inout spi_sram_mosi is unused
+@W: CL158 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":92:1:92:8|Inout PS2_clk1 is unused
+@W: CL158 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":93:1:93:9|Inout PS2_data1 is unused
+@W: CL158 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":94:1:94:8|Inout PS2_clk2 is unused
+@W: CL158 :"C:\lscc\diamond\3.1_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":95:1:95:9|Inout PS2_data2 is unused
+@END
+
+At c_vhdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 80MB peak: 91MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Jun 19 16:57:01 2014
+
+###########################################################]
+Premap Report
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 800R, Built Nov 18 2013 10:58:25
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2013.09L 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: C:\lscc\diamond\3.1_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO_scck.rpt 
+Printing clock  summary report in "C:\lscc\diamond\3.1_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 115MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 117MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: BN132 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":262:2:262:3|Removing sequential instance user_module1.addpixel2[8:0],  because it is equivalent to instance user_module1.addpixel1[8:0]
+@N: MF236 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":270:29:270:57|Generating a type div divider 
+@N: MF236 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":267:28:267:58|Generating a type div divider 
+syn_allowed_resources : blockrams=26  set on top level netlist FleaFPGA_2v5
+
+
+Clock Summary
+**************
+
+Start                                   Requested     Requested     Clock                                           Clock              
+Clock                                   Frequency     Period        Type                                            Group              
+---------------------------------------------------------------------------------------------------------------------------------------
+ADC_PLL|CLKOP_inferred_clock            1.0 MHz       1000.000      inferred                                        Inferred_clkgroup_0
+ADC_PLL|CLKOS_inferred_clock            1.0 MHz       1000.000      inferred                                        Inferred_clkgroup_1
+vga_controller|v_sync_derived_clock     1.0 MHz       1000.000      derived (from ADC_PLL|CLKOS_inferred_clock)     Inferred_clkgroup_1
+=======================================================================================================================================
+
+@W: MT529 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\dso_rambuffer_ch1.vhd":121:4:121:26|Found inferred clock ADC_PLL|CLKOP_inferred_clock which controls 36 sequential elements including user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\simple_vga_crtc.vhd":80:4:80:5|Found inferred clock ADC_PLL|CLKOS_inferred_clock which controls 101 sequential elements including user_module1.U2.row_1[8:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 78MB peak: 143MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Jun 19 16:57:04 2014
+
+###########################################################]
+Map & Optimize Report
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 800R, Built Nov 18 2013 10:58:25
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2013.09L 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 114MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 116MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 143MB)
+
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_1 on net GPIO_1 has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_2 on net GPIO_2 has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_3 on net GPIO_3 has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_4 on net GPIO_4 has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_5 on net GPIO_5 has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_6 on net GPIO_6 has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_7 on net GPIO_7 has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_8 on net GPIO_8 has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_9 on net GPIO_9 has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_10 on net GPIO_10 has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_11 on net GPIO_11 has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_12 on net GPIO_12 has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_13 on net GPIO_13 has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_14 on net GPIO_14 has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_15 on net GPIO_15 has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":131:15:131:22|Tristate driver GPIO_16 on net GPIO_16 has its enable tied to GND (module FleaFPGA_2v5) 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: BN132 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":331:8:331:21|Removing user instance user_module1.Green_out_0_sqmuxa,  because it is equivalent to instance user_module1.set_pixel1_0_sqmuxa
+@W: BN132 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":262:2:262:3|Removing sequential instance user_module1.set_pixel2,  because it is equivalent to instance user_module1.set_pixel1
+@N: FX493 |Applying initial value "1000000000000" on instance user_module1.sample_rate[12:0] 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+
+@N:"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":165:3:165:4|Found counter in view:work.FleaFPGA_DSO(behavior) inst ADC_buffer_addr[9:0]
+@N:"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":165:3:165:4|Found counter in view:work.FleaFPGA_DSO(behavior) inst ADC_sample_divider[12:0]
+@N: MF179 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":180:8:180:39|Found 13 bit by 13 bit '==' comparator, 'un6_adc_sample_divider'
+@N: MF179 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":294:9:294:42|Found 10 bit by 10 bit '==' comparator, 'un23_vga_disp_en'
+@N: MF179 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":305:9:305:52|Found 9 bit by 9 bit '==' comparator, 'un41_vga_disp_en'
+@N: MF179 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":315:8:315:49|Found 9 bit by 9 bit '==' comparator, 'un45_vga_disp_en'
+@N: MF179 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":186:9:186:53|Found 9 bit by 9 bit '==' comparator, 'un1_adc_rawout'
+@N: MF179 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":284:8:284:47|Found 9 bit by 9 bit '==' comparator, 'un13_vga_disp_en'
+@N: BN362 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":262:2:262:3|Removing sequential instance grid_column[0] in hierarchy view:work.FleaFPGA_DSO(behavior) because there are no references to its outputs 
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 145MB)
+
+@N: MF578 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":222:2:222:3|Incompatible asynchronous control logic preventing generated clock conversion of user_module1.sample_button_count[3] (view:work.FleaFPGA_2v5(arch)).
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 145MB)
+
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 146MB peak: 146MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 146MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 146MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 146MB)
+
+@N: BN362 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":262:2:262:3|Removing sequential instance user_module1.vga_trigger_scaled[0] in hierarchy view:work.FleaFPGA_2v5(arch) because there are no references to its outputs 
+@N: BN362 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":262:2:262:3|Removing sequential instance user_module1.vga_bufout_scaled[0] in hierarchy view:work.FleaFPGA_2v5(arch) because there are no references to its outputs 
+
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 146MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 145MB peak: 146MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+------------------------------------------------------------
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 145MB peak: 146MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_2_.un1[0] on net GPIO[2] has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_3_.un1[0] on net GPIO[3] has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_4_.un1[0] on net GPIO[4] has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_5_.un1[0] on net GPIO[5] has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_6_.un1[0] on net GPIO[6] has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_7_.un1[0] on net GPIO[7] has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_8_.un1[0] on net GPIO[8] has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_9_.un1[0] on net GPIO[9] has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_10_.un1[0] on net GPIO[10] has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_12_.un1[0] on net GPIO[12] has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_13_.un1[0] on net GPIO[13] has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_14_.un1[0] on net GPIO[14] has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_15_.un1[0] on net GPIO[15] has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_16_.un1[0] on net GPIO[16] has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_17_.un1[0] on net GPIO[17] has its enable tied to GND (module FleaFPGA_2v5) 
+@W: MO111 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_2v5_dso_toplevel.vhd":49:1:49:4|Tristate driver GPIO_obuft_18_.un1[0] on net GPIO[18] has its enable tied to GND (module FleaFPGA_2v5) 
+@A: BN291 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":86:45:86:50|Boundary register user_module1.sample_LED_3_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":86:45:86:50|Boundary register user_module1.sample_LED_2_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":86:45:86:50|Boundary register user_module1.sample_LED_1_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":86:45:86:50|Boundary register user_module1.trig_row_8_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":86:45:86:50|Boundary register user_module1.trig_row_7_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":86:45:86:50|Boundary register user_module1.trig_row_6_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":86:45:86:50|Boundary register user_module1.trig_row_5_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":86:45:86:50|Boundary register user_module1.trig_row_4_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":86:45:86:50|Boundary register user_module1.trig_row_3_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":86:45:86:50|Boundary register user_module1.trig_row_2_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\fleafpga_dso.vhd":86:45:86:50|Boundary register user_module1.trig_row_1_.fb packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 147MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 186 clock pin(s) of sequential element(s)
+0 instances converted, 186 sequential instances remain driven by gated/generated clocks
+
+============================================================================================================== Gated/Generated Clocks ==============================================================================================================
+Clock Tree ID     Driving Element               Drive Element Type     Fanout     Sample Instance                     Explanation                                                                                                                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       user_module1.U1.PLLInst_0     EHXPLLJ                100        user_module1.Blue_out_1[0]          Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       user_module1.U1.PLLInst_0     EHXPLLJ                37         user_module1.ADC_buffer_addr[9]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0003       user_module1.U2.v_sync        FD1S3BX                49         user_module1.ADC_filter_shift       Need declared clock or clock from port to derive clock from ff                                                                
+====================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+Writing Analyst data base C:\lscc\diamond\3.1_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 147MB)
+
+Writing EDIF Netlist and constraint files
+I-2013.09L 
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 149MB peak: 151MB)
+
+@W: MT246 :"c:\lscc\diamond\3.1_x64\examples\fleadso\source\adc_pll.vhd":112:4:112:12|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+Found clock vga_controller|v_sync_derived_clock with period 1000.00ns 
+@W: MT420 |Found inferred clock ADC_PLL|CLKOS_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:user_module1.U1.CLKOS"
+
+@W: MT420 |Found inferred clock ADC_PLL|CLKOP_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:user_module1.U1.CLKOP"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Jun 19 16:57:09 2014
+#
+
+
+Top view:               FleaFPGA_2v5
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 956.992
+
+                                        Requested     Estimated     Requested     Estimated                 Clock                                           Clock              
+Starting Clock                          Frequency     Frequency     Period        Period        Slack       Type                                            Group              
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ADC_PLL|CLKOP_inferred_clock            1.0 MHz       99.6 MHz      1000.000      10.040        989.960     inferred                                        Inferred_clkgroup_0
+ADC_PLL|CLKOS_inferred_clock            1.0 MHz       23.3 MHz      1000.000      43.008        956.992     inferred                                        Inferred_clkgroup_1
+vga_controller|v_sync_derived_clock     1.0 MHz       24.7 MHz      1000.000      40.523        959.477     derived (from ADC_PLL|CLKOS_inferred_clock)     Inferred_clkgroup_1
+System                                  1.0 MHz       NA            1000.000      NA            NA          system                                          system_clkgroup    
+===============================================================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                    |    rise  to  rise      |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                             Ending                               |  constraint  slack     |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ADC_PLL|CLKOP_inferred_clock         ADC_PLL|CLKOP_inferred_clock         |  1000.000    989.960   |  No paths    -      |  No paths    -      |  No paths    -    
+ADC_PLL|CLKOS_inferred_clock         ADC_PLL|CLKOS_inferred_clock         |  1000.000    956.992   |  No paths    -      |  No paths    -      |  No paths    -    
+vga_controller|v_sync_derived_clock  ADC_PLL|CLKOP_inferred_clock         |  Diff grp    -         |  No paths    -      |  No paths    -      |  No paths    -    
+vga_controller|v_sync_derived_clock  ADC_PLL|CLKOS_inferred_clock         |  1000.000    959.477   |  No paths    -      |  No paths    -      |  No paths    -    
+vga_controller|v_sync_derived_clock  vga_controller|v_sync_derived_clock  |  1000.000    1994.487  |  No paths    -      |  No paths    -      |  No paths    -    
+===================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: ADC_PLL|CLKOP_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                Starting                                                                Arrival            
+Instance                        Reference                        Type        Pin     Net                Time        Slack  
+                                Clock                                                                                      
+---------------------------------------------------------------------------------------------------------------------------
+user_module1.adc_rawout[3]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[3]      1.188       989.960
+user_module1.adc_rawout[4]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[4]      1.188       990.103
+user_module1.adc_rawout[5]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[5]      1.188       990.103
+user_module1.adc_rawout[6]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[6]      1.188       990.246
+user_module1.adc_rawout[7]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[7]      1.188       990.246
+user_module1.adc_rawout[8]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[8]      1.188       990.389
+user_module1.adc_rawout[9]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[9]      1.188       990.389
+user_module1.adc_rawout[0]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout_5       1.108       990.518
+user_module1.adc_rawout[10]     ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[10]     1.188       990.532
+user_module1.adc_rawout[1]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[1]      1.044       990.725
+===========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                                                      Required            
+Instance                            Reference                        Type        Pin     Net                      Time         Slack  
+                                    Clock                                                                                             
+--------------------------------------------------------------------------------------------------------------------------------------
+user_module1.ADC_buffer_addr[9]     ADC_PLL|CLKOP_inferred_clock     FD1P3DX     D       ADC_buffer_addr_s[9]     999.894      989.960
+user_module1.ADC_buffer_addr[7]     ADC_PLL|CLKOP_inferred_clock     FD1P3DX     D       ADC_buffer_addr_s[7]     999.894      990.103
+user_module1.ADC_buffer_addr[8]     ADC_PLL|CLKOP_inferred_clock     FD1P3DX     D       ADC_buffer_addr_s[8]     999.894      990.103
+user_module1.ADC_buffer_addr[5]     ADC_PLL|CLKOP_inferred_clock     FD1P3DX     D       ADC_buffer_addr_s[5]     999.894      990.246
+user_module1.ADC_buffer_addr[6]     ADC_PLL|CLKOP_inferred_clock     FD1P3DX     D       ADC_buffer_addr_s[6]     999.894      990.246
+user_module1.ADC_buffer_addr[3]     ADC_PLL|CLKOP_inferred_clock     FD1P3DX     D       ADC_buffer_addr_s[3]     999.894      990.389
+user_module1.ADC_buffer_addr[4]     ADC_PLL|CLKOP_inferred_clock     FD1P3DX     D       ADC_buffer_addr_s[4]     999.894      990.389
+user_module1.adc_rawout[9]          ADC_PLL|CLKOP_inferred_clock     FD1S3DX     D       adc_rawout_5[9]          999.894      990.518
+user_module1.adc_rawout[10]         ADC_PLL|CLKOP_inferred_clock     FD1S3DX     D       adc_rawout_5[10]         999.894      990.518
+user_module1.ADC_buffer_addr[1]     ADC_PLL|CLKOP_inferred_clock     FD1P3DX     D       ADC_buffer_addr_s[1]     999.894      990.532
+======================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.894
+
+    - Propagation time:                      9.934
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 989.960
+
+    Number of logic level(s):                13
+    Starting point:                          user_module1.adc_rawout[3] / Q
+    Ending point:                            user_module1.ADC_buffer_addr[9] / D
+    The start point is clocked by            ADC_PLL|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            ADC_PLL|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                                           Pin      Pin               Arrival     No. of    
+Name                                        Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------
+user_module1.adc_rawout[3]                  FD1S3DX      Q        Out     1.188     1.188       -         
+adc_rawout[3]                               Net          -        -       -         -           6         
+user_module1.un2_trig_lower_cry_0_0         CCU2D        A1       In      0.000     1.188       -         
+user_module1.un2_trig_lower_cry_0_0         CCU2D        COUT     Out     1.545     2.732       -         
+un2_trig_lower_cry_0                        Net          -        -       -         -           1         
+user_module1.un2_trig_lower_cry_1_0         CCU2D        CIN      In      0.000     2.732       -         
+user_module1.un2_trig_lower_cry_1_0         CCU2D        COUT     Out     0.143     2.875       -         
+un2_trig_lower_cry_2                        Net          -        -       -         -           1         
+user_module1.un2_trig_lower_cry_3_0         CCU2D        CIN      In      0.000     2.875       -         
+user_module1.un2_trig_lower_cry_3_0         CCU2D        COUT     Out     0.143     3.018       -         
+un2_trig_lower_cry_4                        Net          -        -       -         -           1         
+user_module1.un2_trig_lower_cry_5_0         CCU2D        CIN      In      0.000     3.018       -         
+user_module1.un2_trig_lower_cry_5_0         CCU2D        COUT     Out     0.143     3.161       -         
+un2_trig_lower_cry_6                        Net          -        -       -         -           1         
+user_module1.un2_trig_lower_cry_7_0         CCU2D        CIN      In      0.000     3.161       -         
+user_module1.un2_trig_lower_cry_7_0         CCU2D        COUT     Out     0.143     3.304       -         
+un2_trig_lower_cry_8_cry                    Net          -        -       -         -           1         
+user_module1.un2_trig_lower_cry_8_0         CCU2D        CIN      In      0.000     3.304       -         
+user_module1.un2_trig_lower_cry_8_0         CCU2D        S0       Out     1.685     4.989       -         
+un2_trig_lower_cry_8                        Net          -        -       -         -           3         
+user_module1.ADC_buffer_addr_0_sqmuxa_i     ORCALUT4     B        In      0.000     4.989       -         
+user_module1.ADC_buffer_addr_0_sqmuxa_i     ORCALUT4     Z        Out     1.281     6.269       -         
+ADC_buffer_addr                             Net          -        -       -         -           11        
+user_module1.ADC_buffer_addr_cry_0[0]       CCU2D        A1       In      0.000     6.269       -         
+user_module1.ADC_buffer_addr_cry_0[0]       CCU2D        COUT     Out     1.545     7.814       -         
+ADC_buffer_addr_cry[0]                      Net          -        -       -         -           1         
+user_module1.ADC_buffer_addr_cry_0[1]       CCU2D        CIN      In      0.000     7.814       -         
+user_module1.ADC_buffer_addr_cry_0[1]       CCU2D        COUT     Out     0.143     7.957       -         
+ADC_buffer_addr_cry[2]                      Net          -        -       -         -           1         
+user_module1.ADC_buffer_addr_cry_0[3]       CCU2D        CIN      In      0.000     7.957       -         
+user_module1.ADC_buffer_addr_cry_0[3]       CCU2D        COUT     Out     0.143     8.099       -         
+ADC_buffer_addr_cry[4]                      Net          -        -       -         -           1         
+user_module1.ADC_buffer_addr_cry_0[5]       CCU2D        CIN      In      0.000     8.099       -         
+user_module1.ADC_buffer_addr_cry_0[5]       CCU2D        COUT     Out     0.143     8.242       -         
+ADC_buffer_addr_cry[6]                      Net          -        -       -         -           1         
+user_module1.ADC_buffer_addr_cry_0[7]       CCU2D        CIN      In      0.000     8.242       -         
+user_module1.ADC_buffer_addr_cry_0[7]       CCU2D        COUT     Out     0.143     8.385       -         
+ADC_buffer_addr_cry[8]                      Net          -        -       -         -           1         
+user_module1.ADC_buffer_addr_s_0[9]         CCU2D        CIN      In      0.000     8.385       -         
+user_module1.ADC_buffer_addr_s_0[9]         CCU2D        S0       Out     1.549     9.934       -         
+ADC_buffer_addr_s[9]                        Net          -        -       -         -           1         
+user_module1.ADC_buffer_addr[9]             FD1P3DX      D        In      0.000     9.934       -         
+==========================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: ADC_PLL|CLKOS_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                            Starting                                                                Arrival            
+Instance                                    Reference                        Type        Pin      Net               Time        Slack  
+                                            Clock                                                                                      
+---------------------------------------------------------------------------------------------------------------------------------------
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP8KC       DOB0     vga_bufout[0]     3.737       956.992
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP8KC       DOB2     vga_bufout[2]     3.737       956.992
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP8KC       DOB1     vga_bufout[1]     3.737       957.135
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP8KC       DOB3     vga_bufout[3]     3.737       957.135
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP8KC       DOB4     vga_bufout[4]     3.737       957.135
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP8KC       DOB5     vga_bufout[5]     3.737       957.278
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP8KC       DOB6     vga_bufout[6]     3.737       957.278
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP8KC       DOB7     vga_bufout[7]     3.737       957.420
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP8KC       DOB8     vga_bufout[8]     3.737       957.420
+user_module1.U2.v_count[0]                  ADC_PLL|CLKOS_inferred_clock     FD1P3DX     Q        v_count[0]        1.108       989.279
+=======================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                        Starting                                                                       Required            
+Instance                                Reference                        Type        Pin     Net                       Time         Slack  
+                                        Clock                                                                                              
+-------------------------------------------------------------------------------------------------------------------------------------------
+user_module1.vga_bufout_scaled_0[0]     ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un103_sum_0[5]      999.894      956.992
+user_module1.vga_bufout_scaled[1]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un103_sum_i_0       999.894      959.660
+user_module1.vga_bufout_scaled[2]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un96_sum_i_0        999.894      963.113
+user_module1.vga_bufout_scaled[3]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un82_sum_i_0[5]     999.894      966.581
+user_module1.vga_bufout_scaled[4]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un75_sum_i_0[5]     999.894      970.033
+user_module1.vga_bufout_scaled[5]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un68_sum_i_0[5]     999.894      973.486
+user_module1.vga_bufout_scaled[6]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un61_sum_i_0[5]     999.894      976.938
+user_module1.vga_bufout_scaled[7]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un54_sum_i_0[5]     999.894      980.390
+user_module1.vga_bufout_scaled[8]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un47_sum_i_0[5]     999.894      983.842
+user_module1.U2.row_1[0]                ADC_PLL|CLKOS_inferred_clock     FD1P3AX     SP      row_0_sqmuxa              999.528      989.279
+===========================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.894
+
+    - Propagation time:                      42.902
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     956.992
+
+    Number of logic level(s):                36
+    Starting point:                          user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0 / DOB0
+    Ending point:                            user_module1.vga_bufout_scaled_0[0] / D
+    The start point is clocked by            ADC_PLL|CLKOS_inferred_clock [rising] on pin CLKB
+    The end   point is clocked by            ADC_PLL|CLKOS_inferred_clock [rising] on pin CK
+
+Instance / Net                                                                              Pin      Pin               Arrival     No. of    
+Name                                                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0                                        DP8KC        DOB0     Out     3.737     3.737       -         
+vga_bufout[0]                                                                  Net          -        -       -         -           6         
+user_module1.un1_vga_bufout_cry_2_0                                            CCU2D        B1       In      0.000     3.737       -         
+user_module1.un1_vga_bufout_cry_2_0                                            CCU2D        COUT     Out     1.545     5.281       -         
+un1_vga_bufout_cry_2                                                           Net          -        -       -         -           1         
+user_module1.un1_vga_bufout_cry_3_0                                            CCU2D        CIN      In      0.000     5.281       -         
+user_module1.un1_vga_bufout_cry_3_0                                            CCU2D        COUT     Out     0.143     5.424       -         
+un1_vga_bufout_cry_4                                                           Net          -        -       -         -           1         
+user_module1.un1_vga_bufout_cry_5_0                                            CCU2D        CIN      In      0.000     5.424       -         
+user_module1.un1_vga_bufout_cry_5_0                                            CCU2D        COUT     Out     0.143     5.567       -         
+un1_vga_bufout_cry_6                                                           Net          -        -       -         -           1         
+user_module1.un1_vga_bufout_cry_7_0                                            CCU2D        CIN      In      0.000     5.567       -         
+user_module1.un1_vga_bufout_cry_7_0                                            CCU2D        COUT     Out     0.143     5.710       -         
+un1_vga_bufout_cry_8                                                           Net          -        -       -         -           1         
+user_module1.un1_vga_bufout_cry_9_0                                            CCU2D        CIN      In      0.000     5.710       -         
+user_module1.un1_vga_bufout_cry_9_0                                            CCU2D        S0       Out     1.685     7.394       -         
+un1_vga_bufout_cry_9_0_S0                                                      Net          -        -       -         -           3         
+user_module1.un1_vga_bufout_cry_9_0_RNII5P91                                   ORCALUT4     B        In      0.000     7.394       -         
+user_module1.un1_vga_bufout_cry_9_0_RNII5P91                                   ORCALUT4     Z        Out     1.193     8.587       -         
+N_20                                                                           Net          -        -       -         -           4         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un40_sum_cry_1_0      CCU2D        A0       In      0.000     8.587       -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un40_sum_cry_1_0      CCU2D        COUT     Out     1.545     10.132      -         
+mult1_un40_sum_cry_2_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un40_sum_cry_3_0      CCU2D        CIN      In      0.000     10.132      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un40_sum_cry_3_0      CCU2D        COUT     Out     0.143     10.275      -         
+mult1_un40_sum_cry_4_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un40_sum_s_5_0        CCU2D        CIN      In      0.000     10.275      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un40_sum_s_5_0        CCU2D        S0       Out     1.757     12.032      -         
+mult1_un40_sum_0[5]                                                            Net          -        -       -         -           5         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un47_sum_cry_1_0      CCU2D        A0       In      0.000     12.032      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un47_sum_cry_1_0      CCU2D        COUT     Out     1.545     13.576      -         
+mult1_un47_sum_cry_2_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un47_sum_cry_3_0      CCU2D        CIN      In      0.000     13.576      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un47_sum_cry_3_0      CCU2D        COUT     Out     0.143     13.719      -         
+mult1_un47_sum_cry_4_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un47_sum_s_5_0        CCU2D        CIN      In      0.000     13.719      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un47_sum_s_5_0        CCU2D        S0       Out     1.765     15.484      -         
+mult1_un47_sum_0[5]                                                            Net          -        -       -         -           6         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un54_sum_cry_1_0      CCU2D        A0       In      0.000     15.484      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un54_sum_cry_1_0      CCU2D        COUT     Out     1.545     17.028      -         
+mult1_un54_sum_cry_2_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un54_sum_cry_3_0      CCU2D        CIN      In      0.000     17.028      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un54_sum_cry_3_0      CCU2D        COUT     Out     0.143     17.171      -         
+mult1_un54_sum_cry_4_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un54_sum_s_5_0        CCU2D        CIN      In      0.000     17.171      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un54_sum_s_5_0        CCU2D        S0       Out     1.765     18.936      -         
+mult1_un54_sum_0[5]                                                            Net          -        -       -         -           6         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un61_sum_cry_1_0      CCU2D        A0       In      0.000     18.936      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un61_sum_cry_1_0      CCU2D        COUT     Out     1.545     20.481      -         
+mult1_un61_sum_cry_2_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un61_sum_cry_3_0      CCU2D        CIN      In      0.000     20.481      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un61_sum_cry_3_0      CCU2D        COUT     Out     0.143     20.624      -         
+mult1_un61_sum_cry_4_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un61_sum_s_5_0        CCU2D        CIN      In      0.000     20.624      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un61_sum_s_5_0        CCU2D        S0       Out     1.765     22.389      -         
+mult1_un61_sum_0[5]                                                            Net          -        -       -         -           6         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un68_sum_cry_1_0      CCU2D        A0       In      0.000     22.389      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un68_sum_cry_1_0      CCU2D        COUT     Out     1.545     23.933      -         
+mult1_un68_sum_cry_2_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un68_sum_cry_3_0      CCU2D        CIN      In      0.000     23.933      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un68_sum_cry_3_0      CCU2D        COUT     Out     0.143     24.076      -         
+mult1_un68_sum_cry_4_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un68_sum_s_5_0        CCU2D        CIN      In      0.000     24.076      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un68_sum_s_5_0        CCU2D        S0       Out     1.765     25.841      -         
+mult1_un68_sum_0[5]                                                            Net          -        -       -         -           6         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un75_sum_cry_1_0      CCU2D        A0       In      0.000     25.841      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un75_sum_cry_1_0      CCU2D        COUT     Out     1.545     27.385      -         
+mult1_un75_sum_cry_2_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un75_sum_cry_3_0      CCU2D        CIN      In      0.000     27.385      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un75_sum_cry_3_0      CCU2D        COUT     Out     0.143     27.528      -         
+mult1_un75_sum_cry_4_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un75_sum_s_5_0        CCU2D        CIN      In      0.000     27.528      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un75_sum_s_5_0        CCU2D        S0       Out     1.765     29.293      -         
+mult1_un75_sum_0[5]                                                            Net          -        -       -         -           6         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un82_sum_cry_1_0      CCU2D        A0       In      0.000     29.293      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un82_sum_cry_1_0      CCU2D        COUT     Out     1.545     30.838      -         
+mult1_un82_sum_cry_2_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un82_sum_cry_3_0      CCU2D        CIN      In      0.000     30.838      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un82_sum_cry_3_0      CCU2D        COUT     Out     0.143     30.980      -         
+mult1_un82_sum_cry_4_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un82_sum_s_5_0        CCU2D        CIN      In      0.000     30.980      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un82_sum_s_5_0        CCU2D        S0       Out     1.765     32.745      -         
+mult1_un82_sum_0[5]                                                            Net          -        -       -         -           6         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un89_sum_cry_1_0      CCU2D        A0       In      0.000     32.745      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un89_sum_cry_1_0      CCU2D        COUT     Out     1.545     34.290      -         
+mult1_un89_sum_cry_2_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un89_sum_cry_3_0      CCU2D        CIN      In      0.000     34.290      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un89_sum_cry_3_0      CCU2D        COUT     Out     0.143     34.433      -         
+mult1_un89_sum_cry_4_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un89_sum_s_5_0        CCU2D        CIN      In      0.000     34.433      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un89_sum_s_5_0        CCU2D        S0       Out     1.781     36.214      -         
+mult1_un96_sum_0                                                               Net          -        -       -         -           7         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un96_sum_cry_1_0      CCU2D        A1       In      0.000     36.214      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un96_sum_cry_1_0      CCU2D        COUT     Out     1.545     37.758      -         
+mult1_un96_sum_cry_1_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un96_sum_cry_2_0      CCU2D        CIN      In      0.000     37.758      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un96_sum_cry_2_0      CCU2D        COUT     Out     0.143     37.901      -         
+mult1_un96_sum_cry_3_0                                                         Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un96_sum_cry_4_0      CCU2D        CIN      In      0.000     37.901      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un96_sum_cry_4_0      CCU2D        S1       Out     1.765     39.666      -         
+mult1_un103_sum_0                                                              Net          -        -       -         -           6         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un103_sum_cry_1_0     CCU2D        A1       In      0.000     39.666      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un103_sum_cry_1_0     CCU2D        COUT     Out     1.545     41.211      -         
+mult1_un103_sum_cry_1_0                                                        Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un103_sum_cry_2_0     CCU2D        CIN      In      0.000     41.211      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un103_sum_cry_2_0     CCU2D        COUT     Out     0.143     41.353      -         
+mult1_un103_sum_cry_3_0                                                        Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un103_sum_cry_4_0     CCU2D        CIN      In      0.000     41.353      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un103_sum_cry_4_0     CCU2D        S1       Out     1.549     42.902      -         
+mult1_un103_sum_0[5]                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_0[0]                                            FD1P3AX      D        In      0.000     42.902      -         
+=============================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: vga_controller|v_sync_derived_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                        Starting                                                                               Arrival             
+Instance                                Reference                               Type        Pin     Net                        Time        Slack   
+                                        Clock                                                                                                      
+---------------------------------------------------------------------------------------------------------------------------------------------------
+user_module1.trig_row[0]                vga_controller|v_sync_derived_clock     FD1S3IX     Q       trig_row[0]                1.252       959.477 
+user_module1.trig_row[2]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[2]                1.228       959.501 
+user_module1.trig_row[1]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[1]                1.220       959.652 
+user_module1.trig_row[3]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[3]                1.204       959.668 
+user_module1.trig_row[4]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[4]                1.204       959.668 
+user_module1.trig_row[5]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[5]                1.204       959.811 
+user_module1.trig_row[6]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[6]                1.204       959.811 
+user_module1.trig_row[7]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[7]                1.204       959.953 
+user_module1.trig_row[8]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[8]                1.204       959.953 
+user_module1.sample_button_count[0]     vga_controller|v_sync_derived_clock     FD1S3AX     Q       sample_button_count[0]     1.180       1994.487
+===================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                         Starting                                                                               Required             
+Instance                                 Reference                               Type        Pin     Net                        Time         Slack   
+                                         Clock                                                                                                       
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+user_module1.vga_trigger_scaled_0[0]     vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un103_sum[5]         999.894      959.477 
+user_module1.vga_trigger_scaled[1]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un103_sum_i          999.894      962.145 
+user_module1.vga_trigger_scaled[2]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un96_sum_i           999.894      965.597 
+user_module1.vga_trigger_scaled[3]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un82_sum_i[5]        999.894      969.066 
+user_module1.vga_trigger_scaled[4]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un75_sum_i[5]        999.894      972.518 
+user_module1.vga_trigger_scaled[5]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un68_sum_i[5]        999.894      975.970 
+user_module1.vga_trigger_scaled[6]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un61_sum_i[5]        999.894      979.423 
+user_module1.vga_trigger_scaled[7]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un54_sum_i[5]        999.894      982.875 
+user_module1.vga_trigger_scaled[8]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un47_sum_i[5]        999.894      986.327 
+user_module1.sample_LED[0]               vga_controller|v_sync_derived_clock     FD1S3IX     CD      sample_rate_RNIHO0A[0]     1999.197     1994.487
+=====================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.894
+
+    - Propagation time:                      40.417
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 959.477
+
+    Number of logic level(s):                36
+    Starting point:                          user_module1.trig_row[0] / Q
+    Ending point:                            user_module1.vga_trigger_scaled_0[0] / D
+    The start point is clocked by            vga_controller|v_sync_derived_clock [rising] on pin CK
+    The end   point is clocked by            ADC_PLL|CLKOS_inferred_clock [rising] on pin CK
+
+Instance / Net                                                                               Pin      Pin               Arrival     No. of    
+Name                                                                            Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------------
+user_module1.trig_row[0]                                                        FD1S3IX      Q        Out     1.252     1.252       -         
+trig_row[0]                                                                     Net          -        -       -         -           13        
+user_module1.un1_trig_row_cry_2_0                                               CCU2D        B1       In      0.000     1.252       -         
+user_module1.un1_trig_row_cry_2_0                                               CCU2D        COUT     Out     1.545     2.796       -         
+un1_trig_row_cry_2                                                              Net          -        -       -         -           1         
+user_module1.un1_trig_row_cry_3_0                                               CCU2D        CIN      In      0.000     2.796       -         
+user_module1.un1_trig_row_cry_3_0                                               CCU2D        COUT     Out     0.143     2.939       -         
+un1_trig_row_cry_4                                                              Net          -        -       -         -           1         
+user_module1.un1_trig_row_cry_5_0                                               CCU2D        CIN      In      0.000     2.939       -         
+user_module1.un1_trig_row_cry_5_0                                               CCU2D        COUT     Out     0.143     3.082       -         
+un1_trig_row_cry_6                                                              Net          -        -       -         -           1         
+user_module1.un1_trig_row_cry_7_0                                               CCU2D        CIN      In      0.000     3.082       -         
+user_module1.un1_trig_row_cry_7_0                                               CCU2D        COUT     Out     0.143     3.225       -         
+un1_trig_row_cry_8                                                              Net          -        -       -         -           1         
+user_module1.un1_trig_row_cry_9_0                                               CCU2D        CIN      In      0.000     3.225       -         
+user_module1.un1_trig_row_cry_9_0                                               CCU2D        S0       Out     1.685     4.910       -         
+un1_trig_row_cry_9_0_S0                                                         Net          -        -       -         -           3         
+user_module1.un1_trig_row_cry_9_0_RNI34LK                                       ORCALUT4     B        In      0.000     4.910       -         
+user_module1.un1_trig_row_cry_9_0_RNI34LK                                       ORCALUT4     Z        Out     1.193     6.103       -         
+N_16                                                                            Net          -        -       -         -           4         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un40_sum_cry_1_0      CCU2D        A0       In      0.000     6.103       -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un40_sum_cry_1_0      CCU2D        COUT     Out     1.545     7.647       -         
+mult1_un40_sum_cry_2                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un40_sum_cry_3_0      CCU2D        CIN      In      0.000     7.647       -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un40_sum_cry_3_0      CCU2D        COUT     Out     0.143     7.790       -         
+mult1_un40_sum_cry_4                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un40_sum_s_5_0        CCU2D        CIN      In      0.000     7.790       -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un40_sum_s_5_0        CCU2D        S0       Out     1.757     9.547       -         
+mult1_un40_sum[5]                                                               Net          -        -       -         -           5         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un47_sum_cry_1_0      CCU2D        A0       In      0.000     9.547       -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un47_sum_cry_1_0      CCU2D        COUT     Out     1.545     11.091      -         
+mult1_un47_sum_cry_2                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un47_sum_cry_3_0      CCU2D        CIN      In      0.000     11.091      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un47_sum_cry_3_0      CCU2D        COUT     Out     0.143     11.234      -         
+mult1_un47_sum_cry_4                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un47_sum_s_5_0        CCU2D        CIN      In      0.000     11.234      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un47_sum_s_5_0        CCU2D        S0       Out     1.765     12.999      -         
+mult1_un47_sum[5]                                                               Net          -        -       -         -           6         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un54_sum_cry_1_0      CCU2D        A0       In      0.000     12.999      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un54_sum_cry_1_0      CCU2D        COUT     Out     1.545     14.544      -         
+mult1_un54_sum_cry_2                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un54_sum_cry_3_0      CCU2D        CIN      In      0.000     14.544      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un54_sum_cry_3_0      CCU2D        COUT     Out     0.143     14.686      -         
+mult1_un54_sum_cry_4                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un54_sum_s_5_0        CCU2D        CIN      In      0.000     14.686      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un54_sum_s_5_0        CCU2D        S0       Out     1.765     16.451      -         
+mult1_un54_sum[5]                                                               Net          -        -       -         -           6         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un61_sum_cry_1_0      CCU2D        A0       In      0.000     16.451      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un61_sum_cry_1_0      CCU2D        COUT     Out     1.545     17.996      -         
+mult1_un61_sum_cry_2                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un61_sum_cry_3_0      CCU2D        CIN      In      0.000     17.996      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un61_sum_cry_3_0      CCU2D        COUT     Out     0.143     18.139      -         
+mult1_un61_sum_cry_4                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un61_sum_s_5_0        CCU2D        CIN      In      0.000     18.139      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un61_sum_s_5_0        CCU2D        S0       Out     1.765     19.904      -         
+mult1_un61_sum[5]                                                               Net          -        -       -         -           6         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un68_sum_cry_1_0      CCU2D        A0       In      0.000     19.904      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un68_sum_cry_1_0      CCU2D        COUT     Out     1.545     21.448      -         
+mult1_un68_sum_cry_2                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un68_sum_cry_3_0      CCU2D        CIN      In      0.000     21.448      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un68_sum_cry_3_0      CCU2D        COUT     Out     0.143     21.591      -         
+mult1_un68_sum_cry_4                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un68_sum_s_5_0        CCU2D        CIN      In      0.000     21.591      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un68_sum_s_5_0        CCU2D        S0       Out     1.765     23.356      -         
+mult1_un68_sum[5]                                                               Net          -        -       -         -           6         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un75_sum_cry_1_0      CCU2D        A0       In      0.000     23.356      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un75_sum_cry_1_0      CCU2D        COUT     Out     1.545     24.901      -         
+mult1_un75_sum_cry_2                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un75_sum_cry_3_0      CCU2D        CIN      In      0.000     24.901      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un75_sum_cry_3_0      CCU2D        COUT     Out     0.143     25.043      -         
+mult1_un75_sum_cry_4                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un75_sum_s_5_0        CCU2D        CIN      In      0.000     25.043      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un75_sum_s_5_0        CCU2D        S0       Out     1.765     26.808      -         
+mult1_un75_sum[5]                                                               Net          -        -       -         -           6         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un82_sum_cry_1_0      CCU2D        A0       In      0.000     26.808      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un82_sum_cry_1_0      CCU2D        COUT     Out     1.545     28.353      -         
+mult1_un82_sum_cry_2                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un82_sum_cry_3_0      CCU2D        CIN      In      0.000     28.353      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un82_sum_cry_3_0      CCU2D        COUT     Out     0.143     28.496      -         
+mult1_un82_sum_cry_4                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un82_sum_s_5_0        CCU2D        CIN      In      0.000     28.496      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un82_sum_s_5_0        CCU2D        S0       Out     1.765     30.261      -         
+mult1_un82_sum[5]                                                               Net          -        -       -         -           6         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un89_sum_cry_1_0      CCU2D        A0       In      0.000     30.261      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un89_sum_cry_1_0      CCU2D        COUT     Out     1.545     31.805      -         
+mult1_un89_sum_cry_2                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un89_sum_cry_3_0      CCU2D        CIN      In      0.000     31.805      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un89_sum_cry_3_0      CCU2D        COUT     Out     0.143     31.948      -         
+mult1_un89_sum_cry_4                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un89_sum_s_5_0        CCU2D        CIN      In      0.000     31.948      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un89_sum_s_5_0        CCU2D        S0       Out     1.781     33.729      -         
+mult1_un96_sum                                                                  Net          -        -       -         -           7         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un96_sum_cry_1_0      CCU2D        A1       In      0.000     33.729      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un96_sum_cry_1_0      CCU2D        COUT     Out     1.545     35.273      -         
+mult1_un96_sum_cry_1                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un96_sum_cry_2_0      CCU2D        CIN      In      0.000     35.273      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un96_sum_cry_2_0      CCU2D        COUT     Out     0.143     35.416      -         
+mult1_un96_sum_cry_3                                                            Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un96_sum_cry_4_0      CCU2D        CIN      In      0.000     35.416      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un96_sum_cry_4_0      CCU2D        S1       Out     1.765     37.181      -         
+mult1_un103_sum                                                                 Net          -        -       -         -           6         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un103_sum_cry_1_0     CCU2D        A1       In      0.000     37.181      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un103_sum_cry_1_0     CCU2D        COUT     Out     1.545     38.726      -         
+mult1_un103_sum_cry_1                                                           Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un103_sum_cry_2_0     CCU2D        CIN      In      0.000     38.726      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un103_sum_cry_2_0     CCU2D        COUT     Out     0.143     38.868      -         
+mult1_un103_sum_cry_3                                                           Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un103_sum_cry_4_0     CCU2D        CIN      In      0.000     38.868      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un103_sum_cry_4_0     CCU2D        S1       Out     1.549     40.417      -         
+mult1_un103_sum[5]                                                              Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_0[0]                                            FD1P3AX      D        In      0.000     40.417      -         
+==============================================================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-4
+
+Register bits: 184 of 6864 (3%)
+PIC Latch:       0
+I/O cells:       75
+Block Rams : 1 of 26 (3%)
+
+
+Details:
+CCU2D:          183
+DP8KC:          1
+FD1P3AX:        89
+FD1P3AY:        2
+FD1P3DX:        20
+FD1P3IX:        11
+FD1S3AX:        12
+FD1S3BX:        1
+FD1S3DX:        36
+FD1S3IX:        9
+GSR:            1
+IB:             5
+IFS1P3DX:       1
+INV:            35
+OB:             54
+OBZ:            16
+OFS1P3BX:       1
+OFS1P3DX:       2
+ORCALUT4:       123
+PUR:            1
+VHI:            4
+VLO:            5
+true:           1
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 53MB peak: 151MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:03s cputime
+# Thu Jun 19 16:57:09 2014
+
+###########################################################]

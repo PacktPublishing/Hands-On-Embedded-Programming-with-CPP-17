@@ -1,0 +1,12 @@
+#Start recording tcl command: 6/20/2014 13:42:22
+#Project Location: C:/lscc/diamond/3.1_x64/examples/FleaDSO; Project name: FleaDSO
+prj_project open "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO.ldf"
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+#Stop recording: 6/21/2014 03:17:07

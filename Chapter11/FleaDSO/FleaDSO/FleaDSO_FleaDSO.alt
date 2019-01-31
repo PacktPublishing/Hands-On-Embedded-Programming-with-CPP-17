@@ -1,0 +1,50 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Wed Oct 03 00:12:18 2018 *
+NOTE DESIGN NAME: FleaFPGA_Ohm_A5 *
+NOTE DEVICE NAME: LFE5U-25F-6CABGA381 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS n_led1 : P2 : out *
+NOTE PINS sys_clock : H2 : in *
+NOTE PINS LVDS_ck[0] : G2 : out *
+NOTE PINS LVDS_Blue[0] : A4 : out *
+NOTE PINS LVDS_Green[0] : A2 : out *
+NOTE PINS LVDS_Red[0] : C1 : out *
+NOTE PINS PS2_enable : N1 : out *
+NOTE PINS mmc_mosi : B2 : out *
+NOTE PINS mmc_clk : C3 : out *
+NOTE PINS mmc_n_cs : B3 : out *
+NOTE PINS ADC3_error : R20 : out *
+NOTE PINS ADC3_input : T20 : in *
+NOTE PINS GPIO_21 : P16 : in *
+NOTE PINS GPIO_20 : N17 : in *
+NOTE PINS Dram_DQML : A11 : out *
+NOTE PINS Dram_DQMH : D16 : out *
+NOTE PINS Dram_n_cs : C11 : out *
+NOTE PINS Dram_Addr[12] : C14 : out *
+NOTE PINS Dram_Addr[11] : C16 : out *
+NOTE PINS Dram_Addr[10] : D9 : out *
+NOTE PINS Dram_Addr[9] : A14 : out *
+NOTE PINS Dram_Addr[8] : D14 : out *
+NOTE PINS Dram_Addr[7] : D15 : out *
+NOTE PINS Dram_Addr[6] : B13 : out *
+NOTE PINS Dram_Addr[5] : C13 : out *
+NOTE PINS Dram_Addr[4] : D13 : out *
+NOTE PINS Dram_Addr[3] : A13 : out *
+NOTE PINS Dram_Addr[2] : D8 : out *
+NOTE PINS Dram_Addr[1] : C10 : out *
+NOTE PINS Dram_Addr[0] : B12 : out *
+NOTE PINS Dram_BA[1] : D11 : out *
+NOTE PINS Dram_BA[0] : A12 : out *
+NOTE PINS Dram_n_We : D12 : out *
+NOTE PINS Dram_n_Cas : B11 : out *
+NOTE PINS Dram_n_Ras : C12 : out *
+NOTE PINS Dram_CKE : C15 : out *
+NOTE PINS Dram_Clk : C17 : out *
+NOTE PINS slave_tx_o : P1 : out *
+NOTE PINS sys_reset : T17 : in *
+NOTE PINS SYSCONFIG_PIN_D1 : V2 : inout *
+NOTE PINS SYSCONFIG_PIN_D0 : W2 : inout *
+NOTE PINS SYSCONFIG_PIN_HOLDN : R2 : inout *
+NOTE CONFIGURATION MODE: SPI_SERIAL *
+NOTE COMPRESSION: on *

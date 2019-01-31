@@ -1,0 +1,52 @@
+@P:  Worst Slack : -0.800
+@P:  ADC_PLL|CLKOP_inferred_clock - Estimated Frequency : 187.5 MHz
+@P:  ADC_PLL|CLKOP_inferred_clock - Requested Frequency : 220.6 MHz
+@P:  ADC_PLL|CLKOP_inferred_clock - Estimated Period : 5.332
+@P:  ADC_PLL|CLKOP_inferred_clock - Requested Period : 4.532
+@P:  ADC_PLL|CLKOP_inferred_clock - Slack : -0.800
+@P:  ADC_PLL|CLKOS_inferred_clock - Estimated Frequency : 42.8 MHz
+@P:  ADC_PLL|CLKOS_inferred_clock - Requested Frequency : 1.0 MHz
+@P:  ADC_PLL|CLKOS_inferred_clock - Estimated Period : 23.340
+@P:  ADC_PLL|CLKOS_inferred_clock - Requested Period : 1000.000
+@P:  ADC_PLL|CLKOS_inferred_clock - Slack : 976.660
+@P:  DVI_clkgen|CLKOP_inferred_clock - Estimated Frequency : 383.0 MHz
+@P:  DVI_clkgen|CLKOP_inferred_clock - Requested Frequency : 450.6 MHz
+@P:  DVI_clkgen|CLKOP_inferred_clock - Estimated Period : 2.611
+@P:  DVI_clkgen|CLKOP_inferred_clock - Requested Period : 2.219
+@P:  DVI_clkgen|CLKOP_inferred_clock - Slack : -0.392
+@P:  DVI_clkgen|CLKOS2_inferred_clock - Estimated Frequency : 253.6 MHz
+@P:  DVI_clkgen|CLKOS2_inferred_clock - Requested Frequency : 298.4 MHz
+@P:  DVI_clkgen|CLKOS2_inferred_clock - Estimated Period : 3.943
+@P:  DVI_clkgen|CLKOS2_inferred_clock - Requested Period : 3.352
+@P:  DVI_clkgen|CLKOS2_inferred_clock - Slack : -0.591
+@P:  DVI_clkgen|CLKOS3_inferred_clock - Estimated Frequency : 255.0 MHz
+@P:  DVI_clkgen|CLKOS3_inferred_clock - Requested Frequency : 300.0 MHz
+@P:  DVI_clkgen|CLKOS3_inferred_clock - Estimated Period : 3.921
+@P:  DVI_clkgen|CLKOS3_inferred_clock - Requested Period : 3.333
+@P:  DVI_clkgen|CLKOS3_inferred_clock - Slack : -0.588
+@P:  vga_controller|v_sync_derived_clock - Estimated Frequency : 45.8 MHz
+@P:  vga_controller|v_sync_derived_clock - Requested Frequency : 1.0 MHz
+@P:  vga_controller|v_sync_derived_clock - Estimated Period : 21.817
+@P:  vga_controller|v_sync_derived_clock - Requested Period : 1000.000
+@P:  vga_controller|v_sync_derived_clock - Slack : 978.183
+@P:  System - Estimated Frequency : NA
+@P:  System - Requested Frequency : 1.0 MHz
+@P:  System - Estimated Period : NA
+@P:  System - Requested Period : 1000.000
+@P:  System - Slack : NA
+@P:  Total Area : 404.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  Total Area : 0.0
+@P:  CPU Time : 0h:00m:12s

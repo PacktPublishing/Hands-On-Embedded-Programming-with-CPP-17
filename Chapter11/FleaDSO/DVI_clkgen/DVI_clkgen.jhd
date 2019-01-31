@@ -1,0 +1,2 @@
+VHDL_ENTITY_ONLY DVI_clkgen DEFIN DVI_clkgen.vhd
+MODULE DVI_clkgen DEFIN DVI_clkgen.vhd

@@ -1,0 +1,26 @@
+#Start recording tcl command: 2/19/2018 22:24:05
+#Project Location: C:/lscc/diamond/3.9_x64/examples/FleaDSO; Project name: FleaDSO
+prj_project open "C:/lscc/diamond/3.9_x64/examples/FleaDSO/FleaDSO.ldf"
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ddr_out/ddr_out.sbx"
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/ADC_PLL.sbx"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL"
+source "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+prj_run Export -impl FleaDSO
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/ADC_PLL.sbx"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL"
+source "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+#Stop recording: 2/20/2018 00:36:25

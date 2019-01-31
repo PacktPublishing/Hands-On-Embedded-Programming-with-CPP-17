@@ -1,0 +1,6 @@
+clkop  i
+clkos  i
+clkout  o
+reset  i
+data i
+dout o

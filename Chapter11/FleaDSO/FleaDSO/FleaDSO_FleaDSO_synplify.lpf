@@ -1,0 +1,47 @@
+#
+# Logical Preferences generated for Lattice by Synplify maplat, Build 1682R.
+#
+
+# Period Constraints 
+#FREQUENCY NET "u0/clk_dvi" 450.6 MHz;
+#FREQUENCY NET "u0/clk_50" 300.0 MHz;
+#FREQUENCY NET "u0/clk_vga" 298.4 MHz;
+#FREQUENCY NET "user_module1/U1/ADC_clk" 220.6 MHz;
+#FREQUENCY NET "user_module1/U1/VGA_25MHz" 1.0 MHz;
+#FREQUENCY NET "user_module1/U2/vsync" 1.0 MHz;
+
+
+# Output Constraints 
+
+# Input Constraints 
+
+# Point-to-point Delay Constraints 
+
+#MULTICYCLE FROM CLKNET "user_module1/U2/vsync"  TO CLKNET "user_module1/U2/vsync"  2X;
+
+
+# Block Path Constraints 
+#BLOCK PATH FROM CLKNET "user_module1/U1/VGA_25MHz" TO CLKNET "user_module1/U1/ADC_clk";
+#BLOCK PATH FROM CLKNET "user_module1/U1/VGA_25MHz" TO CLKNET "u0/clk_vga";
+#BLOCK PATH FROM CLKNET "user_module1/U1/VGA_25MHz" TO CLKNET "u0/clk_dvi";
+#BLOCK PATH FROM CLKNET "user_module1/U1/VGA_25MHz" TO CLKNET "u0/clk_50";
+#BLOCK PATH FROM CLKNET "user_module1/U1/ADC_clk" TO CLKNET "user_module1/U1/VGA_25MHz";
+#BLOCK PATH FROM CLKNET "user_module1/U1/ADC_clk" TO CLKNET "u0/clk_vga";
+#BLOCK PATH FROM CLKNET "user_module1/U1/ADC_clk" TO CLKNET "u0/clk_dvi";
+#BLOCK PATH FROM CLKNET "user_module1/U1/ADC_clk" TO CLKNET "u0/clk_50";
+#BLOCK PATH FROM CLKNET "u0/clk_vga" TO CLKNET "user_module1/U1/VGA_25MHz";
+#BLOCK PATH FROM CLKNET "u0/clk_vga" TO CLKNET "user_module1/U1/ADC_clk";
+#BLOCK PATH FROM CLKNET "u0/clk_vga" TO CLKNET "u0/clk_dvi";
+#BLOCK PATH FROM CLKNET "u0/clk_vga" TO CLKNET "u0/clk_50";
+#BLOCK PATH FROM CLKNET "u0/clk_dvi" TO CLKNET "user_module1/U1/VGA_25MHz";
+#BLOCK PATH FROM CLKNET "u0/clk_dvi" TO CLKNET "user_module1/U1/ADC_clk";
+#BLOCK PATH FROM CLKNET "u0/clk_dvi" TO CLKNET "u0/clk_vga";
+#BLOCK PATH FROM CLKNET "u0/clk_dvi" TO CLKNET "u0/clk_50";
+#BLOCK PATH FROM CLKNET "u0/clk_50" TO CLKNET "user_module1/U1/VGA_25MHz";
+#BLOCK PATH FROM CLKNET "u0/clk_50" TO CLKNET "user_module1/U1/ADC_clk";
+#BLOCK PATH FROM CLKNET "u0/clk_50" TO CLKNET "u0/clk_vga";
+#BLOCK PATH FROM CLKNET "u0/clk_50" TO CLKNET "u0/clk_dvi";
+
+BLOCK ASYNCPATHS;
+
+# End of generated Logical Preferences.

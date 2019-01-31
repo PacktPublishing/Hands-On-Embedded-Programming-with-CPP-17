@@ -1,0 +1,15 @@
+#Start recording tcl command: 10/2/2018 23:01:29
+#Project Location: C:/lscc/diamond/3.9_x64/examples/FleaDSO; Project name: FleaDSO
+prj_project open "C:/lscc/diamond/3.9_x64/examples/FleaDSO/FleaDSO.ldf"
+prj_src add "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/simple_uart.vhd"
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+pgr_project open "C:/lscc/diamond/3.9_x64/examples/FleaDSO/FleaDSO/FleaDSO.xcf"
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/ADC_PLL.sbx"
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DVI_clkgen/DVI_clkgen.sbx"
+prj_run Export -impl FleaDSO
+pgr_project close
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+#Stop recording: 10/3/2018 00:17:42

@@ -1,0 +1,87 @@
+#--  Synopsys, Inc.
+#--  Version L-2016.09L-1
+#--  Project file C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\scratchproject.prs
+
+#project files
+add_file -vhdl -lib work "C:/lscc/diamond/3.9_x64/cae_library/synthesis/vhdl/ecp5u.vhd"
+add_file -vhdl -lib work "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/Simple_VGA_CRTC.vhd"
+add_file -vhdl -lib work "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/TDMS_encoder.vhd"
+add_file -vhdl -lib work "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/VGA.vhd"
+add_file -vhdl -lib work "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/simple_uart.vhd"
+add_file -vhdl -lib work "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DSO_RAMBUFFER_CH1/DSO_RAMBUFFER_CH1.vhd"
+add_file -vhdl -lib work "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/ADC_PLL.vhd"
+add_file -vhdl -lib work "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_DSO.vhd"
+add_file -vhdl -lib work "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ddr_out/ddr_out.vhd"
+add_file -vhdl -lib work "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DVI_clkgen/DVI_clkgen.vhd"
+add_file -vhdl -lib work "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/DVI_D.vhd"
+add_file -vhdl -lib work "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_2v5_DSO_toplevel.vhd"
+
+
+
+#implementation: "FleaDSO"
+impl -add C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -project_relative_includes 1
+set_option -include_path {C:/lscc/diamond/3.9_x64/examples/FleaDSO/FleaDSO/}
+
+#device options
+set_option -technology ECP5U
+set_option -part LFE5U_25F
+set_option -package BG381C
+set_option -speed_grade -6
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -top_module "FleaFPGA_Ohm_A5"
+
+# hdl_compiler_options
+set_option -distributed_compile 0
+
+# mapper_without_write_options
+set_option -frequency auto
+set_option -default_enum_encoding onehot
+set_option -srs_instrumentation 1
+
+# mapper_options
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# Lattice XP
+set_option -maxfan 1000
+set_option -disable_io_insertion 0
+set_option -retiming 1
+set_option -pipe 1
+set_option -forcegsr false
+set_option -fix_gated_and_generated_clocks 1
+set_option -rw_check_on_ram 1
+set_option -update_models_cp 0
+set_option -syn_edif_array_rename 1
+set_option -Write_declared_clocks_only 1
+
+# NFilter
+set_option -no_sequential_opt 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 0
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+set_option -multi_file_compilation_unit 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "C:/lscc/diamond/3.9_x64/examples/FleaDSO/FleaDSO/FleaDSO_FleaDSO.edi"
+
+#set log file 
+set_option log_file "C:/lscc/diamond/3.9_x64/examples/FleaDSO/FleaDSO/FleaDSO_FleaDSO.srf" 
+impl -active "FleaDSO"

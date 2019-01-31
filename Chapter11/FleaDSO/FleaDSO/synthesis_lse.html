@@ -1,0 +1,738 @@
+<HTML>
+<HEAD><TITLE>Synthesis and Ngdbuild Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Syn"></A><B><U><big>Synthesis and Ngdbuild  Report</big></U></B>
+synthesis:  version Diamond (64-bit) 3.9.1.119
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Sat Feb 17 21:16:44 2018
+
+
+Command Line:  synthesis -f FleaDSO_FleaDSO_lattice.synproj -gui 
+
+Synthesis options:
+The -a option is ECP5U.
+The -s option is 6.
+The -t option is CABGA381.
+The -d option is LFE5U-25F.
+Using package CABGA381.
+Using performance grade 6.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5U
+
+### Device  : LFE5U-25F
+
+### Package : CABGA381
+
+### Speed   : 6
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Timing
+Top-level module name = FleaFPGA_Ohm_A5.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3 (default)
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = no
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/lscc/diamond/3.9_x64/ispfpga/sa5p00/data (searchpath added)
+-p C:/lscc/diamond/3.9_x64/examples/FleaDSO/FleaDSO (searchpath added)
+-p C:/lscc/diamond/3.9_x64/examples/FleaDSO (searchpath added)
+VHDL library = work
+VHDL design file = C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_2v5_DSO_toplevel.vhd
+VHDL design file = C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_DSO.vhd
+VHDL design file = C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/Simple_VGA_CRTC.vhd
+VHDL design file = C:/lscc/diamond/3.9_x64/examples/FleaDSO/ddr_out/ddr_out.vhd
+VHDL design file = C:/lscc/diamond/3.9_x64/examples/FleaDSO/DVI_clkgen/DVI_clkgen.vhd
+VHDL design file = C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/TDMS_encoder.vhd
+VHDL design file = C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/DVI_D.vhd
+VHDL design file = C:/lscc/diamond/3.9_x64/examples/FleaDSO/DSO_RAMBUFFER_CH1/DSO_RAMBUFFER_CH1.vhd
+NGD file = FleaDSO_FleaDSO.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.9_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5u.v. VERI-1482
+Compile design.
+Compile Design Begin
+INFO - synthesis: The default VHDL library search path is now "C:/lscc/diamond/3.9_x64/examples/FleaDSO/FleaDSO". VHDL-1504
+Analyzing VHDL file c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd. VHDL-1481
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(40): analyzing entity vga_controller. VHDL-1012
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(67): analyzing architecture behavior. VHDL-1010
+unit FleaFPGA_Ohm_A5 is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/lscc/diamond/3.9_x64/examples/fleadso/dso_rambuffer_ch1/dso_rambuffer_ch1.vhd. VHDL-1481
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/dso_rambuffer_ch1/dso_rambuffer_ch1.vhd(12): analyzing entity dso_rambuffer_ch1. VHDL-1012
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/dso_rambuffer_ch1/dso_rambuffer_ch1.vhd(30): analyzing architecture structure. VHDL-1010
+unit FleaFPGA_Ohm_A5 is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/lscc/diamond/3.9_x64/examples/fleadso/source/fleafpga_dso.vhd. VHDL-1481
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/fleafpga_dso.vhd(26): analyzing entity fleafpga_dso. VHDL-1012
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/fleafpga_dso.vhd(55): analyzing architecture behavior. VHDL-1010
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/fleafpga_dso.vhd(104): 'adc_pll' is not compiled in library work. VHDL-1240
+unit FleaFPGA_Ohm_A5 is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/lscc/diamond/3.9_x64/examples/fleadso/dvi_clkgen/dvi_clkgen.vhd. VHDL-1481
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/dvi_clkgen/dvi_clkgen.vhd(12): analyzing entity dvi_clkgen. VHDL-1012
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/dvi_clkgen/dvi_clkgen.vhd(20): analyzing architecture structure. VHDL-1010
+unit FleaFPGA_Ohm_A5 is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/lscc/diamond/3.9_x64/examples/fleadso/source/tdms_encoder.vhd. VHDL-1481
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/tdms_encoder.vhd(14): analyzing entity tdms_encoder. VHDL-1012
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/tdms_encoder.vhd(22): analyzing architecture behavioral. VHDL-1010
+unit FleaFPGA_Ohm_A5 is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/lscc/diamond/3.9_x64/examples/fleadso/ddr_out/ddr_out.vhd. VHDL-1481
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/ddr_out/ddr_out.vhd(12): analyzing entity ddr_out. VHDL-1012
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/ddr_out/ddr_out.vhd(22): analyzing architecture structure. VHDL-1010
+unit FleaFPGA_Ohm_A5 is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/lscc/diamond/3.9_x64/examples/fleadso/source/dvi_d.vhd. VHDL-1481
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/dvi_d.vhd(15): analyzing entity dvid. VHDL-1012
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/dvi_d.vhd(31): analyzing architecture behavioral. VHDL-1010
+unit FleaFPGA_Ohm_A5 is not yet analyzed. VHDL-1485
+Analyzing VHDL file c:/lscc/diamond/3.9_x64/examples/fleadso/source/fleafpga_2v5_dso_toplevel.vhd. VHDL-1481
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/fleafpga_2v5_dso_toplevel.vhd(19): analyzing entity fleafpga_ohm_a5. VHDL-1012
+INFO - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/fleafpga_2v5_dso_toplevel.vhd(113): analyzing architecture arch. VHDL-1010
+unit FleaFPGA_Ohm_A5 is not yet analyzed. VHDL-1485
+unit FleaFPGA_Ohm_A5 is not yet analyzed. VHDL-1485
+c:/lscc/diamond/3.9_x64/examples/fleadso/source/fleafpga_2v5_dso_toplevel.vhd(19): executing FleaFPGA_Ohm_A5(arch)
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/fleafpga_2v5_dso_toplevel.vhd(111): replacing existing netlist FleaFPGA_Ohm_A5(arch). VHDL-1205
+Top module name (VHDL): FleaFPGA_Ohm_A5
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p25.nph' in environment: C:/lscc/diamond/3.9_x64/ispfpga.
+Package Status:                     Final          Version 1.35.
+Top-level module name = FleaFPGA_Ohm_A5.
+WARNING - synthesis: Initial value found on net gnd will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net clk_dvi will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net clk_dvin will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net clk_vga will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net vga_red[3] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net vga_red[2] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net vga_red[1] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net vga_red[0] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net vga_green[3] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net vga_green[2] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net vga_green[1] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net vga_green[0] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net vga_blue[3] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net vga_blue[2] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net vga_blue[1] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net vga_blue[0] will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net hsync will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net vsync will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net blank will be ignored due to unrecognized driver type
+WARNING - synthesis: net n18 does not have a driver. VDB-1002
+WARNING - synthesis: net n19 does not have a driver. VDB-1002
+WARNING - synthesis: net n20 does not have a driver. VDB-1002
+WARNING - synthesis: net n21 does not have a driver. VDB-1002
+WARNING - synthesis: net n30 does not have a driver. VDB-1002
+WARNING - synthesis: net n31 does not have a driver. VDB-1002
+WARNING - synthesis: net n32 does not have a driver. VDB-1002
+WARNING - synthesis: net n33 does not have a driver. VDB-1002
+WARNING - synthesis: net n42 does not have a driver. VDB-1002
+WARNING - synthesis: net n43 does not have a driver. VDB-1002
+WARNING - synthesis: net n44 does not have a driver. VDB-1002
+WARNING - synthesis: net n45 does not have a driver. VDB-1002
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/tdms_encoder.vhd(26): net ones_3__N_179[3] does not have a driver. VDB-1002
+WARNING - synthesis: net n111 does not have a driver. VDB-1002
+WARNING - synthesis: net n112 does not have a driver. VDB-1002
+WARNING - synthesis: net n113 does not have a driver. VDB-1002
+WARNING - synthesis: net n114 does not have a driver. VDB-1002
+WARNING - synthesis: net n123 does not have a driver. VDB-1002
+WARNING - synthesis: net n124 does not have a driver. VDB-1002
+WARNING - synthesis: net n125 does not have a driver. VDB-1002
+WARNING - synthesis: net n126 does not have a driver. VDB-1002
+WARNING - synthesis: net n135 does not have a driver. VDB-1002
+WARNING - synthesis: net n136 does not have a driver. VDB-1002
+WARNING - synthesis: net n137 does not have a driver. VDB-1002
+WARNING - synthesis: net n138 does not have a driver. VDB-1002
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/tdms_encoder.vhd(29): net data_word_disparity_3__N_207[3] does not have a driver. VDB-1002
+WARNING - synthesis: net n18 does not have a driver. VDB-1002
+WARNING - synthesis: net n19 does not have a driver. VDB-1002
+WARNING - synthesis: net n20 does not have a driver. VDB-1002
+WARNING - synthesis: net n21 does not have a driver. VDB-1002
+WARNING - synthesis: net n30 does not have a driver. VDB-1002
+WARNING - synthesis: net n31 does not have a driver. VDB-1002
+WARNING - synthesis: net n32 does not have a driver. VDB-1002
+WARNING - synthesis: net n33 does not have a driver. VDB-1002
+WARNING - synthesis: net n42 does not have a driver. VDB-1002
+WARNING - synthesis: net n43 does not have a driver. VDB-1002
+WARNING - synthesis: net n44 does not have a driver. VDB-1002
+WARNING - synthesis: net n45 does not have a driver. VDB-1002
+WARNING - synthesis: net n111 does not have a driver. VDB-1002
+WARNING - synthesis: net n112 does not have a driver. VDB-1002
+WARNING - synthesis: net n113 does not have a driver. VDB-1002
+WARNING - synthesis: net n114 does not have a driver. VDB-1002
+WARNING - synthesis: net n123 does not have a driver. VDB-1002
+WARNING - synthesis: net n124 does not have a driver. VDB-1002
+WARNING - synthesis: net n125 does not have a driver. VDB-1002
+WARNING - synthesis: net n126 does not have a driver. VDB-1002
+WARNING - synthesis: net n135 does not have a driver. VDB-1002
+WARNING - synthesis: net n136 does not have a driver. VDB-1002
+WARNING - synthesis: net n137 does not have a driver. VDB-1002
+WARNING - synthesis: net n138 does not have a driver. VDB-1002
+WARNING - synthesis: net n18 does not have a driver. VDB-1002
+WARNING - synthesis: net n19 does not have a driver. VDB-1002
+WARNING - synthesis: net n20 does not have a driver. VDB-1002
+WARNING - synthesis: net n21 does not have a driver. VDB-1002
+WARNING - synthesis: net n30 does not have a driver. VDB-1002
+WARNING - synthesis: net n31 does not have a driver. VDB-1002
+WARNING - synthesis: net n32 does not have a driver. VDB-1002
+WARNING - synthesis: net n33 does not have a driver. VDB-1002
+WARNING - synthesis: net n42 does not have a driver. VDB-1002
+WARNING - synthesis: net n43 does not have a driver. VDB-1002
+WARNING - synthesis: net n44 does not have a driver. VDB-1002
+WARNING - synthesis: net n45 does not have a driver. VDB-1002
+WARNING - synthesis: net n111 does not have a driver. VDB-1002
+WARNING - synthesis: net n112 does not have a driver. VDB-1002
+WARNING - synthesis: net n113 does not have a driver. VDB-1002
+WARNING - synthesis: net n114 does not have a driver. VDB-1002
+WARNING - synthesis: net n123 does not have a driver. VDB-1002
+WARNING - synthesis: net n124 does not have a driver. VDB-1002
+WARNING - synthesis: net n125 does not have a driver. VDB-1002
+WARNING - synthesis: net n126 does not have a driver. VDB-1002
+WARNING - synthesis: net n135 does not have a driver. VDB-1002
+WARNING - synthesis: net n136 does not have a driver. VDB-1002
+WARNING - synthesis: net n137 does not have a driver. VDB-1002
+WARNING - synthesis: net n138 does not have a driver. VDB-1002
+######## Converting I/O port Dram_Data[15] to input.
+######## Converting I/O port Dram_Data[14] to input.
+######## Converting I/O port Dram_Data[13] to input.
+######## Converting I/O port Dram_Data[12] to input.
+######## Converting I/O port Dram_Data[11] to input.
+######## Converting I/O port Dram_Data[10] to input.
+######## Converting I/O port Dram_Data[9] to input.
+######## Converting I/O port Dram_Data[8] to input.
+######## Converting I/O port Dram_Data[7] to input.
+######## Converting I/O port Dram_Data[6] to input.
+######## Converting I/O port Dram_Data[5] to input.
+######## Converting I/O port Dram_Data[4] to input.
+######## Converting I/O port Dram_Data[3] to input.
+######## Converting I/O port Dram_Data[2] to input.
+######## Converting I/O port Dram_Data[1] to input.
+######## Converting I/O port Dram_Data[0] to input.
+######## Converting I/O port GPIO_2 to input.
+######## Converting I/O port GPIO_3 to input.
+######## Converting I/O port GPIO_4 to input.
+######## Converting I/O port GPIO_6 to input.
+######## Converting I/O port GPIO_7 to input.
+######## Converting I/O port GPIO_8 to input.
+######## Converting I/O port GPIO_9 to input.
+######## Converting I/O port GPIO_10 to input.
+######## Converting I/O port GPIO_11 to input.
+######## Converting I/O port GPIO_12 to input.
+######## Converting I/O port GPIO_13 to input.
+######## Converting I/O port GPIO_14 to input.
+######## Converting I/O port GPIO_15 to input.
+######## Converting I/O port GPIO_16 to input.
+######## Converting I/O port GPIO_17 to input.
+######## Converting I/O port GPIO_18 to input.
+######## Converting I/O port GPIO_19 to input.
+######## Converting I/O port GPIO_22 to input.
+######## Converting I/O port GPIO_23 to input.
+######## Converting I/O port GPIO_24 to input.
+######## Converting I/O port GPIO_25 to input.
+######## Converting I/O port GPIO_26 to input.
+######## Converting I/O port GPIO_27 to input.
+######## Converting I/O port GPIO_IDSD to input.
+######## Converting I/O port GPIO_IDSC to input.
+######## Converting I/O port PS2_clk1 to input.
+######## Converting I/O port PS2_data1 to input.
+######## Converting I/O port PS2_clk2 to input.
+######## Converting I/O port PS2_data2 to input.
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/fleafpga_2v5_dso_toplevel.vhd(121): net vga_red[3] does not have a driver. VDB-1002
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/fleafpga_2v5_dso_toplevel.vhd(122): net vga_green[3] does not have a driver. VDB-1002
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/fleafpga_2v5_dso_toplevel.vhd(123): net vga_blue[3] does not have a driver. VDB-1002
+######## Missing driver on net slave_tx_o. Patching with GND.
+######## Missing driver on net Dram_Clk. Patching with GND.
+######## Missing driver on net Dram_n_Ras. Patching with GND.
+######## Missing driver on net Dram_n_Cas. Patching with GND.
+######## Missing driver on net Dram_n_We. Patching with GND.
+######## Missing driver on net Dram_BA[1]. Patching with GND.
+######## Missing driver on net Dram_BA[0]. Patching with GND.
+######## Missing driver on net Dram_Addr[12]. Patching with GND.
+######## Missing driver on net Dram_Addr[11]. Patching with GND.
+######## Missing driver on net Dram_Addr[10]. Patching with GND.
+######## Missing driver on net Dram_Addr[9]. Patching with GND.
+######## Missing driver on net Dram_Addr[8]. Patching with GND.
+######## Missing driver on net Dram_Addr[7]. Patching with GND.
+######## Missing driver on net Dram_Addr[6]. Patching with GND.
+######## Missing driver on net Dram_Addr[5]. Patching with GND.
+######## Missing driver on net Dram_Addr[4]. Patching with GND.
+######## Missing driver on net Dram_Addr[3]. Patching with GND.
+######## Missing driver on net Dram_Addr[2]. Patching with GND.
+######## Missing driver on net Dram_Addr[1]. Patching with GND.
+######## Missing driver on net Dram_Addr[0]. Patching with GND.
+######## Missing driver on net Dram_DQMH. Patching with GND.
+######## Missing driver on net Dram_DQML. Patching with GND.
+######## Missing driver on net mmc_clk. Patching with GND.
+######## Missing driver on net mmc_mosi. Patching with GND.
+######## Missing driver on net vga_red[3]. Patching with GND.
+######## Missing driver on net vga_red[2]. Patching with GND.
+######## Missing driver on net vga_red[1]. Patching with GND.
+######## Missing driver on net vga_red[0]. Patching with GND.
+######## Missing driver on net vga_green[3]. Patching with GND.
+######## Missing driver on net vga_green[2]. Patching with GND.
+######## Missing driver on net vga_green[1]. Patching with GND.
+######## Missing driver on net vga_green[0]. Patching with GND.
+######## Missing driver on net vga_blue[3]. Patching with GND.
+######## Missing driver on net vga_blue[2]. Patching with GND.
+######## Missing driver on net vga_blue[1]. Patching with GND.
+######## Missing driver on net vga_blue[0]. Patching with GND.
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Register \user_module1/U2/disp_ena_38 clock is stuck at Zero. VDB-5035
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+
+
+
+WARNING - synthesis: Bit 0 of Register \u100/u21/dc_bias is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u100/u21/dc_bias is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u100/u21/dc_bias is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u100/u21/dc_bias is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u100/u22/dc_bias is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u100/u22/dc_bias is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u100/u22/dc_bias is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u100/u22/dc_bias is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \u100/u23/dc_bias is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u100/u23/dc_bias is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u100/u23/dc_bias is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \u100/u23/dc_bias is stuck at Zero
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: Bit 1 of Register \u100/u21/encoded is stuck at One
+WARNING - synthesis: Bit 4 of Register \u100/u21/encoded is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \u100/u21/encoded is stuck at One
+WARNING - synthesis: Bit 6 of Register \u100/u21/encoded is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \u100/u21/encoded is stuck at One
+WARNING - synthesis: Bit 8 of Register \u100/u21/encoded is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \u100/u21/encoded is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u100/u22/encoded is stuck at One
+WARNING - synthesis: Bit 2 of Register \u100/u22/encoded is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \u100/u22/encoded is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \u100/u22/encoded is stuck at One
+WARNING - synthesis: Bit 6 of Register \u100/u22/encoded is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \u100/u22/encoded is stuck at One
+WARNING - synthesis: Bit 8 of Register \u100/u22/encoded is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \u100/u22/encoded is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u100/latched_green is stuck at One
+WARNING - synthesis: Bit 2 of Register \u100/latched_green is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \u100/latched_green is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \u100/latched_green is stuck at One
+WARNING - synthesis: Bit 6 of Register \u100/latched_green is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \u100/latched_green is stuck at One
+WARNING - synthesis: Bit 8 of Register \u100/latched_green is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \u100/latched_green is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u100/latched_red is stuck at One
+WARNING - synthesis: Bit 4 of Register \u100/latched_red is stuck at Zero
+WARNING - synthesis: Bit 5 of Register \u100/latched_red is stuck at One
+WARNING - synthesis: Bit 6 of Register \u100/latched_red is stuck at Zero
+WARNING - synthesis: Bit 7 of Register \u100/latched_red is stuck at One
+WARNING - synthesis: Bit 8 of Register \u100/latched_red is stuck at Zero
+WARNING - synthesis: Bit 9 of Register \u100/latched_red is stuck at Zero
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: Bit 0 of Register \u100/u21/encoded is stuck at One
+WARNING - synthesis: Bit 1 of Register \u100/u21/encoded is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u100/u21/encoded is stuck at One
+WARNING - synthesis: Bit 0 of Register \u100/u22/encoded is stuck at One
+WARNING - synthesis: Bit 1 of Register \u100/u22/encoded is stuck at One
+WARNING - synthesis: Bit 0 of Register \u100/latched_green is stuck at One
+WARNING - synthesis: Bit 1 of Register \u100/latched_green is stuck at One
+WARNING - synthesis: Bit 0 of Register \u100/latched_red is stuck at One
+WARNING - synthesis: Bit 1 of Register \u100/latched_red is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \u100/latched_red is stuck at One
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: Cell OB already has the black_box_pad_pin attribute on O.
+WARNING - synthesis: Cell OB already has the black_box_pad_pin attribute on O.
+WARNING - synthesis: Cell OB already has the black_box_pad_pin attribute on O.
+WARNING - synthesis: Skipping pad insertion on LVDS_Red[0] due to black_box_pad_pin attribute.
+WARNING - synthesis: Skipping pad insertion on LVDS_Green[0] due to black_box_pad_pin attribute.
+WARNING - synthesis: Skipping pad insertion on LVDS_Blue[0] due to black_box_pad_pin attribute.
+WARNING - synthesis: Skipping pad insertion on LVDS_ck[0] due to black_box_pad_pin attribute.
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/h_sync_36 is tied to a constant
+
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Register \user_module1/U2/h_sync_36 is stuck at One. VDB-5014
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/tdms_encoder.vhd(105): Register \u100/u23/encoded_i1 is stuck at One. VDB-5014
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/dvi_d.vhd(105): Register \u100/latched_blue_i1 is stuck at One. VDB-5014
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/tdms_encoder.vhd(105): Register \u100/u23/encoded_i2 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/dvi_d.vhd(105): Register \u100/latched_blue_i2 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/simple_vga_crtc.vhd(132): Clock on register \user_module1/U2/v_sync_37 is tied to a constant
+
+WARNING - synthesis: C:/lscc/diamond/3.9_x64/ispfpga/vhdl_packages/numeric_std.vhd(1241): Register \user_module1/sample_LED_60_95__i1 clock is stuck at One. VDB-5036
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/dvi_d.vhd(121): Register \u100/shift_blue_i8 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/lscc/diamond/3.9_x64/examples/fleadso/source/fleafpga_dso.vhd(253): Register \user_module1/sample_rate_i0 clock is stuck at One. VDB-5036
+Duplicate register/latch removal. \u100/shift_blue_i0 is a one-to-one match with \u100/shift_green_i8.
+Duplicate register/latch removal. \u100/shift_red_i9 is a one-to-one match with \u100/shift_green_i9.
+Duplicate register/latch removal. \u100/shift_red_i8 is a one-to-one match with \u100/shift_blue_i9.
+Duplicate register/latch removal. \u100/shift_blue_i0 is a one-to-one match with \u100/shift_red_i8.
+Duplicate register/latch removal. \u100/shift_red_i9 is a one-to-one match with \u100/shift_blue_i0.
+Duplicate register/latch removal. \u100/shift_red_i7 is a one-to-one match with \u100/shift_green_i7.
+Duplicate register/latch removal. \u100/shift_red_i6 is a one-to-one match with \u100/shift_blue_i7.
+Duplicate register/latch removal. \u100/shift_red_i6 is a one-to-one match with \u100/shift_green_i6.
+Duplicate register/latch removal. \u100/shift_red_i5 is a one-to-one match with \u100/shift_green_i5.
+Duplicate register/latch removal. \u100/shift_red_i4 is a one-to-one match with \u100/shift_blue_i5.
+Duplicate register/latch removal. \u100/shift_red_i4 is a one-to-one match with \u100/shift_green_i4.
+Duplicate register/latch removal. \u100/shift_red_i3 is a one-to-one match with \u100/shift_green_i3.
+Duplicate register/latch removal. \u100/shift_red_i2 is a one-to-one match with \u100/shift_blue_i3.
+Duplicate register/latch removal. \u100/shift_red_i2 is a one-to-one match with \u100/shift_green_i2.
+Duplicate register/latch removal. \u100/shift_red_i1 is a one-to-one match with \u100/shift_green_i1.
+Duplicate register/latch removal. \u100/shift_red_i0 is a one-to-one match with \u100/shift_green_i0.
+WARNING - synthesis: Initial value found on instance \u100/shift_red_i6 will be ignored.
+WARNING - synthesis: Initial value found on instance \u100/shift_red_i4 will be ignored.
+WARNING - synthesis: Initial value found on instance \u100/shift_red_i2 will be ignored.
+WARNING - synthesis: Initial value found on instance \u100/shift_blue_i1 will be ignored.
+Applying 1.000000 MHz constraint to all clocks
+
+WARNING - synthesis: Mapping latch \user_module1/rst_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in FleaFPGA_Ohm_A5_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: Port 'CLKOS2' has no signal connected to it. Property 'FREQUENCY_PIN_CLKOS2' is ignored for instance 'PLLInst_0'.
+WARNING - synthesis: Port 'CLKOS' has no signal connected to it. Property 'FREQUENCY_PIN_CLKOS' is ignored for instance 'PLLInst_0'.
+WARNING - synthesis: logical net 'slave_rx_i' has no load.
+WARNING - synthesis: input pad net 'slave_rx_i' has no legal load.
+WARNING - synthesis: logical net 'slave_cts_i' has no load.
+WARNING - synthesis: input pad net 'slave_cts_i' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[15]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[15]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[14]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[14]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[13]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[13]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[12]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[12]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[11]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[11]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[10]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[10]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[9]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[9]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[8]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[8]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[7]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[7]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[6]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[6]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[5]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[5]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[4]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[4]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[3]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[3]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[2]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[2]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[1]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[1]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[0]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[0]' has no legal load.
+WARNING - synthesis: logical net 'GPIO_2' has no load.
+WARNING - synthesis: input pad net 'GPIO_2' has no legal load.
+WARNING - synthesis: logical net 'GPIO_3' has no load.
+WARNING - synthesis: input pad net 'GPIO_3' has no legal load.
+WARNING - synthesis: logical net 'GPIO_4' has no load.
+WARNING - synthesis: input pad net 'GPIO_4' has no legal load.
+WARNING - synthesis: logical net 'GPIO_6' has no load.
+WARNING - synthesis: input pad net 'GPIO_6' has no legal load.
+WARNING - synthesis: logical net 'GPIO_7' has no load.
+WARNING - synthesis: input pad net 'GPIO_7' has no legal load.
+WARNING - synthesis: logical net 'GPIO_8' has no load.
+WARNING - synthesis: input pad net 'GPIO_8' has no legal load.
+WARNING - synthesis: logical net 'GPIO_9' has no load.
+WARNING - synthesis: input pad net 'GPIO_9' has no legal load.
+WARNING - synthesis: logical net 'GPIO_10' has no load.
+WARNING - synthesis: input pad net 'GPIO_10' has no legal load.
+WARNING - synthesis: logical net 'GPIO_11' has no load.
+WARNING - synthesis: input pad net 'GPIO_11' has no legal load.
+WARNING - synthesis: logical net 'GPIO_12' has no load.
+WARNING - synthesis: input pad net 'GPIO_12' has no legal load.
+WARNING - synthesis: logical net 'GPIO_13' has no load.
+WARNING - synthesis: input pad net 'GPIO_13' has no legal load.
+WARNING - synthesis: logical net 'GPIO_14' has no load.
+WARNING - synthesis: input pad net 'GPIO_14' has no legal load.
+WARNING - synthesis: logical net 'GPIO_15' has no load.
+WARNING - synthesis: input pad net 'GPIO_15' has no legal load.
+WARNING - synthesis: logical net 'GPIO_16' has no load.
+WARNING - synthesis: input pad net 'GPIO_16' has no legal load.
+WARNING - synthesis: logical net 'GPIO_17' has no load.
+WARNING - synthesis: input pad net 'GPIO_17' has no legal load.
+WARNING - synthesis: logical net 'GPIO_18' has no load.
+WARNING - synthesis: input pad net 'GPIO_18' has no legal load.
+WARNING - synthesis: logical net 'GPIO_19' has no load.
+WARNING - synthesis: input pad net 'GPIO_19' has no legal load.
+WARNING - synthesis: logical net 'GPIO_21' has no load.
+WARNING - synthesis: input pad net 'GPIO_21' has no legal load.
+WARNING - synthesis: logical net 'GPIO_22' has no load.
+WARNING - synthesis: input pad net 'GPIO_22' has no legal load.
+WARNING - synthesis: logical net 'GPIO_23' has no load.
+WARNING - synthesis: input pad net 'GPIO_23' has no legal load.
+WARNING - synthesis: logical net 'GPIO_24' has no load.
+WARNING - synthesis: input pad net 'GPIO_24' has no legal load.
+WARNING - synthesis: logical net 'GPIO_25' has no load.
+WARNING - synthesis: input pad net 'GPIO_25' has no legal load.
+WARNING - synthesis: logical net 'GPIO_26' has no load.
+WARNING - synthesis: input pad net 'GPIO_26' has no legal load.
+WARNING - synthesis: logical net 'GPIO_27' has no load.
+WARNING - synthesis: input pad net 'GPIO_27' has no legal load.
+WARNING - synthesis: logical net 'GPIO_IDSD' has no load.
+WARNING - synthesis: input pad net 'GPIO_IDSD' has no legal load.
+WARNING - synthesis: logical net 'GPIO_IDSC' has no load.
+WARNING - synthesis: input pad net 'GPIO_IDSC' has no legal load.
+WARNING - synthesis: logical net 'ADC0_input' has no load.
+WARNING - synthesis: input pad net 'ADC0_input' has no legal load.
+WARNING - synthesis: logical net 'mmc_dat1' has no load.
+WARNING - synthesis: input pad net 'mmc_dat1' has no legal load.
+WARNING - synthesis: logical net 'mmc_dat2' has no load.
+WARNING - synthesis: input pad net 'mmc_dat2' has no legal load.
+WARNING - synthesis: logical net 'mmc_miso' has no load.
+WARNING - synthesis: input pad net 'mmc_miso' has no legal load.
+WARNING - synthesis: logical net 'PS2_clk1' has no load.
+WARNING - synthesis: input pad net 'PS2_clk1' has no legal load.
+WARNING - synthesis: logical net 'PS2_data1' has no load.
+WARNING - synthesis: input pad net 'PS2_data1' has no legal load.
+WARNING - synthesis: logical net 'PS2_clk2' has no load.
+WARNING - synthesis: input pad net 'PS2_clk2' has no legal load.
+WARNING - synthesis: logical net 'PS2_data2' has no load.
+WARNING - synthesis: input pad net 'PS2_data2' has no legal load.
+WARNING - synthesis: logical net 'GPIO_20_c' has no load.
+WARNING - synthesis: DRC complete with 105 warnings.
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file FleaDSO_FleaDSO.ngd.
+
+################### Begin Area Report (FleaFPGA_Ohm_A5)######################
+Number of register bits => 20 of 24879 (0 % )
+EHXPLLL => 1
+FD1S3AX => 6
+FD1S3AY => 5
+FD1S3IX => 5
+FD1S3JX => 4
+GSR => 1
+IB => 3
+LUT4 => 5
+OB => 34
+ODDRX1F => 4
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : u0/clk_dvi, loads : 25
+  Net : sys_clock_c, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : u100/shift_green_9_N_148_9, loads : 10
+  Net : u100/shift_red_9, loads : 3
+  Net : u100/shift_clock_0, loads : 3
+  Net : u100/shift_clock_1, loads : 3
+  Net : u100/shift_red_0, loads : 2
+  Net : u100/shift_red_2, loads : 2
+  Net : u100/shift_clock_2, loads : 2
+  Net : u100/shift_clock_9, loads : 2
+  Net : u100/shift_clock_6, loads : 2
+  Net : u100/shift_clock_8, loads : 2
+################### End Clock Report ##################
+
+<A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_dvi]                 |  200.000 MHz|  229.305 MHz|     3  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 90.637  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 1.342  secs
+--------------------------------------------------------------
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

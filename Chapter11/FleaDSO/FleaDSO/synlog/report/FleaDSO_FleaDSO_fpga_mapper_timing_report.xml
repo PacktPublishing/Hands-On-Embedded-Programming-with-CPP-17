@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synlog\FleaDSO_FleaDSO_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>ADC_PLL|CLKOP_inferred_clock</data>
+<data>220.6 MHz</data>
+<data>187.5 MHz</data>
+<data>-0.800</data>
+</row>
+<row>
+<data>ADC_PLL|CLKOS_inferred_clock</data>
+<data>1.0 MHz</data>
+<data>42.8 MHz</data>
+<data>976.660</data>
+</row>
+<row>
+<data>DVI_clkgen|CLKOP_inferred_clock</data>
+<data>450.6 MHz</data>
+<data>383.0 MHz</data>
+<data>-0.392</data>
+</row>
+<row>
+<data>DVI_clkgen|CLKOS2_inferred_clock</data>
+<data>298.4 MHz</data>
+<data>253.6 MHz</data>
+<data>-0.591</data>
+</row>
+<row>
+<data>DVI_clkgen|CLKOS3_inferred_clock</data>
+<data>300.0 MHz</data>
+<data>255.0 MHz</data>
+<data>-0.588</data>
+</row>
+<row>
+<data>vga_controller|v_sync_derived_clock</data>
+<data>1.0 MHz</data>
+<data>45.8 MHz</data>
+<data>978.183</data>
+</row>
+<row>
+<data>System</data>
+<data>1.0 MHz</data>
+<data>NA</data>
+<data>NA</data>
+</row>
+</report_table>

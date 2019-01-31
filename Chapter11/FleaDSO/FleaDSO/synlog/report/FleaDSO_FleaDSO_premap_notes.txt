@@ -1,0 +1,12 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":185:2:185:3|Removing sequential instance txready (in view: work.simple_uart(rtl)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":130:2:130:3|Removing sequential instance rxdata[7:0] (in view: work.simple_uart(rtl)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":130:2:130:3|Removing sequential instance rxint (in view: work.simple_uart(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":185:2:185:3|Removing sequential instance txint (in view: work.simple_uart(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":104:2:104:3|Removing sequential instance rxcounter[15:0] (in view: work.simple_uart(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":130:2:130:3|Removing sequential instance rxstate[0:4] (in view: work.simple_uart(rtl)) of type view:PrimLib.dffpatre(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":130:2:130:3|Removing sequential instance rxbuffer[8:0] (in view: work.simple_uart(rtl)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":104:2:104:3|Removing sequential instance rxclock (in view: work.simple_uart(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":64:2:64:3|Removing sequential instance rxd_sync2 (in view: work.simple_uart(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":64:2:64:3|Removing sequential instance rxd_sync (in view: work.simple_uart(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.

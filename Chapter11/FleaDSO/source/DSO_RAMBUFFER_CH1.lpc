@@ -1,0 +1,56 @@
+[Device]
+Family=machxo2
+PartType=LCMXO2-7000HE
+PartName=LCMXO2-7000HE-4TG144C
+SpeedGrade=4
+Package=TQFP144
+OperatingCondition=COM
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=RAM_DP_TRUE
+CoreRevision=7.5
+ModuleName=DSO_RAMBUFFER_CH1
+SourceFormat=VHDL
+ParameterFileVersion=1.0
+Date=02/17/2018
+Time=18:18:02
+
+[Parameters]
+Verilog=0
+VHDL=1
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+RAddress=1024
+RData=9
+WAddress=1024
+WData=9
+ROutputEn=1
+RClockEn=0
+WOutputEn=1
+WClockEn=0
+enByte=0
+ByteSize=8
+Optimization=Speed
+Reset=Sync
+Reset1=Sync
+Init=0
+MemFile=c:/lscc/diamond/2.2_x64/examples/blinky/adc_buffer_init.mem
+MemFormat=bin
+EnECC=0
+Pipeline=0
+WriteA=Normal
+WriteB=Normal
+init_data=0
+
+[FilesGenerated]
+c:/lscc/diamond/2.2_x64/examples/blinky/adc_buffer_init.mem=mem
+
+[Command]
+cmd_line= -w -n DSO_RAMBUFFER_CH1 -lang vhdl -synth synplify -bus_exp 7 -bb -arch xo2c00 -type ramdp -device LCMXO2-7000HE -aaddr_width 10 -widtha 9 -baddr_width 10 -widthb 9 -anum_words 1024 -bnum_words 1024 -outdataA REGISTERED -outdataB REGISTERED -cascade -1 -resetmode SYNC -sync_reset -mem_init0 -writemodeA NORMAL -writemodeB NORMAL

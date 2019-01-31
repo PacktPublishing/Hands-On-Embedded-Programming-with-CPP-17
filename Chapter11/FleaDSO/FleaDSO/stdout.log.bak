@@ -1,0 +1,130 @@
+Running in Lattice mode
+
+
+Starting:    C:\lscc\diamond\3.9_x64\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.9_x64\synpbase
+Hostname:    TINO-ALPHA1
+Date:        Wed Oct 03 00:00:16 2018
+Version:     L-2016.09L-1
+
+Arguments:   -product synplify_pro -batch FleaDSO_FleaDSO_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+
+Technology initialized from device list to: LATTICE-XP
+
+log file: "C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.srr"
+
+Running: hdl_info_gen in foreground
+
+
+
+Generating HDL info...
+
+
+hdl_info_gen completed
+# Wed Oct 03 00:00:16 2018
+
+Return Code: 0
+Run Time:00h:00m:00s
+
+Copied C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.srr to C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.srf
+
+log file: "C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.srr"
+
+Running: FleaDSO in foreground
+
+
+
+Running proj_1|FleaDSO
+
+
+Running: compile (Compile) on proj_1|FleaDSO
+# Wed Oct 03 00:00:17 2018
+
+
+Running: compile_flow (Compile Process) on proj_1|FleaDSO
+# Wed Oct 03 00:00:17 2018
+
+
+Running: compiler (Compile Input) on proj_1|FleaDSO
+# Wed Oct 03 00:00:17 2018
+
+Copied C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_comp.srs to C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.srs
+
+
+compiler completed
+# Wed Oct 03 00:00:20 2018
+
+Return Code: 0
+Run Time:00h:00m:03s
+
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|FleaDSO
+# Wed Oct 03 00:00:20 2018
+
+
+multi_srs_gen completed
+# Wed Oct 03 00:00:20 2018
+
+Return Code: 0
+Run Time:00h:00m:00s
+
+Copied C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_mult.srs to C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.srs
+
+Copied C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.srr to C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.srf
+
+Complete: Compile Process on proj_1|FleaDSO
+
+
+Running: premap (Pre-mapping) on proj_1|FleaDSO
+# Wed Oct 03 00:00:20 2018
+
+
+premap completed with warnings
+# Wed Oct 03 00:00:22 2018
+
+Return Code: 1
+Run Time:00h:00m:02s
+
+Complete: Compile on proj_1|FleaDSO
+
+
+Running: map (Map) on proj_1|FleaDSO
+# Wed Oct 03 00:00:22 2018
+
+License granted for 4 parallel jobs
+
+
+Running: fpga_mapper (Map & Optimize) on proj_1|FleaDSO
+# Wed Oct 03 00:00:22 2018
+
+Copied C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_m.srm to C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.srm
+
+
+fpga_mapper completed with warnings
+# Wed Oct 03 00:00:36 2018
+
+Return Code: 1
+Run Time:00h:00m:14s
+
+Complete: Map on proj_1|FleaDSO
+
+Copied C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.srr to C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.srf
+
+Complete: Logic Synthesis on proj_1|FleaDSO
+
+TCL script complete: "FleaDSO_FleaDSO_synplify.tcl"
+
+exit status=0
+
+exit status=0
+
+Save changes for project:
+C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\proj_1.prj
+
+batch mode default:no
+

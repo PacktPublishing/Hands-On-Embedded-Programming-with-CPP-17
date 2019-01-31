@@ -1,0 +1,246 @@
+----------------------------------------------------------------------
+Report for cell FleaFPGA_Ohm_A5.arch
+
+Register bits: 368 of 24288 (2%)
+PIC Latch:       0
+I/O cells:       39
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2C      203       100.0
+                             DP16KD        1       100.0
+                            EHXPLLL        2       100.0
+                            FD1P3AX      102       100.0
+                            FD1P3AY        2       100.0
+                            FD1P3DX       20       100.0
+                            FD1P3IX       12       100.0
+                            FD1P3JX        9       100.0
+                            FD1S3AX      146       100.0
+                            FD1S3AY        5       100.0
+                            FD1S3BX        5       100.0
+                            FD1S3DX       38       100.0
+                            FD1S3IX       19       100.0
+                            FD1S3JX        8       100.0
+                                GSR        1       100.0
+                                 IB        5       100.0
+                           IFS1P3DX        1       100.0
+                                INV       34       100.0
+                                 OB       34       100.0
+                            ODDRX1F        4       100.0
+                           OFS1P3BX        1       100.0
+                           ORCALUT4      370       100.0
+                              PFUMX        3       100.0
+                                PUR        1       100.0
+                                VHI        9       100.0
+                                VLO        8       100.0
+SUB MODULES 
+                            ADC_PLL        1       100.0
+                  DSO_RAMBUFFER_CH1        1       100.0
+                         DVI_clkgen        1       100.0
+                       FleaFPGA_DSO        1       100.0
+                       TDMS_encoder        1       100.0
+                     TDMS_encoder_0        1       100.0
+                     TDMS_encoder_1        1       100.0
+                            ddr_out        1       100.0
+                          ddr_out_0        1       100.0
+                          ddr_out_1        1       100.0
+                          ddr_out_2        1       100.0
+                               dvid        1       100.0
+                        simple_uart        1       100.0
+                     vga_controller        1       100.0
+                            
+                         TOTAL          1057           
+----------------------------------------------------------------------
+Report for cell simple_uart.netlist
+     Instance path:  myuart
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2C       19         9.4
+                            FD1P3AX        8         7.8
+                            FD1P3IX        1         8.3
+                            FD1P3JX        9       100.0
+                            FD1S3AX       63        43.2
+                            FD1S3BX        3        60.0
+                            FD1S3DX        1         2.6
+                            FD1S3IX        1         5.3
+                           ORCALUT4       40        10.8
+                                VHI        1        11.1
+                            
+                         TOTAL           146           
+----------------------------------------------------------------------
+Report for cell dvid.netlist
+     Instance path:  u100
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3AX       71        48.6
+                            FD1S3AY        5       100.0
+                            FD1S3IX        6        31.6
+                            FD1S3JX        6        75.0
+                                 OB        4        11.8
+                            ODDRX1F        4       100.0
+                           ORCALUT4      179        48.4
+                              PFUMX        3       100.0
+                                VHI        4        44.4
+                                VLO        4        50.0
+SUB MODULES 
+                       TDMS_encoder        1       100.0
+                     TDMS_encoder_0        1       100.0
+                     TDMS_encoder_1        1       100.0
+                            ddr_out        1       100.0
+                          ddr_out_0        1       100.0
+                          ddr_out_1        1       100.0
+                          ddr_out_2        1       100.0
+                            
+                         TOTAL           293           
+----------------------------------------------------------------------
+Report for cell ddr_out_2.netlist
+  Original Cell name ddr_out
+     Instance path:  u100.u5
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 OB        1         2.9
+                            ODDRX1F        1        25.0
+                                VLO        1        12.5
+                            
+                         TOTAL             3           
+----------------------------------------------------------------------
+Report for cell ddr_out_1.netlist
+  Original Cell name ddr_out
+     Instance path:  u100.u4
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 OB        1         2.9
+                            ODDRX1F        1        25.0
+                                VLO        1        12.5
+                            
+                         TOTAL             3           
+----------------------------------------------------------------------
+Report for cell ddr_out_0.netlist
+  Original Cell name ddr_out
+     Instance path:  u100.u3
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 OB        1         2.9
+                            ODDRX1F        1        25.0
+                                VLO        1        12.5
+                            
+                         TOTAL             3           
+----------------------------------------------------------------------
+Report for cell ddr_out.netlist
+  Original Cell name ddr_out
+     Instance path:  u100.u2
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                                 OB        1         2.9
+                            ODDRX1F        1        25.0
+                                VLO        1        12.5
+                            
+                         TOTAL             3           
+----------------------------------------------------------------------
+Report for cell TDMS_encoder_0.netlist
+  Original Cell name TDMS_encoder
+     Instance path:  u100.u23
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3AX       10         6.8
+                           ORCALUT4       29         7.8
+                                VHI        1        11.1
+                            
+                         TOTAL            40           
+----------------------------------------------------------------------
+Report for cell TDMS_encoder_1.netlist
+  Original Cell name TDMS_encoder
+     Instance path:  u100.u22
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3AX        4         2.7
+                            FD1S3IX        3        15.8
+                            FD1S3JX        3        37.5
+                           ORCALUT4       43        11.6
+                              PFUMX        2        66.7
+                                VHI        1        11.1
+                            
+                         TOTAL            56           
+----------------------------------------------------------------------
+Report for cell TDMS_encoder.netlist
+  Original Cell name TDMS_encoder
+     Instance path:  u100.u21
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            FD1S3AX        4         2.7
+                            FD1S3IX        3        15.8
+                            FD1S3JX        3        37.5
+                           ORCALUT4       46        12.4
+                              PFUMX        1        33.3
+                                VHI        1        11.1
+                            
+                         TOTAL            58           
+----------------------------------------------------------------------
+Report for cell DVI_clkgen.netlist
+     Instance path:  u0
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            EHXPLLL        1        50.0
+                                VLO        1        12.5
+                            
+                         TOTAL             2           
+----------------------------------------------------------------------
+Report for cell FleaFPGA_DSO.netlist
+     Instance path:  user_module1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2C      184        90.6
+                             DP16KD        1       100.0
+                            EHXPLLL        1        50.0
+                            FD1P3AX       94        92.2
+                            FD1P3AY        2       100.0
+                            FD1P3DX       20       100.0
+                            FD1P3IX       11        91.7
+                            FD1S3AX       12         8.2
+                            FD1S3BX        2        40.0
+                            FD1S3DX       37        97.4
+                            FD1S3IX       12        63.2
+                            FD1S3JX        2        25.0
+                                INV       32        94.1
+                           ORCALUT4      151        40.8
+                                VHI        3        33.3
+                                VLO        2        25.0
+SUB MODULES 
+                            ADC_PLL        1       100.0
+                  DSO_RAMBUFFER_CH1        1       100.0
+                     vga_controller        1       100.0
+                            
+                         TOTAL           569           
+----------------------------------------------------------------------
+Report for cell DSO_RAMBUFFER_CH1.netlist
+     Instance path:  user_module1.U3
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                             DP16KD        1       100.0
+                                VHI        1        11.1
+                                VLO        1        12.5
+                            
+                         TOTAL             3           
+----------------------------------------------------------------------
+Report for cell vga_controller.netlist
+     Instance path:  user_module1.U2
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                              CCU2C       12         5.9
+                            FD1P3AX       19        18.6
+                            FD1P3DX       10        50.0
+                            FD1S3BX        2        40.0
+                            FD1S3DX       11        28.9
+                                INV        1         2.9
+                           ORCALUT4       50        13.5
+                                VHI        1        11.1
+                            
+                         TOTAL           106           
+----------------------------------------------------------------------
+Report for cell ADC_PLL.netlist
+     Instance path:  user_module1.U1
+                                          Cell usage:
+                               cell       count    Res Usage(%)
+                            EHXPLLL        1        50.0
+                                VLO        1        12.5
+                            
+                         TOTAL             2           

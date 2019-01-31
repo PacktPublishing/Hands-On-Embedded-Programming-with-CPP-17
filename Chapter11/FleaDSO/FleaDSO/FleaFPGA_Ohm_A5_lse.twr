@@ -1,0 +1,137 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sat Feb 17 21:16:49 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     FleaFPGA_Ohm_A5
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_dvi]
+            119 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 0.639ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AY    CK             \u100/shift_clock_i1  (from clk_dvi +)
+   Destination:    FD1S3IX    CD             \u100/shift_red_i0  (to clk_dvi +)
+
+   Delay:                   4.536ns  (15.4% logic, 84.6% route), 3 logic levels.
+
+ Constraint Details:
+
+      4.536ns data_path \u100/shift_clock_i1 to \u100/shift_red_i0 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.639ns
+
+ Path Details: \u100/shift_clock_i1 to \u100/shift_red_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \u100/shift_clock_i1 (from clk_dvi)
+Route         3   e 1.339                                  \u100/shift_clock[1]
+LUT4        ---     0.166              A to Z              \u100/i299_4_lut
+Route         1   e 1.020                                  \u100/n416
+LUT4        ---     0.166              A to Z              \u100/i310_4_lut
+Route        10   e 1.480                                  \u100/shift_green_9__N_148[9]
+                  --------
+                    4.536  (15.4% logic, 84.6% route), 3 logic levels.
+
+
+Passed:  The following path meets requirements by 0.639ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AY    CK             \u100/shift_clock_i1  (from clk_dvi +)
+   Destination:    FD1S3IX    CD             \u100/shift_red_i5  (to clk_dvi +)
+
+   Delay:                   4.536ns  (15.4% logic, 84.6% route), 3 logic levels.
+
+ Constraint Details:
+
+      4.536ns data_path \u100/shift_clock_i1 to \u100/shift_red_i5 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.639ns
+
+ Path Details: \u100/shift_clock_i1 to \u100/shift_red_i5
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \u100/shift_clock_i1 (from clk_dvi)
+Route         3   e 1.339                                  \u100/shift_clock[1]
+LUT4        ---     0.166              A to Z              \u100/i299_4_lut
+Route         1   e 1.020                                  \u100/n416
+LUT4        ---     0.166              A to Z              \u100/i310_4_lut
+Route        10   e 1.480                                  \u100/shift_green_9__N_148[9]
+                  --------
+                    4.536  (15.4% logic, 84.6% route), 3 logic levels.
+
+
+Passed:  The following path meets requirements by 0.639ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AY    CK             \u100/shift_clock_i1  (from clk_dvi +)
+   Destination:    FD1S3IX    CD             \u100/shift_red_i3  (to clk_dvi +)
+
+   Delay:                   4.536ns  (15.4% logic, 84.6% route), 3 logic levels.
+
+ Constraint Details:
+
+      4.536ns data_path \u100/shift_clock_i1 to \u100/shift_red_i3 meets
+      5.000ns delay constraint less
+     -0.175ns L_S requirement (totaling 5.175ns) by 0.639ns
+
+ Path Details: \u100/shift_clock_i1 to \u100/shift_red_i3
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.365             CK to Q              \u100/shift_clock_i1 (from clk_dvi)
+Route         3   e 1.339                                  \u100/shift_clock[1]
+LUT4        ---     0.166              A to Z              \u100/i299_4_lut
+Route         1   e 1.020                                  \u100/n416
+LUT4        ---     0.166              A to Z              \u100/i310_4_lut
+Route        10   e 1.480                                  \u100/shift_green_9__N_148[9]
+                  --------
+                    4.536  (15.4% logic, 84.6% route), 3 logic levels.
+
+Report: 4.361 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_dvi]                 |     5.000 ns|     4.361 ns|     3  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  119 paths, 22 nets, and 42 connections (50.6% coverage)
+
+
+Peak memory: 94531584 bytes, TRCE: 159744 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="FleaDSO" device="LFE5U-25F-6BG381C" default_implementation="FleaDSO">
+    <Options/>
+    <Implementation title="FleaDSO" dir="FleaDSO" description="FleaDSO" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="vga" top="FleaFPGA_Ohm_A5"/>
+        <Source name="source/ADC_PLL.ipx" type="IPX_Module" type_short="IPX" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/ADC_PLL.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/DSO_RAMBUFFER_CH1.ipx" type="IPX_Module" type_short="IPX" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/DSO_RAMBUFFER_CH1.lpc" type="LPC_Module" type_short="LPC" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/DSO_RAMBUFFER_CH1.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/FleaFPGA_2v5_DSO_toplevel.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="FleaFPGA_Ohm_A5"/>
+        </Source>
+        <Source name="source/FleaFPGA_DSO.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/Simple_VGA_CRTC.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="ddr_out/ddr_out.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="DVI_clkgen/DVI_clkgen.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="source/FleaFPGA_Ohm_A5_Top.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/Flea_zero_A2_top.vhd" type="VHDL" type_short="VHDL" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/TDMS_encoder.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/DVI_D.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="DSO_RAMBUFFER_CH1/DSO_RAMBUFFER_CH1.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="ADC_PLL/ADC_PLL.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="source/VGA.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="source/simple_uart.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="FleaDSO/FleaDSO.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="source/FleaFPGA_2v5_DSO_toplevel.lpf" type="Logic Preference" type_short="LPF" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="source/FleaFPGA_Ohm_A5.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="FleaDSO1.sty"/>
+</BaliProject>

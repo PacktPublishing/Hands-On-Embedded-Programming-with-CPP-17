@@ -1,0 +1,1910 @@
+# Wed Oct 03 00:10:18 2018
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 142MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+@N: MF236 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":271:29:271:57|Generating a type div divider 
+@N: MF236 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":268:28:268:58|Generating a type div divider 
+@W: BN132 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":263:2:263:3|Removing sequential instance user_module1.set_pixel2 because it is equivalent to instance user_module1.set_pixel1. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: FX493 |Applying initial value "10000000000000" on instance user_module1.sample_rate[13:0].
+@N: FX493 |Applying initial value "0000000000" on instance u100.shift_red[9:0].
+@N: FX493 |Applying initial value "0000000000" on instance u100.shift_green[9:0].
+@N: FX493 |Applying initial value "0000000000" on instance u100.shift_blue[9:0].
+@N: FX493 |Applying initial value "0000011111" on instance u100.shift_clock[9:0].
+@N: FX493 |Applying initial value "0000000000" on instance u100.latched_red[9:0].
+@N: FX493 |Applying initial value "0000000000" on instance u100.latched_green[9:0].
+@N: FX493 |Applying initial value "0000000000" on instance u100.latched_blue[9:0].
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 144MB peak: 146MB)
+
+@N: MO231 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":163:3:163:4|Found counter in view:work.FleaFPGA_DSO(behavior) instance ADC_buffer_addr[9:0] 
+@N: MO231 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":163:3:163:4|Found counter in view:work.FleaFPGA_DSO(behavior) instance ADC_sample_divider[13:0] 
+@N: MF179 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":306:9:306:52|Found 9 by 9 bit equality operator ('==') un33_vga_disp_en (in view: work.FleaFPGA_DSO(behavior))
+@N: MF179 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":316:8:316:49|Found 9 by 9 bit equality operator ('==') un37_vga_disp_en (in view: work.FleaFPGA_DSO(behavior))
+@N: MF179 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":184:9:184:53|Found 9 by 9 bit equality operator ('==') un1_adc_rawout (in view: work.FleaFPGA_DSO(behavior))
+@N: MF179 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":285:8:285:47|Found 9 by 9 bit equality operator ('==') un11_vga_disp_en (in view: work.FleaFPGA_DSO(behavior))
+@N: MF179 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":178:8:178:39|Found 14 by 14 bit equality operator ('==') un6_adc_sample_divider (in view: work.FleaFPGA_DSO(behavior))
+@N: MF179 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":295:9:295:42|Found 10 by 10 bit equality operator ('==') un19_vga_disp_en (in view: work.FleaFPGA_DSO(behavior))
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":263:2:263:3|Removing sequential instance grid_column[0] (in view: work.FleaFPGA_DSO(behavior)) because it does not drive other instances.
+@W: BN132 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\tdms_encoder.vhd":76:6:76:7|Removing instance u100.u22.encoded[3] because it is equivalent to instance u100.u22.encoded[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\tdms_encoder.vhd":76:6:76:7|Removing instance u100.u22.encoded[9] because it is equivalent to instance u100.u22.encoded[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\tdms_encoder.vhd":76:6:76:7|Removing instance u100.u23.encoded[3] because it is equivalent to instance u100.u23.encoded[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\tdms_encoder.vhd":76:6:76:7|Removing instance u100.u23.encoded[1] because it is equivalent to instance u100.u23.encoded[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Starting factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 146MB)
+
+@W: BN132 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\dvi_d.vhd":101:6:101:7|Removing instance u100.latched_red[3] because it is equivalent to instance u100.latched_red[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\dvi_d.vhd":101:6:101:7|Removing instance u100.latched_red[9] because it is equivalent to instance u100.latched_red[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\dvi_d.vhd":43:101:43:101|Removing instance u100.latched_green[3] because it is equivalent to instance u100.latched_green[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\dvi_d.vhd":43:101:43:101|Removing instance u100.latched_green[9] because it is equivalent to instance u100.latched_green[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\dvi_d.vhd":43:101:43:101|Removing instance u100.latched_blue[3] because it is equivalent to instance u100.latched_blue[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 148MB peak: 149MB)
+
+@N: MF578 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":222:2:222:3|Incompatible asynchronous control logic preventing generated clock conversion of user_module1.sample_button_count[3] (in view: work.FleaFPGA_Ohm_A5(arch)).
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 149MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 147MB peak: 149MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 153MB peak: 156MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 162MB peak: 163MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 162MB peak: 163MB)
+
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":263:2:263:3|Removing sequential instance user_module1.vga_trigger_scaled[0] (in view: work.FleaFPGA_Ohm_A5(arch)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":263:2:263:3|Removing sequential instance user_module1.vga_bufout_scaled[0] (in view: work.FleaFPGA_Ohm_A5(arch)) because it does not drive other instances.
+
+Finished preparing to map (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 158MB peak: 163MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 158MB peak: 163MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:07s		    -1.57ns		 385 /       321
+   2		0h:00m:07s		    -1.57ns		 368 /       322
+   3		0h:00m:07s		    -1.57ns		 368 /       322
+   4		0h:00m:07s		    -1.57ns		 368 /       322
+   5		0h:00m:07s		    -1.57ns		 368 /       322
+   6		0h:00m:07s		    -1.57ns		 368 /       322
+
+   7		0h:00m:09s		    -2.24ns		 393 /       368
+   8		0h:00m:09s		    -2.24ns		 409 /       368
+   9		0h:00m:09s		    -2.24ns		 416 /       368
+  10		0h:00m:09s		    -2.24ns		 420 /       368
+  11		0h:00m:09s		    -2.24ns		 421 /       368
+
+
+  12		0h:00m:10s		    -2.24ns		 410 /       368
+  13		0h:00m:10s		    -2.24ns		 410 /       368
+  14		0h:00m:10s		    -2.24ns		 409 /       368
+  15		0h:00m:10s		    -2.24ns		 409 /       368
+  16		0h:00m:10s		    -2.24ns		 409 /       368
+@N: MF322 |Retiming summary: 18 registers retimed to 67 
+
+		#####  BEGIN RETIMING REPORT  #####
+
+Retiming summary : 18 registers retimed to 67
+
+Original and Pipelined registers replaced by retiming :
+		myuart.txcounter[0]
+		myuart.txcounter[1]
+		myuart.txcounter[2]
+		myuart.txcounter[3]
+		myuart.txcounter[4]
+		myuart.txcounter[5]
+		myuart.txcounter[6]
+		myuart.txcounter[7]
+		myuart.txcounter[8]
+		myuart.txcounter[9]
+		myuart.txcounter[10]
+		myuart.txcounter[11]
+		myuart.txcounter[12]
+		myuart.txcounter[13]
+		myuart.txcounter[14]
+		myuart.txcounter[15]
+		myuart.txstate[0]
+		myuart.txstate[1]
+
+New registers created by retiming :
+		myuart.txcounter_ret
+		myuart.txcounter_ret[0]
+		myuart.txcounter_ret_0
+		myuart.txcounter_ret_1
+		myuart.txcounter_ret_2
+		myuart.txcounter_ret_3
+		myuart.txcounter_ret_4
+		myuart.txcounter_ret_5
+		myuart.txcounter_ret_6
+		myuart.txcounter_ret_7
+		myuart.txcounter_ret_8
+		myuart.txcounter_ret_9
+		myuart.txcounter_ret_10
+		myuart.txcounter_ret_11
+		myuart.txcounter_ret_12
+		myuart.txcounter_ret_13
+		myuart.txcounter_ret_14
+		myuart.txcounter_ret_15
+		myuart.txcounter_ret_16
+		myuart.txcounter_ret_17
+		myuart.txcounter_ret_18
+		myuart.txcounter_ret_19
+		myuart.txcounter_ret_20
+		myuart.txcounter_ret_21
+		myuart.txcounter_ret_22
+		myuart.txcounter_ret_23
+		myuart.txcounter_ret_24
+		myuart.txcounter_ret_25
+		myuart.txcounter_ret_26
+		myuart.txcounter_ret_27
+		myuart.txcounter_ret_28
+		myuart.txcounter_ret_30
+		myuart.txcounter_ret_31
+		myuart.txcounter_ret_32
+		myuart.txcounter_ret_33
+		myuart.txcounter_ret_34
+		myuart.txcounter_ret_35
+		myuart.txcounter_ret_36
+		myuart.txcounter_ret_37
+		myuart.txcounter_ret_38
+		myuart.txcounter_ret_39
+		myuart.txcounter_ret_40
+		myuart.txcounter_ret_41
+		myuart.txcounter_ret_42
+		myuart.txcounter_ret_43
+		myuart.txcounter_ret_44
+		myuart.txcounter_ret_45
+		myuart.txcounter_ret_46
+		myuart.txcounter_ret_47
+		myuart.txcounter_ret_48
+		myuart.txcounter_ret_49
+		myuart.txcounter_ret_50
+		myuart.txcounter_ret_51
+		myuart.txcounter_ret_52
+		myuart.txcounter_ret_53
+		myuart.txcounter_ret_54
+		myuart.txcounter_ret_55
+		myuart.txcounter_ret_56
+		myuart.txcounter_ret_57
+		myuart.txcounter_ret_58
+		myuart.txcounter_ret_59
+		myuart.txcounter_ret_60
+		myuart.txcounter_ret_61
+		myuart.txstate_ret
+		myuart.txstate_ret_0
+		myuart.txstate_ret_1
+		myuart.txstate_ret_2
+
+
+		#####   END RETIMING REPORT  #####
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:10s; Memory used current: 166MB peak: 167MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":185:2:185:3|Boundary register myuart.txbuffer_16_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":185:2:185:3|Boundary register myuart.txbuffer_15_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":185:2:185:3|Boundary register myuart.txbuffer_14_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":185:2:185:3|Boundary register myuart.txbuffer_13_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":185:2:185:3|Boundary register myuart.txbuffer_12_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":185:2:185:3|Boundary register myuart.txbuffer_11_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":185:2:185:3|Boundary register myuart.txbuffer_10_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":185:2:185:3|Boundary register myuart.txbuffer_9_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":185:2:185:3|Boundary register myuart.txbuffer_8_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":185:2:185:3|Boundary register myuart.txbuffer_7_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":74:45:74:50|Boundary register user_module1.trig_row_8_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":74:45:74:50|Boundary register user_module1.trig_row_7_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":74:45:74:50|Boundary register user_module1.trig_row_6_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":74:45:74:50|Boundary register user_module1.trig_row_5_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":74:45:74:50|Boundary register user_module1.trig_row_4_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":74:45:74:50|Boundary register user_module1.trig_row_3_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":74:45:74:50|Boundary register user_module1.trig_row_2_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":74:45:74:50|Boundary register user_module1.trig_row_1_.fb (in view: work.FleaFPGA_Ohm_A5(arch)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 167MB peak: 168MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+6 gated/generated clock tree(s) driving 370 clock pin(s) of sequential element(s)
+0 instances converted, 370 sequential instances remain driven by gated/generated clocks
+
+=============================================================================================================== Gated/Generated Clocks ================================================================================================================
+Clock Tree ID     Driving Element               Drive Element Type     Fanout     Sample Instance                        Explanation                                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       user_module1.U1.PLLInst_0     EHXPLLL                100        user_module1.Green_out_1[0]            Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       u0.PLLInst_0                  EHXPLLL                87         myuart.txbuffer[17]                    Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0003       u0.PLLInst_0                  EHXPLLL                48         u100.latched_blue[9]                   Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0004       user_module1.U1.PLLInst_0     EHXPLLL                45         user_module1.ADC_lowspeed_raw_1[6]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0005       u0.PLLInst_0                  EHXPLLL                40         u100.shift_blue[9]                     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0006       user_module1.U2.v_sync        FD1S3BX                50         user_module1.ADC_filter_shift          Need declared clock or clock from port to derive clock from ff                                                                
+=======================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:11s; Memory used current: 131MB peak: 168MB)
+
+Writing Analyst data base C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:11s; Memory used current: 163MB peak: 168MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.edi
+L-2016.09L-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:12s; Memory used current: 167MB peak: 169MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 165MB peak: 169MB)
+
+@W: MT246 :"c:\lscc\diamond\3.9_x64\examples\fleadso\ddr_out\ddr_out.vhd":42:4:42:17|Blackbox ODDRX1F is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\lscc\diamond\3.9_x64\examples\fleadso\dvi_clkgen\dvi_clkgen.vhd":59:4:59:12|Blackbox EHXPLLL is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock DVI_clkgen|CLKOP_inferred_clock with period 2.22ns. Please declare a user-defined clock on object "n:u0.CLKOP"
+@W: MT420 |Found inferred clock DVI_clkgen|CLKOS2_inferred_clock with period 3.35ns. Please declare a user-defined clock on object "n:u0.CLKOS2"
+@W: MT420 |Found inferred clock DVI_clkgen|CLKOS3_inferred_clock with period 3.33ns. Please declare a user-defined clock on object "n:u0.CLKOS3"
+@N: MT615 |Found clock vga_controller|v_sync_derived_clock with period 1000.00ns 
+@W: MT420 |Found inferred clock ADC_PLL|CLKOS_inferred_clock with period 1000.00ns. Please declare a user-defined clock on object "n:user_module1.U1.CLKOS"
+@W: MT420 |Found inferred clock ADC_PLL|CLKOP_inferred_clock with period 4.53ns. Please declare a user-defined clock on object "n:user_module1.U1.CLKOP"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Oct 03 00:10:31 2018
+#
+
+
+Top view:               FleaFPGA_Ohm_A5
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -0.800
+
+                                        Requested     Estimated     Requested     Estimated                 Clock                                           Clock                
+Starting Clock                          Frequency     Frequency     Period        Period        Slack       Type                                            Group                
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ADC_PLL|CLKOP_inferred_clock            220.6 MHz     187.5 MHz     4.532         5.332         -0.800      inferred                                        Autoconstr_clkgroup_3
+ADC_PLL|CLKOS_inferred_clock            1.0 MHz       42.8 MHz      1000.000      23.340        976.660     inferred                                        Autoconstr_clkgroup_4
+DVI_clkgen|CLKOP_inferred_clock         450.6 MHz     383.0 MHz     2.219         2.611         -0.392      inferred                                        Autoconstr_clkgroup_2
+DVI_clkgen|CLKOS2_inferred_clock        298.4 MHz     253.6 MHz     3.352         3.943         -0.591      inferred                                        Autoconstr_clkgroup_1
+DVI_clkgen|CLKOS3_inferred_clock        300.0 MHz     255.0 MHz     3.333         3.921         -0.588      inferred                                        Autoconstr_clkgroup_0
+vga_controller|v_sync_derived_clock     1.0 MHz       45.8 MHz      1000.000      21.817        978.183     derived (from ADC_PLL|CLKOS_inferred_clock)     Autoconstr_clkgroup_4
+System                                  1.0 MHz       NA            1000.000      NA            NA          system                                          system_clkgroup      
+=================================================================================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                    |    rise  to  rise      |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                             Ending                               |  constraint  slack     |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DVI_clkgen|CLKOS3_inferred_clock     DVI_clkgen|CLKOS3_inferred_clock     |  3.333       -0.588    |  No paths    -      |  No paths    -      |  No paths    -    
+DVI_clkgen|CLKOS2_inferred_clock     DVI_clkgen|CLKOS2_inferred_clock     |  3.352       -0.591    |  No paths    -      |  No paths    -      |  No paths    -    
+DVI_clkgen|CLKOS2_inferred_clock     DVI_clkgen|CLKOP_inferred_clock      |  Diff grp    -         |  No paths    -      |  No paths    -      |  No paths    -    
+DVI_clkgen|CLKOP_inferred_clock      System                               |  2.219       1.111     |  No paths    -      |  No paths    -      |  No paths    -    
+DVI_clkgen|CLKOP_inferred_clock      DVI_clkgen|CLKOP_inferred_clock      |  2.219       -0.392    |  No paths    -      |  No paths    -      |  No paths    -    
+ADC_PLL|CLKOP_inferred_clock         DVI_clkgen|CLKOS3_inferred_clock     |  Diff grp    -         |  No paths    -      |  No paths    -      |  No paths    -    
+ADC_PLL|CLKOP_inferred_clock         ADC_PLL|CLKOP_inferred_clock         |  4.532       -0.800    |  No paths    -      |  No paths    -      |  No paths    -    
+ADC_PLL|CLKOS_inferred_clock         DVI_clkgen|CLKOS2_inferred_clock     |  Diff grp    -         |  No paths    -      |  No paths    -      |  No paths    -    
+ADC_PLL|CLKOS_inferred_clock         ADC_PLL|CLKOS_inferred_clock         |  1000.000    976.661   |  No paths    -      |  No paths    -      |  No paths    -    
+vga_controller|v_sync_derived_clock  ADC_PLL|CLKOP_inferred_clock         |  Diff grp    -         |  No paths    -      |  No paths    -      |  No paths    -    
+vga_controller|v_sync_derived_clock  ADC_PLL|CLKOS_inferred_clock         |  1000.000    978.183   |  No paths    -      |  No paths    -      |  No paths    -    
+vga_controller|v_sync_derived_clock  vga_controller|v_sync_derived_clock  |  1000.000    1996.729  |  No paths    -      |  No paths    -      |  No paths    -    
+===================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: ADC_PLL|CLKOP_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                               Starting                                                               Arrival           
+Instance                       Reference                        Type        Pin     Net               Time        Slack 
+                               Clock                                                                                    
+------------------------------------------------------------------------------------------------------------------------
+user_module1.adc_rawout[0]     ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout_5      0.955       -0.800
+user_module1.adc_rawout[4]     ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[4]     1.027       -0.750
+user_module1.adc_rawout[3]     ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[3]     1.015       -0.738
+user_module1.adc_rawout[1]     ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[1]     0.907       -0.691
+user_module1.adc_rawout[2]     ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[2]     0.907       -0.691
+user_module1.adc_rawout[5]     ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[5]     1.027       -0.689
+user_module1.adc_rawout[6]     ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[6]     1.027       -0.689
+user_module1.adc_rawout[7]     ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[7]     1.027       -0.628
+user_module1.adc_rawout[8]     ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[8]     1.027       -0.628
+user_module1.adc_rawout[9]     ADC_PLL|CLKOP_inferred_clock     FD1S3DX     Q       adc_rawout[9]     1.027       -0.567
+========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                Starting                                                                  Required           
+Instance                        Reference                        Type        Pin     Net                  Time         Slack 
+                                Clock                                                                                        
+-----------------------------------------------------------------------------------------------------------------------------
+user_module1.adc_rawout[9]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     D       adc_rawout_5[9]      4.478        -0.800
+user_module1.adc_rawout[10]     ADC_PLL|CLKOP_inferred_clock     FD1S3DX     D       adc_rawout_5[10]     4.478        -0.800
+user_module1.adc_rawout[7]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     D       adc_rawout_5[7]      4.478        -0.739
+user_module1.adc_rawout[8]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     D       adc_rawout_5[8]      4.478        -0.739
+user_module1.adc_rawout[5]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     D       adc_rawout_5[5]      4.478        -0.624
+user_module1.adc_rawout[6]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     D       adc_rawout_5[6]      4.478        -0.624
+user_module1.adc_rawout[3]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     D       adc_rawout_5[3]      4.478        -0.563
+user_module1.adc_rawout[4]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     D       adc_rawout_5[4]      4.478        -0.563
+user_module1.adc_rawout[1]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     D       adc_rawout_5[1]      4.478        -0.502
+user_module1.adc_rawout[2]      ADC_PLL|CLKOP_inferred_clock     FD1S3DX     D       adc_rawout_5[2]      4.478        -0.502
+=============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      4.532
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.478
+
+    - Propagation time:                      5.278
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.800
+
+    Number of logic level(s):                11
+    Starting point:                          user_module1.adc_rawout[0] / Q
+    Ending point:                            user_module1.adc_rawout[10] / D
+    The start point is clocked by            ADC_PLL|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            ADC_PLL|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                     Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+user_module1.adc_rawout[0]               FD1S3DX      Q        Out     0.955     0.955       -         
+adc_rawout_5                             Net          -        -       -         -           3         
+user_module1.un5_adc_rawout_cry_0_0      CCU2C        A1       In      0.000     0.955       -         
+user_module1.un5_adc_rawout_cry_0_0      CCU2C        COUT     Out     0.900     1.855       -         
+un5_adc_rawout_cry_0                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_1_0      CCU2C        CIN      In      0.000     1.855       -         
+user_module1.un5_adc_rawout_cry_1_0      CCU2C        COUT     Out     0.061     1.916       -         
+un5_adc_rawout_cry_2                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_3_0      CCU2C        CIN      In      0.000     1.916       -         
+user_module1.un5_adc_rawout_cry_3_0      CCU2C        COUT     Out     0.061     1.977       -         
+un5_adc_rawout_cry_4                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_5_0      CCU2C        CIN      In      0.000     1.977       -         
+user_module1.un5_adc_rawout_cry_5_0      CCU2C        COUT     Out     0.061     2.038       -         
+un5_adc_rawout_cry_6                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_7_0      CCU2C        CIN      In      0.000     2.038       -         
+user_module1.un5_adc_rawout_cry_7_0      CCU2C        COUT     Out     0.061     2.099       -         
+un5_adc_rawout_cry_8                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_9_0      CCU2C        CIN      In      0.000     2.099       -         
+user_module1.un5_adc_rawout_cry_9_0      CCU2C        COUT     Out     0.061     2.160       -         
+un5_adc_rawout_cry_10                    Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_11_0     CCU2C        CIN      In      0.000     2.160       -         
+user_module1.un5_adc_rawout_cry_11_0     CCU2C        S1       Out     0.854     3.014       -         
+un5_adc_rawout_cry_11_0_S1               Net          -        -       -         -           5         
+user_module1.un1_adc_rawout_2[6]         ORCALUT4     C        In      0.000     3.014       -         
+user_module1.un1_adc_rawout_2[6]         ORCALUT4     Z        Out     0.606     3.619       -         
+un1_adc_rawout_2[6]                      Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_5_0        CCU2C        B1       In      0.000     3.619       -         
+user_module1.adc_rawout_5_cry_5_0        CCU2C        COUT     Out     0.900     4.519       -         
+adc_rawout_5_cry_6                       Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_7_0        CCU2C        CIN      In      0.000     4.519       -         
+user_module1.adc_rawout_5_cry_7_0        CCU2C        COUT     Out     0.061     4.580       -         
+adc_rawout_5_cry_8                       Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_9_0        CCU2C        CIN      In      0.000     4.580       -         
+user_module1.adc_rawout_5_cry_9_0        CCU2C        S1       Out     0.698     5.278       -         
+adc_rawout_5[10]                         Net          -        -       -         -           1         
+user_module1.adc_rawout[10]              FD1S3DX      D        In      0.000     5.278       -         
+=======================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      4.532
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.478
+
+    - Propagation time:                      5.278
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -0.800
+
+    Number of logic level(s):                11
+    Starting point:                          user_module1.adc_rawout[0] / Q
+    Ending point:                            user_module1.adc_rawout[9] / D
+    The start point is clocked by            ADC_PLL|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            ADC_PLL|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                     Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+user_module1.adc_rawout[0]               FD1S3DX      Q        Out     0.955     0.955       -         
+adc_rawout_5                             Net          -        -       -         -           3         
+user_module1.un5_adc_rawout_cry_0_0      CCU2C        A1       In      0.000     0.955       -         
+user_module1.un5_adc_rawout_cry_0_0      CCU2C        COUT     Out     0.900     1.855       -         
+un5_adc_rawout_cry_0                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_1_0      CCU2C        CIN      In      0.000     1.855       -         
+user_module1.un5_adc_rawout_cry_1_0      CCU2C        COUT     Out     0.061     1.916       -         
+un5_adc_rawout_cry_2                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_3_0      CCU2C        CIN      In      0.000     1.916       -         
+user_module1.un5_adc_rawout_cry_3_0      CCU2C        COUT     Out     0.061     1.977       -         
+un5_adc_rawout_cry_4                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_5_0      CCU2C        CIN      In      0.000     1.977       -         
+user_module1.un5_adc_rawout_cry_5_0      CCU2C        COUT     Out     0.061     2.038       -         
+un5_adc_rawout_cry_6                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_7_0      CCU2C        CIN      In      0.000     2.038       -         
+user_module1.un5_adc_rawout_cry_7_0      CCU2C        COUT     Out     0.061     2.099       -         
+un5_adc_rawout_cry_8                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_9_0      CCU2C        CIN      In      0.000     2.099       -         
+user_module1.un5_adc_rawout_cry_9_0      CCU2C        COUT     Out     0.061     2.160       -         
+un5_adc_rawout_cry_10                    Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_11_0     CCU2C        CIN      In      0.000     2.160       -         
+user_module1.un5_adc_rawout_cry_11_0     CCU2C        S1       Out     0.854     3.014       -         
+un5_adc_rawout_cry_11_0_S1               Net          -        -       -         -           5         
+user_module1.un1_adc_rawout_2[6]         ORCALUT4     C        In      0.000     3.014       -         
+user_module1.un1_adc_rawout_2[6]         ORCALUT4     Z        Out     0.606     3.619       -         
+un1_adc_rawout_2[6]                      Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_5_0        CCU2C        B1       In      0.000     3.619       -         
+user_module1.adc_rawout_5_cry_5_0        CCU2C        COUT     Out     0.900     4.519       -         
+adc_rawout_5_cry_6                       Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_7_0        CCU2C        CIN      In      0.000     4.519       -         
+user_module1.adc_rawout_5_cry_7_0        CCU2C        COUT     Out     0.061     4.580       -         
+adc_rawout_5_cry_8                       Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_9_0        CCU2C        CIN      In      0.000     4.580       -         
+user_module1.adc_rawout_5_cry_9_0        CCU2C        S0       Out     0.698     5.278       -         
+adc_rawout_5[9]                          Net          -        -       -         -           1         
+user_module1.adc_rawout[9]               FD1S3DX      D        In      0.000     5.278       -         
+=======================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      4.532
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.478
+
+    - Propagation time:                      5.228
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.750
+
+    Number of logic level(s):                9
+    Starting point:                          user_module1.adc_rawout[4] / Q
+    Ending point:                            user_module1.adc_rawout[10] / D
+    The start point is clocked by            ADC_PLL|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            ADC_PLL|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                     Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+user_module1.adc_rawout[4]               FD1S3DX      Q        Out     1.027     1.027       -         
+adc_rawout[4]                            Net          -        -       -         -           7         
+user_module1.un5_adc_rawout_cry_3_0      CCU2C        A1       In      0.000     1.027       -         
+user_module1.un5_adc_rawout_cry_3_0      CCU2C        COUT     Out     0.900     1.927       -         
+un5_adc_rawout_cry_4                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_5_0      CCU2C        CIN      In      0.000     1.927       -         
+user_module1.un5_adc_rawout_cry_5_0      CCU2C        COUT     Out     0.061     1.988       -         
+un5_adc_rawout_cry_6                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_7_0      CCU2C        CIN      In      0.000     1.988       -         
+user_module1.un5_adc_rawout_cry_7_0      CCU2C        COUT     Out     0.061     2.049       -         
+un5_adc_rawout_cry_8                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_9_0      CCU2C        CIN      In      0.000     2.049       -         
+user_module1.un5_adc_rawout_cry_9_0      CCU2C        COUT     Out     0.061     2.110       -         
+un5_adc_rawout_cry_10                    Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_11_0     CCU2C        CIN      In      0.000     2.110       -         
+user_module1.un5_adc_rawout_cry_11_0     CCU2C        S1       Out     0.854     2.963       -         
+un5_adc_rawout_cry_11_0_S1               Net          -        -       -         -           5         
+user_module1.un1_adc_rawout_2[6]         ORCALUT4     C        In      0.000     2.963       -         
+user_module1.un1_adc_rawout_2[6]         ORCALUT4     Z        Out     0.606     3.570       -         
+un1_adc_rawout_2[6]                      Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_5_0        CCU2C        B1       In      0.000     3.570       -         
+user_module1.adc_rawout_5_cry_5_0        CCU2C        COUT     Out     0.900     4.470       -         
+adc_rawout_5_cry_6                       Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_7_0        CCU2C        CIN      In      0.000     4.470       -         
+user_module1.adc_rawout_5_cry_7_0        CCU2C        COUT     Out     0.061     4.531       -         
+adc_rawout_5_cry_8                       Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_9_0        CCU2C        CIN      In      0.000     4.531       -         
+user_module1.adc_rawout_5_cry_9_0        CCU2C        S1       Out     0.698     5.228       -         
+adc_rawout_5[10]                         Net          -        -       -         -           1         
+user_module1.adc_rawout[10]              FD1S3DX      D        In      0.000     5.228       -         
+=======================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      4.532
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.478
+
+    - Propagation time:                      5.228
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.750
+
+    Number of logic level(s):                9
+    Starting point:                          user_module1.adc_rawout[4] / Q
+    Ending point:                            user_module1.adc_rawout[9] / D
+    The start point is clocked by            ADC_PLL|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            ADC_PLL|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                     Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+user_module1.adc_rawout[4]               FD1S3DX      Q        Out     1.027     1.027       -         
+adc_rawout[4]                            Net          -        -       -         -           7         
+user_module1.un5_adc_rawout_cry_3_0      CCU2C        A1       In      0.000     1.027       -         
+user_module1.un5_adc_rawout_cry_3_0      CCU2C        COUT     Out     0.900     1.927       -         
+un5_adc_rawout_cry_4                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_5_0      CCU2C        CIN      In      0.000     1.927       -         
+user_module1.un5_adc_rawout_cry_5_0      CCU2C        COUT     Out     0.061     1.988       -         
+un5_adc_rawout_cry_6                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_7_0      CCU2C        CIN      In      0.000     1.988       -         
+user_module1.un5_adc_rawout_cry_7_0      CCU2C        COUT     Out     0.061     2.049       -         
+un5_adc_rawout_cry_8                     Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_9_0      CCU2C        CIN      In      0.000     2.049       -         
+user_module1.un5_adc_rawout_cry_9_0      CCU2C        COUT     Out     0.061     2.110       -         
+un5_adc_rawout_cry_10                    Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_11_0     CCU2C        CIN      In      0.000     2.110       -         
+user_module1.un5_adc_rawout_cry_11_0     CCU2C        S1       Out     0.854     2.963       -         
+un5_adc_rawout_cry_11_0_S1               Net          -        -       -         -           5         
+user_module1.un1_adc_rawout_2[6]         ORCALUT4     C        In      0.000     2.963       -         
+user_module1.un1_adc_rawout_2[6]         ORCALUT4     Z        Out     0.606     3.570       -         
+un1_adc_rawout_2[6]                      Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_5_0        CCU2C        B1       In      0.000     3.570       -         
+user_module1.adc_rawout_5_cry_5_0        CCU2C        COUT     Out     0.900     4.470       -         
+adc_rawout_5_cry_6                       Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_7_0        CCU2C        CIN      In      0.000     4.470       -         
+user_module1.adc_rawout_5_cry_7_0        CCU2C        COUT     Out     0.061     4.531       -         
+adc_rawout_5_cry_8                       Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_9_0        CCU2C        CIN      In      0.000     4.531       -         
+user_module1.adc_rawout_5_cry_9_0        CCU2C        S0       Out     0.698     5.228       -         
+adc_rawout_5[9]                          Net          -        -       -         -           1         
+user_module1.adc_rawout[9]               FD1S3DX      D        In      0.000     5.228       -         
+=======================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      4.532
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.478
+
+    - Propagation time:                      5.224
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.746
+
+    Number of logic level(s):                11
+    Starting point:                          user_module1.adc_rawout[0] / Q
+    Ending point:                            user_module1.adc_rawout[10] / D
+    The start point is clocked by            ADC_PLL|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            ADC_PLL|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                    Type         Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+user_module1.adc_rawout[0]              FD1S3DX      Q        Out     0.955     0.955       -         
+adc_rawout_5                            Net          -        -       -         -           3         
+user_module1.un5_adc_rawout_cry_0_0     CCU2C        A1       In      0.000     0.955       -         
+user_module1.un5_adc_rawout_cry_0_0     CCU2C        COUT     Out     0.900     1.855       -         
+un5_adc_rawout_cry_0                    Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_1_0     CCU2C        CIN      In      0.000     1.855       -         
+user_module1.un5_adc_rawout_cry_1_0     CCU2C        COUT     Out     0.061     1.916       -         
+un5_adc_rawout_cry_2                    Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_3_0     CCU2C        CIN      In      0.000     1.916       -         
+user_module1.un5_adc_rawout_cry_3_0     CCU2C        COUT     Out     0.061     1.977       -         
+un5_adc_rawout_cry_4                    Net          -        -       -         -           1         
+user_module1.un5_adc_rawout_cry_5_0     CCU2C        CIN      In      0.000     1.977       -         
+user_module1.un5_adc_rawout_cry_5_0     CCU2C        S1       Out     0.799     2.777       -         
+un5_adc_rawout_cry_5_0_S1               Net          -        -       -         -           3         
+user_module1.un1_adc_rawout_2[0]        ORCALUT4     C        In      0.000     2.777       -         
+user_module1.un1_adc_rawout_2[0]        ORCALUT4     Z        Out     0.606     3.382       -         
+un1_adc_rawout_2[0]                     Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_0_0       CCU2C        B1       In      0.000     3.382       -         
+user_module1.adc_rawout_5_cry_0_0       CCU2C        COUT     Out     0.900     4.282       -         
+adc_rawout_5_cry_0                      Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_1_0       CCU2C        CIN      In      0.000     4.282       -         
+user_module1.adc_rawout_5_cry_1_0       CCU2C        COUT     Out     0.061     4.343       -         
+adc_rawout_5_cry_2                      Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_3_0       CCU2C        CIN      In      0.000     4.343       -         
+user_module1.adc_rawout_5_cry_3_0       CCU2C        COUT     Out     0.061     4.404       -         
+adc_rawout_5_cry_4                      Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_5_0       CCU2C        CIN      In      0.000     4.404       -         
+user_module1.adc_rawout_5_cry_5_0       CCU2C        COUT     Out     0.061     4.465       -         
+adc_rawout_5_cry_6                      Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_7_0       CCU2C        CIN      In      0.000     4.465       -         
+user_module1.adc_rawout_5_cry_7_0       CCU2C        COUT     Out     0.061     4.527       -         
+adc_rawout_5_cry_8                      Net          -        -       -         -           1         
+user_module1.adc_rawout_5_cry_9_0       CCU2C        CIN      In      0.000     4.527       -         
+user_module1.adc_rawout_5_cry_9_0       CCU2C        S1       Out     0.698     5.224       -         
+adc_rawout_5[10]                        Net          -        -       -         -           1         
+user_module1.adc_rawout[10]             FD1S3DX      D        In      0.000     5.224       -         
+======================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: ADC_PLL|CLKOS_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                            Starting                                                                Arrival            
+Instance                                    Reference                        Type        Pin      Net               Time        Slack  
+                                            Clock                                                                                      
+---------------------------------------------------------------------------------------------------------------------------------------
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP16KD      DOB0     vga_bufout[0]     2.585       976.660
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP16KD      DOB2     vga_bufout[2]     2.585       976.660
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP16KD      DOB1     vga_bufout[1]     2.585       976.721
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP16KD      DOB3     vga_bufout[3]     2.585       976.721
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP16KD      DOB4     vga_bufout[4]     2.585       976.721
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP16KD      DOB5     vga_bufout[5]     2.585       976.783
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP16KD      DOB6     vga_bufout[6]     2.585       976.783
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP16KD      DOB7     vga_bufout[7]     2.585       976.843
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0     ADC_PLL|CLKOS_inferred_clock     DP16KD      DOB8     vga_bufout[8]     2.585       976.843
+user_module1.U2.v_count[0]                  ADC_PLL|CLKOS_inferred_clock     FD1P3DX     Q        v_count[0]        0.955       993.633
+=======================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                        Starting                                                                       Required            
+Instance                                Reference                        Type        Pin     Net                       Time         Slack  
+                                        Clock                                                                                              
+-------------------------------------------------------------------------------------------------------------------------------------------
+user_module1.vga_bufout_scaled_0[0]     ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un103_sum_0[5]      999.946      976.660
+user_module1.vga_bufout_scaled[1]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un103_sum_i_0       999.946      977.893
+user_module1.vga_bufout_scaled[2]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un96_sum_i_0        999.946      979.713
+user_module1.vga_bufout_scaled[3]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un82_sum_i_0[5]     999.946      981.546
+user_module1.vga_bufout_scaled[4]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un75_sum_i_0[5]     999.946      983.366
+user_module1.vga_bufout_scaled[5]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un68_sum_i_0[5]     999.946      985.187
+user_module1.vga_bufout_scaled[6]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un61_sum_i_0[5]     999.946      987.008
+user_module1.vga_bufout_scaled[7]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un54_sum_i_0[5]     999.946      988.828
+user_module1.vga_bufout_scaled[8]       ADC_PLL|CLKOS_inferred_clock     FD1P3AX     D       mult1_un47_sum_i_0[5]     999.946      990.649
+user_module1.U2.row_1[0]                ADC_PLL|CLKOS_inferred_clock     FD1P3AX     SP      row_0_sqmuxa              999.807      993.633
+===========================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.946
+
+    - Propagation time:                      23.285
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 976.661
+
+    Number of logic level(s):                37
+    Starting point:                          user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0 / DOB0
+    Ending point:                            user_module1.vga_bufout_scaled_0[0] / D
+    The start point is clocked by            ADC_PLL|CLKOS_inferred_clock [rising] on pin CLKB
+    The end   point is clocked by            ADC_PLL|CLKOS_inferred_clock [rising] on pin CK
+
+Instance / Net                                                                              Pin      Pin               Arrival     No. of    
+Name                                                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------
+user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0                                        DP16KD       DOB0     Out     2.585     2.585       -         
+vga_bufout[0]                                                                  Net          -        -       -         -           6         
+user_module1.un1_vga_bufout_cry_2_0                                            CCU2C        B1       In      0.000     2.585       -         
+user_module1.un1_vga_bufout_cry_2_0                                            CCU2C        COUT     Out     0.900     3.485       -         
+un1_vga_bufout_cry_2                                                           Net          -        -       -         -           1         
+user_module1.un1_vga_bufout_cry_3_0                                            CCU2C        CIN      In      0.000     3.485       -         
+user_module1.un1_vga_bufout_cry_3_0                                            CCU2C        COUT     Out     0.061     3.546       -         
+un1_vga_bufout_cry_4                                                           Net          -        -       -         -           1         
+user_module1.un1_vga_bufout_cry_5_0                                            CCU2C        CIN      In      0.000     3.546       -         
+user_module1.un1_vga_bufout_cry_5_0                                            CCU2C        COUT     Out     0.061     3.607       -         
+un1_vga_bufout_cry_6                                                           Net          -        -       -         -           1         
+user_module1.un1_vga_bufout_cry_7_0                                            CCU2C        CIN      In      0.000     3.607       -         
+user_module1.un1_vga_bufout_cry_7_0                                            CCU2C        COUT     Out     0.061     3.668       -         
+un1_vga_bufout_cry_8                                                           Net          -        -       -         -           1         
+user_module1.un1_vga_bufout_cry_9_0                                            CCU2C        CIN      In      0.000     3.668       -         
+user_module1.un1_vga_bufout_cry_9_0                                            CCU2C        COUT     Out     0.061     3.729       -         
+un1_vga_bufout_cry_10_cry                                                      Net          -        -       -         -           1         
+user_module1.un1_vga_bufout_cry_10_0                                           CCU2C        CIN      In      0.000     3.729       -         
+user_module1.un1_vga_bufout_cry_10_0                                           CCU2C        S0       Out     0.799     4.529       -         
+CO0_0                                                                          Net          -        -       -         -           3         
+user_module1.un1_vga_bufout_cry_10_0_RNI0I1G                                   ORCALUT4     A        In      0.000     4.529       -         
+user_module1.un1_vga_bufout_cry_10_0_RNI0I1G                                   ORCALUT4     Z        Out     0.708     5.237       -         
+ANC4_1_0_a2_0                                                                  Net          -        -       -         -           3         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un40_sum_cry_1_0      CCU2C        A0       In      0.000     5.237       -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un40_sum_cry_1_0      CCU2C        COUT     Out     0.900     6.136       -         
+mult1_un40_sum_cry_2                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un40_sum_cry_3_0      CCU2C        CIN      In      0.000     6.136       -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un40_sum_cry_3_0      CCU2C        COUT     Out     0.061     6.197       -         
+mult1_un40_sum_cry_4                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un40_sum_s_5_0        CCU2C        CIN      In      0.000     6.197       -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un40_sum_s_5_0        CCU2C        S0       Out     0.854     7.051       -         
+mult1_un40_sum[5]                                                              Net          -        -       -         -           5         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un47_sum_cry_1_0      CCU2C        A0       In      0.000     7.051       -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un47_sum_cry_1_0      CCU2C        COUT     Out     0.900     7.951       -         
+mult1_un47_sum_cry_2                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un47_sum_cry_3_0      CCU2C        CIN      In      0.000     7.951       -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un47_sum_cry_3_0      CCU2C        COUT     Out     0.061     8.012       -         
+mult1_un47_sum_cry_4                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un47_sum_s_5_0        CCU2C        CIN      In      0.000     8.012       -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un47_sum_s_5_0        CCU2C        S0       Out     0.860     8.871       -         
+mult1_un47_sum_0[5]                                                            Net          -        -       -         -           6         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un54_sum_cry_1_0      CCU2C        A0       In      0.000     8.871       -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un54_sum_cry_1_0      CCU2C        COUT     Out     0.900     9.771       -         
+mult1_un54_sum_cry_2                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un54_sum_cry_3_0      CCU2C        CIN      In      0.000     9.771       -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un54_sum_cry_3_0      CCU2C        COUT     Out     0.061     9.832       -         
+mult1_un54_sum_cry_4                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un54_sum_s_5_0        CCU2C        CIN      In      0.000     9.832       -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un54_sum_s_5_0        CCU2C        S0       Out     0.860     10.692      -         
+mult1_un54_sum_0[5]                                                            Net          -        -       -         -           6         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un61_sum_cry_1_0      CCU2C        A0       In      0.000     10.692      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un61_sum_cry_1_0      CCU2C        COUT     Out     0.900     11.592      -         
+mult1_un61_sum_cry_2                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un61_sum_cry_3_0      CCU2C        CIN      In      0.000     11.592      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un61_sum_cry_3_0      CCU2C        COUT     Out     0.061     11.653      -         
+mult1_un61_sum_cry_4                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un61_sum_s_5_0        CCU2C        CIN      In      0.000     11.653      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un61_sum_s_5_0        CCU2C        S0       Out     0.860     12.512      -         
+mult1_un61_sum_0[5]                                                            Net          -        -       -         -           6         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un68_sum_cry_1_0      CCU2C        A0       In      0.000     12.512      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un68_sum_cry_1_0      CCU2C        COUT     Out     0.900     13.413      -         
+mult1_un68_sum_cry_2                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un68_sum_cry_3_0      CCU2C        CIN      In      0.000     13.413      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un68_sum_cry_3_0      CCU2C        COUT     Out     0.061     13.474      -         
+mult1_un68_sum_cry_4                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un68_sum_s_5_0        CCU2C        CIN      In      0.000     13.474      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un68_sum_s_5_0        CCU2C        S0       Out     0.860     14.333      -         
+mult1_un68_sum_0[5]                                                            Net          -        -       -         -           6         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un75_sum_cry_1_0      CCU2C        A0       In      0.000     14.333      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un75_sum_cry_1_0      CCU2C        COUT     Out     0.900     15.233      -         
+mult1_un75_sum_cry_2                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un75_sum_cry_3_0      CCU2C        CIN      In      0.000     15.233      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un75_sum_cry_3_0      CCU2C        COUT     Out     0.061     15.294      -         
+mult1_un75_sum_cry_4                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un75_sum_s_5_0        CCU2C        CIN      In      0.000     15.294      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un75_sum_s_5_0        CCU2C        S0       Out     0.860     16.154      -         
+mult1_un75_sum_0[5]                                                            Net          -        -       -         -           6         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un82_sum_cry_1_0      CCU2C        A0       In      0.000     16.154      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un82_sum_cry_1_0      CCU2C        COUT     Out     0.900     17.054      -         
+mult1_un82_sum_cry_2                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un82_sum_cry_3_0      CCU2C        CIN      In      0.000     17.054      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un82_sum_cry_3_0      CCU2C        COUT     Out     0.061     17.115      -         
+mult1_un82_sum_cry_4                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un82_sum_s_5_0        CCU2C        CIN      In      0.000     17.115      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un82_sum_s_5_0        CCU2C        S0       Out     0.860     17.974      -         
+mult1_un82_sum_0[5]                                                            Net          -        -       -         -           6         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un89_sum_cry_1_0      CCU2C        A0       In      0.000     17.974      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un89_sum_cry_1_0      CCU2C        COUT     Out     0.900     18.874      -         
+mult1_un89_sum_cry_2                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un89_sum_cry_3_0      CCU2C        CIN      In      0.000     18.874      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un89_sum_cry_3_0      CCU2C        COUT     Out     0.061     18.935      -         
+mult1_un89_sum_cry_4                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un89_sum_s_5_0        CCU2C        CIN      In      0.000     18.935      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un89_sum_s_5_0        CCU2C        S0       Out     0.872     19.807      -         
+mult1_un96_sum_0                                                               Net          -        -       -         -           7         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un96_sum_cry_1_0      CCU2C        A1       In      0.000     19.807      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un96_sum_cry_1_0      CCU2C        COUT     Out     0.900     20.706      -         
+mult1_un96_sum_cry_1                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un96_sum_cry_2_0      CCU2C        CIN      In      0.000     20.706      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un96_sum_cry_2_0      CCU2C        COUT     Out     0.061     20.767      -         
+mult1_un96_sum_cry_3                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un96_sum_cry_4_0      CCU2C        CIN      In      0.000     20.767      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un96_sum_cry_4_0      CCU2C        S1       Out     0.860     21.627      -         
+mult1_un103_sum_0                                                              Net          -        -       -         -           6         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un103_sum_cry_1_0     CCU2C        A1       In      0.000     21.627      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un103_sum_cry_1_0     CCU2C        COUT     Out     0.900     22.527      -         
+mult1_un103_sum_cry_1                                                          Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un103_sum_cry_2_0     CCU2C        CIN      In      0.000     22.527      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un103_sum_cry_2_0     CCU2C        COUT     Out     0.061     22.588      -         
+mult1_un103_sum_cry_3                                                          Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un103_sum_cry_4_0     CCU2C        CIN      In      0.000     22.588      -         
+user_module1.vga_bufout_scaled_1.if_generate_plus\.mult1_un103_sum_cry_4_0     CCU2C        S1       Out     0.698     23.285      -         
+mult1_un103_sum_0[5]                                                           Net          -        -       -         -           1         
+user_module1.vga_bufout_scaled_0[0]                                            FD1P3AX      D        In      0.000     23.285      -         
+=============================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: DVI_clkgen|CLKOP_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                        Starting                                                                   Arrival           
+Instance                Reference                           Type        Pin     Net                Time        Slack 
+                        Clock                                                                                        
+---------------------------------------------------------------------------------------------------------------------
+u100.shift_clock[4]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AY     Q       shift_clock[4]     0.955       -0.392
+u100.shift_clock[5]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AX     Q       shift_clock[5]     0.955       -0.392
+u100.shift_clock[6]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AX     Q       shift_clock[6]     0.955       -0.392
+u100.shift_clock[0]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AY     Q       shift_clock[0]     1.108       -0.041
+u100.shift_clock[1]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AY     Q       shift_clock[1]     1.108       -0.041
+u100.shift_clock[2]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AY     Q       shift_clock[2]     0.955       -0.041
+u100.shift_clock[3]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AY     Q       shift_clock[3]     0.955       -0.041
+u100.shift_clock[7]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AX     Q       shift_clock[7]     0.955       -0.041
+u100.shift_clock[8]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AX     Q       shift_clock[8]     0.955       -0.041
+u100.shift_clock[9]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AX     Q       shift_clock[9]     0.955       -0.041
+=====================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                       Starting                                                                    Required           
+Instance               Reference                           Type        Pin     Net                 Time         Slack 
+                       Clock                                                                                          
+----------------------------------------------------------------------------------------------------------------------
+u100.shift_blue[3]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AX     D       shift_blue_3[3]     2.165        -0.392
+u100.shift_blue[0]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AX     D       shift_blue_3[0]     2.165        -0.041
+u100.shift_blue[1]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AX     D       shift_blue_3[1]     2.165        -0.041
+u100.shift_blue[2]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AX     D       shift_blue_3[2]     2.165        -0.041
+u100.shift_blue[4]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AX     D       shift_blue_3[4]     2.165        -0.041
+u100.shift_blue[5]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AX     D       shift_blue_3[5]     2.165        -0.041
+u100.shift_blue[6]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AX     D       shift_blue_3[6]     2.165        -0.041
+u100.shift_blue[7]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AX     D       shift_blue_3[7]     2.165        -0.041
+u100.shift_blue[8]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AX     D       shift_blue_3[8]     2.165        -0.041
+u100.shift_blue[9]     DVI_clkgen|CLKOP_inferred_clock     FD1S3AX     D       shift_blue_3[9]     2.165        -0.041
+======================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      2.219
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         2.165
+
+    - Propagation time:                      2.557
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.392
+
+    Number of logic level(s):                3
+    Starting point:                          u100.shift_clock[4] / Q
+    Ending point:                            u100.shift_blue[3] / D
+    The start point is clocked by            DVI_clkgen|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            DVI_clkgen|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+u100.shift_clock[4]           FD1S3AY      Q        Out     0.955     0.955       -         
+shift_clock[4]                Net          -        -       -         -           3         
+u100.shift_blue_3_1_N_2L1     ORCALUT4     A        In      0.000     0.955       -         
+u100.shift_blue_3_1_N_2L1     ORCALUT4     Z        Out     0.606     1.561       -         
+shift_blue_3_1_N_2L1          Net          -        -       -         -           1         
+u100.shift_blue_3_1_0[3]      ORCALUT4     A        In      0.000     1.561       -         
+u100.shift_blue_3_1_0[3]      ORCALUT4     Z        Out     0.606     2.167       -         
+shift_blue_3_1_0[3]           Net          -        -       -         -           1         
+u100.shift_blue_3[3]          ORCALUT4     C        In      0.000     2.167       -         
+u100.shift_blue_3[3]          ORCALUT4     Z        Out     0.390     2.557       -         
+shift_blue_3[3]               Net          -        -       -         -           1         
+u100.shift_blue[3]            FD1S3AX      D        In      0.000     2.557       -         
+============================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      2.219
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         2.165
+
+    - Propagation time:                      2.557
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.392
+
+    Number of logic level(s):                3
+    Starting point:                          u100.shift_clock[5] / Q
+    Ending point:                            u100.shift_blue[3] / D
+    The start point is clocked by            DVI_clkgen|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            DVI_clkgen|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+u100.shift_clock[5]           FD1S3AX      Q        Out     0.955     0.955       -         
+shift_clock[5]                Net          -        -       -         -           3         
+u100.shift_blue_3_1_N_2L1     ORCALUT4     B        In      0.000     0.955       -         
+u100.shift_blue_3_1_N_2L1     ORCALUT4     Z        Out     0.606     1.561       -         
+shift_blue_3_1_N_2L1          Net          -        -       -         -           1         
+u100.shift_blue_3_1_0[3]      ORCALUT4     A        In      0.000     1.561       -         
+u100.shift_blue_3_1_0[3]      ORCALUT4     Z        Out     0.606     2.167       -         
+shift_blue_3_1_0[3]           Net          -        -       -         -           1         
+u100.shift_blue_3[3]          ORCALUT4     C        In      0.000     2.167       -         
+u100.shift_blue_3[3]          ORCALUT4     Z        Out     0.390     2.557       -         
+shift_blue_3[3]               Net          -        -       -         -           1         
+u100.shift_blue[3]            FD1S3AX      D        In      0.000     2.557       -         
+============================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      2.219
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         2.165
+
+    - Propagation time:                      2.557
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.392
+
+    Number of logic level(s):                3
+    Starting point:                          u100.shift_clock[6] / Q
+    Ending point:                            u100.shift_blue[3] / D
+    The start point is clocked by            DVI_clkgen|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            DVI_clkgen|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+u100.shift_clock[6]           FD1S3AX      Q        Out     0.955     0.955       -         
+shift_clock[6]                Net          -        -       -         -           3         
+u100.shift_blue_3_1_N_2L1     ORCALUT4     C        In      0.000     0.955       -         
+u100.shift_blue_3_1_N_2L1     ORCALUT4     Z        Out     0.606     1.561       -         
+shift_blue_3_1_N_2L1          Net          -        -       -         -           1         
+u100.shift_blue_3_1_0[3]      ORCALUT4     A        In      0.000     1.561       -         
+u100.shift_blue_3_1_0[3]      ORCALUT4     Z        Out     0.606     2.167       -         
+shift_blue_3_1_0[3]           Net          -        -       -         -           1         
+u100.shift_blue_3[3]          ORCALUT4     C        In      0.000     2.167       -         
+u100.shift_blue_3[3]          ORCALUT4     Z        Out     0.390     2.557       -         
+shift_blue_3[3]               Net          -        -       -         -           1         
+u100.shift_blue[3]            FD1S3AX      D        In      0.000     2.557       -         
+============================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      2.219
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         2.165
+
+    - Propagation time:                      2.206
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.041
+
+    Number of logic level(s):                2
+    Starting point:                          u100.shift_clock[0] / Q
+    Ending point:                            u100.shift_blue[9] / D
+    The start point is clocked by            DVI_clkgen|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            DVI_clkgen|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+u100.shift_clock[0]          FD1S3AY      Q        Out     1.108     1.108       -         
+shift_clock[0]               Net          -        -       -         -           29        
+u100.un2_shift_clock_7_x     ORCALUT4     A        In      0.000     1.108       -         
+u100.un2_shift_clock_7_x     ORCALUT4     Z        Out     0.708     1.816       -         
+un2_shift_clock_7_x          Net          -        -       -         -           3         
+u100.shift_blue_3[9]         ORCALUT4     A        In      0.000     1.816       -         
+u100.shift_blue_3[9]         ORCALUT4     Z        Out     0.390     2.206       -         
+shift_blue_3[9]              Net          -        -       -         -           1         
+u100.shift_blue[9]           FD1S3AX      D        In      0.000     2.206       -         
+===========================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      2.219
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         2.165
+
+    - Propagation time:                      2.206
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.041
+
+    Number of logic level(s):                2
+    Starting point:                          u100.shift_clock[1] / Q
+    Ending point:                            u100.shift_blue[9] / D
+    The start point is clocked by            DVI_clkgen|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            DVI_clkgen|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                            Pin      Pin               Arrival     No. of    
+Name                         Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+u100.shift_clock[1]          FD1S3AY      Q        Out     1.108     1.108       -         
+shift_clock[1]               Net          -        -       -         -           29        
+u100.un2_shift_clock_7_x     ORCALUT4     B        In      0.000     1.108       -         
+u100.un2_shift_clock_7_x     ORCALUT4     Z        Out     0.708     1.816       -         
+un2_shift_clock_7_x          Net          -        -       -         -           3         
+u100.shift_blue_3[9]         ORCALUT4     A        In      0.000     1.816       -         
+u100.shift_blue_3[9]         ORCALUT4     Z        Out     0.390     2.206       -         
+shift_blue_3[9]              Net          -        -       -         -           1         
+u100.shift_blue[9]           FD1S3AX      D        In      0.000     2.206       -         
+===========================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: DVI_clkgen|CLKOS2_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                        Starting                                                                Arrival           
+Instance                Reference                            Type        Pin     Net            Time        Slack 
+                        Clock                                                                                     
+------------------------------------------------------------------------------------------------------------------
+u100.u22.dc_bias[0]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     Q       dc_bias[0]     1.075       -0.591
+u100.u22.dc_bias[1]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     Q       dc_bias[1]     1.069       -0.585
+u100.u22.dc_bias[3]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     Q       dc_bias[3]     1.087       -0.454
+u100.u22.dc_bias[2]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     Q       dc_bias[2]     1.045       -0.412
+u100.u21.dc_bias[2]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     Q       dc_bias[2]     1.045       -0.358
+u100.u21.dc_bias[3]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     Q       dc_bias[3]     1.093       -0.159
+u100.u21.dc_bias[0]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     Q       dc_bias[0]     1.066       -0.132
+u100.u21.dc_bias[1]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     Q       dc_bias[1]     1.063       -0.129
+u100.u23.dc_bias[2]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     Q       dc_bias[2]     1.045       0.549 
+u100.u23.dc_bias[3]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     Q       dc_bias[3]     1.075       0.567 
+==================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                        Starting                                                                          Required           
+Instance                Reference                            Type        Pin     Net                      Time         Slack 
+                        Clock                                                                                                
+-----------------------------------------------------------------------------------------------------------------------------
+u100.u22.dc_bias[2]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     D       dc_bias_RNO_2[2]         3.298        -0.591
+u100.u22.dc_bias[3]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     D       un1_N_8_0_i              3.298        -0.454
+u100.u21.dc_bias[3]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     D       dc_bias_RNO[3]           3.298        -0.358
+u100.u21.dc_bias[0]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     D       dc_bias_RNO[0]           3.298        -0.159
+u100.u22.dc_bias[0]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     D       dc_bias_RNO_0[0]         3.298        0.015 
+u100.u21.dc_bias[2]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     D       dc_bias_RNO[2]           3.298        0.045 
+u100.u23.dc_bias[2]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     D       dc_bias_RNO_3[2]         3.298        0.549 
+u100.u23.dc_bias[1]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     D       dc_bias_RNO_1[1]         3.298        0.567 
+u100.u23.dc_bias[0]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     D       un1_dc_bias_1_0_axb0     3.298        0.591 
+u100.u23.dc_bias[3]     DVI_clkgen|CLKOS2_inferred_clock     FD1S3AX     D       dc_bias_RNO_0[3]         3.298        0.648 
+=============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      3.352
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.298
+
+    - Propagation time:                      3.889
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.591
+
+    Number of logic level(s):                5
+    Starting point:                          u100.u22.dc_bias[0] / Q
+    Ending point:                            u100.u22.dc_bias[2] / D
+    The start point is clocked by            DVI_clkgen|CLKOS2_inferred_clock [rising] on pin CK
+    The end   point is clocked by            DVI_clkgen|CLKOS2_inferred_clock [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+u100.u22.dc_bias[0]           FD1S3AX      Q        Out     1.075     1.075       -         
+dc_bias[0]                    Net          -        -       -         -           16        
+u100.u22.dc_bias_RNO_9[2]     ORCALUT4     A        In      0.000     1.075       -         
+u100.u22.dc_bias_RNO_9[2]     ORCALUT4     Z        Out     0.606     1.681       -         
+m24_i_2_1_1                   Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO_8[2]     ORCALUT4     A        In      0.000     1.681       -         
+u100.u22.dc_bias_RNO_8[2]     ORCALUT4     Z        Out     0.606     2.287       -         
+m24_i_2                       Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO_5[2]     ORCALUT4     D        In      0.000     2.287       -         
+u100.u22.dc_bias_RNO_5[2]     ORCALUT4     Z        Out     0.606     2.893       -         
+dc_bias_RNO_5[2]              Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO_2[2]     ORCALUT4     A        In      0.000     2.893       -         
+u100.u22.dc_bias_RNO_2[2]     ORCALUT4     Z        Out     0.606     3.499       -         
+un1_dc_bias_1_0_0_c2_0        Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO[2]       ORCALUT4     C        In      0.000     3.499       -         
+u100.u22.dc_bias_RNO[2]       ORCALUT4     Z        Out     0.390     3.889       -         
+dc_bias_RNO_2[2]              Net          -        -       -         -           1         
+u100.u22.dc_bias[2]           FD1S3AX      D        In      0.000     3.889       -         
+============================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      3.352
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.298
+
+    - Propagation time:                      3.883
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.585
+
+    Number of logic level(s):                5
+    Starting point:                          u100.u22.dc_bias[1] / Q
+    Ending point:                            u100.u22.dc_bias[2] / D
+    The start point is clocked by            DVI_clkgen|CLKOS2_inferred_clock [rising] on pin CK
+    The end   point is clocked by            DVI_clkgen|CLKOS2_inferred_clock [rising] on pin CK
+
+Instance / Net                             Pin      Pin               Arrival     No. of    
+Name                          Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+u100.u22.dc_bias[1]           FD1S3AX      Q        Out     1.069     1.069       -         
+dc_bias[1]                    Net          -        -       -         -           15        
+u100.u22.dc_bias_RNO_9[2]     ORCALUT4     B        In      0.000     1.069       -         
+u100.u22.dc_bias_RNO_9[2]     ORCALUT4     Z        Out     0.606     1.675       -         
+m24_i_2_1_1                   Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO_8[2]     ORCALUT4     A        In      0.000     1.675       -         
+u100.u22.dc_bias_RNO_8[2]     ORCALUT4     Z        Out     0.606     2.281       -         
+m24_i_2                       Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO_5[2]     ORCALUT4     D        In      0.000     2.281       -         
+u100.u22.dc_bias_RNO_5[2]     ORCALUT4     Z        Out     0.606     2.887       -         
+dc_bias_RNO_5[2]              Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO_2[2]     ORCALUT4     A        In      0.000     2.887       -         
+u100.u22.dc_bias_RNO_2[2]     ORCALUT4     Z        Out     0.606     3.493       -         
+un1_dc_bias_1_0_0_c2_0        Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO[2]       ORCALUT4     C        In      0.000     3.493       -         
+u100.u22.dc_bias_RNO[2]       ORCALUT4     Z        Out     0.390     3.883       -         
+dc_bias_RNO_2[2]              Net          -        -       -         -           1         
+u100.u22.dc_bias[2]           FD1S3AX      D        In      0.000     3.883       -         
+============================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      3.352
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.298
+
+    - Propagation time:                      3.752
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.454
+
+    Number of logic level(s):                5
+    Starting point:                          u100.u22.dc_bias[3] / Q
+    Ending point:                            u100.u22.dc_bias[3] / D
+    The start point is clocked by            DVI_clkgen|CLKOS2_inferred_clock [rising] on pin CK
+    The end   point is clocked by            DVI_clkgen|CLKOS2_inferred_clock [rising] on pin CK
+
+Instance / Net                                Pin      Pin               Arrival     No. of    
+Name                             Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------
+u100.u22.dc_bias[3]              FD1S3AX      Q        Out     1.087     1.087       -         
+dc_bias[3]                       Net          -        -       -         -           21        
+u100.u22.dc_bias_RNI0IF71[1]     ORCALUT4     C        In      0.000     1.087       -         
+u100.u22.dc_bias_RNI0IF71[1]     ORCALUT4     Z        Out     0.660     1.747       -         
+dc_bias_RNI0IF71[1]              Net          -        -       -         -           2         
+u100.u22.dc_bias_RNO_8[3]        ORCALUT4     A        In      0.000     1.747       -         
+u100.u22.dc_bias_RNO_8[3]        ORCALUT4     Z        Out     0.606     2.353       -         
+dc_bias_RNO_8[3]                 Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO_3[3]        PFUMX        ALUT     In      0.000     2.353       -         
+u100.u22.dc_bias_RNO_3[3]        PFUMX        Z        Out     0.403     2.756       -         
+dc_bias_RNO_3[3]                 Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO_0[3]        ORCALUT4     C        In      0.000     2.756       -         
+u100.u22.dc_bias_RNO_0[3]        ORCALUT4     Z        Out     0.606     3.362       -         
+g0_0_0                           Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO[3]          ORCALUT4     B        In      0.000     3.362       -         
+u100.u22.dc_bias_RNO[3]          ORCALUT4     Z        Out     0.390     3.752       -         
+un1_N_8_0_i                      Net          -        -       -         -           1         
+u100.u22.dc_bias[3]              FD1S3AX      D        In      0.000     3.752       -         
+===============================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      3.352
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.298
+
+    - Propagation time:                      3.752
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.454
+
+    Number of logic level(s):                5
+    Starting point:                          u100.u22.dc_bias[3] / Q
+    Ending point:                            u100.u22.dc_bias[3] / D
+    The start point is clocked by            DVI_clkgen|CLKOS2_inferred_clock [rising] on pin CK
+    The end   point is clocked by            DVI_clkgen|CLKOS2_inferred_clock [rising] on pin CK
+
+Instance / Net                               Pin      Pin               Arrival     No. of    
+Name                            Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------
+u100.u22.dc_bias[3]             FD1S3AX      Q        Out     1.087     1.087       -         
+dc_bias[3]                      Net          -        -       -         -           21        
+u100.u22.dc_bias_RNIKKIE[3]     ORCALUT4     A        In      0.000     1.087       -         
+u100.u22.dc_bias_RNIKKIE[3]     ORCALUT4     Z        Out     0.660     1.747       -         
+g0_0_1_1_sx                     Net          -        -       -         -           2         
+u100.u22.dc_bias_RNO_8[3]       ORCALUT4     B        In      0.000     1.747       -         
+u100.u22.dc_bias_RNO_8[3]       ORCALUT4     Z        Out     0.606     2.353       -         
+dc_bias_RNO_8[3]                Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO_3[3]       PFUMX        ALUT     In      0.000     2.353       -         
+u100.u22.dc_bias_RNO_3[3]       PFUMX        Z        Out     0.403     2.756       -         
+dc_bias_RNO_3[3]                Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO_0[3]       ORCALUT4     C        In      0.000     2.756       -         
+u100.u22.dc_bias_RNO_0[3]       ORCALUT4     Z        Out     0.606     3.362       -         
+g0_0_0                          Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO[3]         ORCALUT4     B        In      0.000     3.362       -         
+u100.u22.dc_bias_RNO[3]         ORCALUT4     Z        Out     0.390     3.752       -         
+un1_N_8_0_i                     Net          -        -       -         -           1         
+u100.u22.dc_bias[3]             FD1S3AX      D        In      0.000     3.752       -         
+==============================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      3.352
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.298
+
+    - Propagation time:                      3.752
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.454
+
+    Number of logic level(s):                5
+    Starting point:                          u100.u22.dc_bias[3] / Q
+    Ending point:                            u100.u22.dc_bias[3] / D
+    The start point is clocked by            DVI_clkgen|CLKOS2_inferred_clock [rising] on pin CK
+    The end   point is clocked by            DVI_clkgen|CLKOS2_inferred_clock [rising] on pin CK
+
+Instance / Net                               Pin      Pin               Arrival     No. of    
+Name                            Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------
+u100.u22.dc_bias[3]             FD1S3AX      Q        Out     1.087     1.087       -         
+dc_bias[3]                      Net          -        -       -         -           21        
+u100.u22.dc_bias_RNIKKIE[3]     ORCALUT4     A        In      0.000     1.087       -         
+u100.u22.dc_bias_RNIKKIE[3]     ORCALUT4     Z        Out     0.660     1.747       -         
+g0_0_1_1_sx                     Net          -        -       -         -           2         
+u100.u22.dc_bias_RNO_9[3]       ORCALUT4     A        In      0.000     1.747       -         
+u100.u22.dc_bias_RNO_9[3]       ORCALUT4     Z        Out     0.606     2.353       -         
+dc_bias_RNO_9[3]                Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO_3[3]       PFUMX        BLUT     In      0.000     2.353       -         
+u100.u22.dc_bias_RNO_3[3]       PFUMX        Z        Out     0.403     2.756       -         
+dc_bias_RNO_3[3]                Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO_0[3]       ORCALUT4     C        In      0.000     2.756       -         
+u100.u22.dc_bias_RNO_0[3]       ORCALUT4     Z        Out     0.606     3.362       -         
+g0_0_0                          Net          -        -       -         -           1         
+u100.u22.dc_bias_RNO[3]         ORCALUT4     B        In      0.000     3.362       -         
+u100.u22.dc_bias_RNO[3]         ORCALUT4     Z        Out     0.390     3.752       -         
+un1_N_8_0_i                     Net          -        -       -         -           1         
+u100.u22.dc_bias[3]             FD1S3AX      D        In      0.000     3.752       -         
+==============================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: DVI_clkgen|CLKOS3_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                            Starting                                                                                  Arrival           
+Instance                    Reference                            Type        Pin     Net                              Time        Slack 
+                            Clock                                                                                                       
+----------------------------------------------------------------------------------------------------------------------------------------
+myuart.txcounter_ret_15     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     Q       txclock4_reto                    0.955       -0.588
+myuart.txcounter_ret_28     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     Q       txstate_reto[1]                  0.955       -0.588
+myuart.txcounter_ret_58     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     Q       txcounter_1_sqmuxa_o_reto_13     0.907       -0.252
+myuart.txcounter_ret_59     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     Q       un3_txcounter_o_reto_13[11]      0.907       -0.252
+myuart.txcounter_ret_60     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     Q       un3_txcounter_s0_reto[2]         0.907       -0.252
+myuart.txcounter_ret_61     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     Q       un3_txcounter_s1_reto[2]         0.907       -0.252
+myuart.txcounter_ret_54     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     Q       txcounter_1_sqmuxa_o_reto_12     0.853       -0.246
+myuart.txcounter_ret_55     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     Q       un3_txcounter_o_reto_12[11]      0.853       -0.246
+myuart.txcounter_ret_56     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     Q       un3_txcounter_s0_reto[1]         0.853       -0.246
+myuart.txcounter_ret_57     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     Q       un3_txcounter_s1_reto[1]         0.853       -0.246
+========================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                            Starting                                                                          Required           
+Instance                    Reference                            Type        Pin     Net                      Time         Slack 
+                            Clock                                                                                                
+---------------------------------------------------------------------------------------------------------------------------------
+myuart.txcounter_ret_2      DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     D       un3_txcounter_s0[15]     3.279        -0.588
+myuart.txcounter_ret_5      DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     D       un3_txcounter_s0[14]     3.279        -0.527
+myuart.txcounter_ret_9      DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     D       un3_txcounter_s0[13]     3.279        -0.527
+myuart.txcounter_ret_14     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     D       un3_txcounter_s0[12]     3.279        -0.466
+myuart.txcounter_ret_18     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     D       un3_txcounter_s0[11]     3.279        -0.466
+myuart.txcounter_ret_19     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     D       un3_txcounter_s1[11]     3.279        -0.466
+myuart.txcounter_ret_22     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     D       un3_txcounter_s0[9]      3.279        -0.405
+myuart.txcounter_ret_23     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     D       un3_txcounter_s1[9]      3.279        -0.405
+myuart.txcounter_ret_26     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     D       un3_txcounter_s0[10]     3.279        -0.405
+myuart.txcounter_ret_27     DVI_clkgen|CLKOS3_inferred_clock     FD1S3AX     D       un3_txcounter_s1[10]     3.279        -0.405
+=================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      3.333
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.279
+
+    - Propagation time:                      3.867
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.588
+
+    Number of logic level(s):                10
+    Starting point:                          myuart.txcounter_ret_15 / Q
+    Ending point:                            myuart.txcounter_ret_2 / D
+    The start point is clocked by            DVI_clkgen|CLKOS3_inferred_clock [rising] on pin CK
+    The end   point is clocked by            DVI_clkgen|CLKOS3_inferred_clock [rising] on pin CK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+myuart.txcounter_ret_15              FD1S3AX      Q        Out     0.955     0.955       -         
+txclock4_reto                        Net          -        -       -         -           3         
+myuart.txcounter_1_sqmuxa            ORCALUT4     A        In      0.000     0.955       -         
+myuart.txcounter_1_sqmuxa            ORCALUT4     Z        Out     0.887     1.842       -         
+txcounter_1_sqmuxa_o                 Net          -        -       -         -           46        
+myuart.un3_txcounter_cry_0_s0_0      CCU2C        A1       In      0.000     1.842       -         
+myuart.un3_txcounter_cry_0_s0_0      CCU2C        COUT     Out     0.900     2.742       -         
+un3_txcounter_cry_0_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_1_s0_0      CCU2C        CIN      In      0.000     2.742       -         
+myuart.un3_txcounter_cry_1_s0_0      CCU2C        COUT     Out     0.061     2.803       -         
+un3_txcounter_cry_2_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_3_s0_0      CCU2C        CIN      In      0.000     2.803       -         
+myuart.un3_txcounter_cry_3_s0_0      CCU2C        COUT     Out     0.061     2.864       -         
+un3_txcounter_cry_4_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_5_s0_0      CCU2C        CIN      In      0.000     2.864       -         
+myuart.un3_txcounter_cry_5_s0_0      CCU2C        COUT     Out     0.061     2.925       -         
+un3_txcounter_cry_6_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_7_s0_0      CCU2C        CIN      In      0.000     2.925       -         
+myuart.un3_txcounter_cry_7_s0_0      CCU2C        COUT     Out     0.061     2.986       -         
+un3_txcounter_cry_8_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_9_s0_0      CCU2C        CIN      In      0.000     2.986       -         
+myuart.un3_txcounter_cry_9_s0_0      CCU2C        COUT     Out     0.061     3.047       -         
+un3_txcounter_cry_10_s0              Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_11_s0_0     CCU2C        CIN      In      0.000     3.047       -         
+myuart.un3_txcounter_cry_11_s0_0     CCU2C        COUT     Out     0.061     3.108       -         
+un3_txcounter_cry_12_s0              Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_13_s0_0     CCU2C        CIN      In      0.000     3.108       -         
+myuart.un3_txcounter_cry_13_s0_0     CCU2C        COUT     Out     0.061     3.169       -         
+un3_txcounter_cry_14_s0              Net          -        -       -         -           1         
+myuart.un3_txcounter_s_15_s0_0       CCU2C        CIN      In      0.000     3.169       -         
+myuart.un3_txcounter_s_15_s0_0       CCU2C        S0       Out     0.698     3.867       -         
+un3_txcounter_s0[15]                 Net          -        -       -         -           1         
+myuart.txcounter_ret_2               FD1S3AX      D        In      0.000     3.867       -         
+===================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      3.333
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.279
+
+    - Propagation time:                      3.867
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.588
+
+    Number of logic level(s):                10
+    Starting point:                          myuart.txcounter_ret_28 / Q
+    Ending point:                            myuart.txcounter_ret_2 / D
+    The start point is clocked by            DVI_clkgen|CLKOS3_inferred_clock [rising] on pin CK
+    The end   point is clocked by            DVI_clkgen|CLKOS3_inferred_clock [rising] on pin CK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+myuart.txcounter_ret_28              FD1S3AX      Q        Out     0.955     0.955       -         
+txstate_reto[1]                      Net          -        -       -         -           3         
+myuart.txcounter_1_sqmuxa            ORCALUT4     B        In      0.000     0.955       -         
+myuart.txcounter_1_sqmuxa            ORCALUT4     Z        Out     0.887     1.842       -         
+txcounter_1_sqmuxa_o                 Net          -        -       -         -           46        
+myuart.un3_txcounter_cry_0_s0_0      CCU2C        A1       In      0.000     1.842       -         
+myuart.un3_txcounter_cry_0_s0_0      CCU2C        COUT     Out     0.900     2.742       -         
+un3_txcounter_cry_0_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_1_s0_0      CCU2C        CIN      In      0.000     2.742       -         
+myuart.un3_txcounter_cry_1_s0_0      CCU2C        COUT     Out     0.061     2.803       -         
+un3_txcounter_cry_2_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_3_s0_0      CCU2C        CIN      In      0.000     2.803       -         
+myuart.un3_txcounter_cry_3_s0_0      CCU2C        COUT     Out     0.061     2.864       -         
+un3_txcounter_cry_4_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_5_s0_0      CCU2C        CIN      In      0.000     2.864       -         
+myuart.un3_txcounter_cry_5_s0_0      CCU2C        COUT     Out     0.061     2.925       -         
+un3_txcounter_cry_6_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_7_s0_0      CCU2C        CIN      In      0.000     2.925       -         
+myuart.un3_txcounter_cry_7_s0_0      CCU2C        COUT     Out     0.061     2.986       -         
+un3_txcounter_cry_8_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_9_s0_0      CCU2C        CIN      In      0.000     2.986       -         
+myuart.un3_txcounter_cry_9_s0_0      CCU2C        COUT     Out     0.061     3.047       -         
+un3_txcounter_cry_10_s0              Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_11_s0_0     CCU2C        CIN      In      0.000     3.047       -         
+myuart.un3_txcounter_cry_11_s0_0     CCU2C        COUT     Out     0.061     3.108       -         
+un3_txcounter_cry_12_s0              Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_13_s0_0     CCU2C        CIN      In      0.000     3.108       -         
+myuart.un3_txcounter_cry_13_s0_0     CCU2C        COUT     Out     0.061     3.169       -         
+un3_txcounter_cry_14_s0              Net          -        -       -         -           1         
+myuart.un3_txcounter_s_15_s0_0       CCU2C        CIN      In      0.000     3.169       -         
+myuart.un3_txcounter_s_15_s0_0       CCU2C        S0       Out     0.698     3.867       -         
+un3_txcounter_s0[15]                 Net          -        -       -         -           1         
+myuart.txcounter_ret_2               FD1S3AX      D        In      0.000     3.867       -         
+===================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      3.333
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.279
+
+    - Propagation time:                      3.806
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.527
+
+    Number of logic level(s):                9
+    Starting point:                          myuart.txcounter_ret_15 / Q
+    Ending point:                            myuart.txcounter_ret_2 / D
+    The start point is clocked by            DVI_clkgen|CLKOS3_inferred_clock [rising] on pin CK
+    The end   point is clocked by            DVI_clkgen|CLKOS3_inferred_clock [rising] on pin CK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+myuart.txcounter_ret_15              FD1S3AX      Q        Out     0.955     0.955       -         
+txclock4_reto                        Net          -        -       -         -           3         
+myuart.txcounter_1_sqmuxa            ORCALUT4     A        In      0.000     0.955       -         
+myuart.txcounter_1_sqmuxa            ORCALUT4     Z        Out     0.887     1.842       -         
+txcounter_1_sqmuxa_o                 Net          -        -       -         -           46        
+myuart.un3_txcounter_cry_1_s0_0      CCU2C        A1       In      0.000     1.842       -         
+myuart.un3_txcounter_cry_1_s0_0      CCU2C        COUT     Out     0.900     2.742       -         
+un3_txcounter_cry_2_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_3_s0_0      CCU2C        CIN      In      0.000     2.742       -         
+myuart.un3_txcounter_cry_3_s0_0      CCU2C        COUT     Out     0.061     2.803       -         
+un3_txcounter_cry_4_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_5_s0_0      CCU2C        CIN      In      0.000     2.803       -         
+myuart.un3_txcounter_cry_5_s0_0      CCU2C        COUT     Out     0.061     2.864       -         
+un3_txcounter_cry_6_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_7_s0_0      CCU2C        CIN      In      0.000     2.864       -         
+myuart.un3_txcounter_cry_7_s0_0      CCU2C        COUT     Out     0.061     2.925       -         
+un3_txcounter_cry_8_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_9_s0_0      CCU2C        CIN      In      0.000     2.925       -         
+myuart.un3_txcounter_cry_9_s0_0      CCU2C        COUT     Out     0.061     2.986       -         
+un3_txcounter_cry_10_s0              Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_11_s0_0     CCU2C        CIN      In      0.000     2.986       -         
+myuart.un3_txcounter_cry_11_s0_0     CCU2C        COUT     Out     0.061     3.047       -         
+un3_txcounter_cry_12_s0              Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_13_s0_0     CCU2C        CIN      In      0.000     3.047       -         
+myuart.un3_txcounter_cry_13_s0_0     CCU2C        COUT     Out     0.061     3.108       -         
+un3_txcounter_cry_14_s0              Net          -        -       -         -           1         
+myuart.un3_txcounter_s_15_s0_0       CCU2C        CIN      In      0.000     3.108       -         
+myuart.un3_txcounter_s_15_s0_0       CCU2C        S0       Out     0.698     3.806       -         
+un3_txcounter_s0[15]                 Net          -        -       -         -           1         
+myuart.txcounter_ret_2               FD1S3AX      D        In      0.000     3.806       -         
+===================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      3.333
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.279
+
+    - Propagation time:                      3.806
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.527
+
+    Number of logic level(s):                9
+    Starting point:                          myuart.txcounter_ret_15 / Q
+    Ending point:                            myuart.txcounter_ret_2 / D
+    The start point is clocked by            DVI_clkgen|CLKOS3_inferred_clock [rising] on pin CK
+    The end   point is clocked by            DVI_clkgen|CLKOS3_inferred_clock [rising] on pin CK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+myuart.txcounter_ret_15              FD1S3AX      Q        Out     0.955     0.955       -         
+txclock4_reto                        Net          -        -       -         -           3         
+myuart.txcounter_1_sqmuxa            ORCALUT4     A        In      0.000     0.955       -         
+myuart.txcounter_1_sqmuxa            ORCALUT4     Z        Out     0.887     1.842       -         
+txcounter_1_sqmuxa_o                 Net          -        -       -         -           46        
+myuart.un3_txcounter_cry_1_s0_0      CCU2C        A0       In      0.000     1.842       -         
+myuart.un3_txcounter_cry_1_s0_0      CCU2C        COUT     Out     0.900     2.742       -         
+un3_txcounter_cry_2_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_3_s0_0      CCU2C        CIN      In      0.000     2.742       -         
+myuart.un3_txcounter_cry_3_s0_0      CCU2C        COUT     Out     0.061     2.803       -         
+un3_txcounter_cry_4_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_5_s0_0      CCU2C        CIN      In      0.000     2.803       -         
+myuart.un3_txcounter_cry_5_s0_0      CCU2C        COUT     Out     0.061     2.864       -         
+un3_txcounter_cry_6_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_7_s0_0      CCU2C        CIN      In      0.000     2.864       -         
+myuart.un3_txcounter_cry_7_s0_0      CCU2C        COUT     Out     0.061     2.925       -         
+un3_txcounter_cry_8_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_9_s0_0      CCU2C        CIN      In      0.000     2.925       -         
+myuart.un3_txcounter_cry_9_s0_0      CCU2C        COUT     Out     0.061     2.986       -         
+un3_txcounter_cry_10_s0              Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_11_s0_0     CCU2C        CIN      In      0.000     2.986       -         
+myuart.un3_txcounter_cry_11_s0_0     CCU2C        COUT     Out     0.061     3.047       -         
+un3_txcounter_cry_12_s0              Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_13_s0_0     CCU2C        CIN      In      0.000     3.047       -         
+myuart.un3_txcounter_cry_13_s0_0     CCU2C        COUT     Out     0.061     3.108       -         
+un3_txcounter_cry_14_s0              Net          -        -       -         -           1         
+myuart.un3_txcounter_s_15_s0_0       CCU2C        CIN      In      0.000     3.108       -         
+myuart.un3_txcounter_s_15_s0_0       CCU2C        S0       Out     0.698     3.806       -         
+un3_txcounter_s0[15]                 Net          -        -       -         -           1         
+myuart.txcounter_ret_2               FD1S3AX      D        In      0.000     3.806       -         
+===================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      3.333
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         3.279
+
+    - Propagation time:                      3.806
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.527
+
+    Number of logic level(s):                9
+    Starting point:                          myuart.txcounter_ret_15 / Q
+    Ending point:                            myuart.txcounter_ret_9 / D
+    The start point is clocked by            DVI_clkgen|CLKOS3_inferred_clock [rising] on pin CK
+    The end   point is clocked by            DVI_clkgen|CLKOS3_inferred_clock [rising] on pin CK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+myuart.txcounter_ret_15              FD1S3AX      Q        Out     0.955     0.955       -         
+txclock4_reto                        Net          -        -       -         -           3         
+myuart.txcounter_1_sqmuxa            ORCALUT4     A        In      0.000     0.955       -         
+myuart.txcounter_1_sqmuxa            ORCALUT4     Z        Out     0.887     1.842       -         
+txcounter_1_sqmuxa_o                 Net          -        -       -         -           46        
+myuart.un3_txcounter_cry_0_s0_0      CCU2C        A1       In      0.000     1.842       -         
+myuart.un3_txcounter_cry_0_s0_0      CCU2C        COUT     Out     0.900     2.742       -         
+un3_txcounter_cry_0_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_1_s0_0      CCU2C        CIN      In      0.000     2.742       -         
+myuart.un3_txcounter_cry_1_s0_0      CCU2C        COUT     Out     0.061     2.803       -         
+un3_txcounter_cry_2_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_3_s0_0      CCU2C        CIN      In      0.000     2.803       -         
+myuart.un3_txcounter_cry_3_s0_0      CCU2C        COUT     Out     0.061     2.864       -         
+un3_txcounter_cry_4_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_5_s0_0      CCU2C        CIN      In      0.000     2.864       -         
+myuart.un3_txcounter_cry_5_s0_0      CCU2C        COUT     Out     0.061     2.925       -         
+un3_txcounter_cry_6_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_7_s0_0      CCU2C        CIN      In      0.000     2.925       -         
+myuart.un3_txcounter_cry_7_s0_0      CCU2C        COUT     Out     0.061     2.986       -         
+un3_txcounter_cry_8_s0               Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_9_s0_0      CCU2C        CIN      In      0.000     2.986       -         
+myuart.un3_txcounter_cry_9_s0_0      CCU2C        COUT     Out     0.061     3.047       -         
+un3_txcounter_cry_10_s0              Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_11_s0_0     CCU2C        CIN      In      0.000     3.047       -         
+myuart.un3_txcounter_cry_11_s0_0     CCU2C        COUT     Out     0.061     3.108       -         
+un3_txcounter_cry_12_s0              Net          -        -       -         -           1         
+myuart.un3_txcounter_cry_13_s0_0     CCU2C        CIN      In      0.000     3.108       -         
+myuart.un3_txcounter_cry_13_s0_0     CCU2C        S0       Out     0.698     3.806       -         
+un3_txcounter_s0[13]                 Net          -        -       -         -           1         
+myuart.txcounter_ret_9               FD1S3AX      D        In      0.000     3.806       -         
+===================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: vga_controller|v_sync_derived_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                        Starting                                                                               Arrival             
+Instance                                Reference                               Type        Pin     Net                        Time        Slack   
+                                        Clock                                                                                                      
+---------------------------------------------------------------------------------------------------------------------------------------------------
+user_module1.trig_row[0]                vga_controller|v_sync_derived_clock     FD1S3IX     Q       trig_row[0]                1.063       978.183 
+user_module1.trig_row[2]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[2]                1.045       978.201 
+user_module1.trig_row[1]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[1]                1.039       978.268 
+user_module1.trig_row[3]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[3]                1.027       978.279 
+user_module1.trig_row[4]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[4]                1.027       978.279 
+user_module1.trig_row[5]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[5]                1.027       978.341 
+user_module1.trig_row[6]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[6]                1.027       978.341 
+user_module1.trig_row[7]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[7]                1.027       978.402 
+user_module1.trig_row[8]                vga_controller|v_sync_derived_clock     FD1P3IX     Q       trig_row[8]                1.027       978.402 
+user_module1.sample_button_count[0]     vga_controller|v_sync_derived_clock     FD1S3AX     Q       sample_button_count[0]     1.009       1996.729
+===================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                         Starting                                                                               Required             
+Instance                                 Reference                               Type        Pin     Net                        Time         Slack   
+                                         Clock                                                                                                       
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+user_module1.vga_trigger_scaled_0[0]     vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un103_sum[5]         999.946      978.183 
+user_module1.vga_trigger_scaled[1]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un103_sum_i          999.946      979.415 
+user_module1.vga_trigger_scaled[2]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un96_sum_i           999.946      981.236 
+user_module1.vga_trigger_scaled[3]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un82_sum_i[5]        999.946      983.068 
+user_module1.vga_trigger_scaled[4]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un75_sum_i[5]        999.946      984.889 
+user_module1.vga_trigger_scaled[5]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un68_sum_i[5]        999.946      986.709 
+user_module1.vga_trigger_scaled[6]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un61_sum_i[5]        999.946      988.529 
+user_module1.vga_trigger_scaled[7]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un54_sum_i[5]        999.946      990.350 
+user_module1.vga_trigger_scaled[8]       vga_controller|v_sync_derived_clock     FD1P3AX     D       mult1_un47_sum_i[5]        999.946      992.170 
+user_module1.sample_LED[0]               vga_controller|v_sync_derived_clock     FD1S3IX     CD      sample_rate_RNIEBIJ[0]     1999.919     1996.729
+=====================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.054
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.946
+
+    - Propagation time:                      21.764
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 978.183
+
+    Number of logic level(s):                37
+    Starting point:                          user_module1.trig_row[0] / Q
+    Ending point:                            user_module1.vga_trigger_scaled_0[0] / D
+    The start point is clocked by            vga_controller|v_sync_derived_clock [rising] on pin CK
+    The end   point is clocked by            ADC_PLL|CLKOS_inferred_clock [rising] on pin CK
+
+Instance / Net                                                                               Pin      Pin               Arrival     No. of    
+Name                                                                            Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------------
+user_module1.trig_row[0]                                                        FD1S3IX      Q        Out     1.063     1.063       -         
+trig_row[0]                                                                     Net          -        -       -         -           13        
+user_module1.un1_trig_row_cry_2_0                                               CCU2C        B1       In      0.000     1.063       -         
+user_module1.un1_trig_row_cry_2_0                                               CCU2C        COUT     Out     0.900     1.963       -         
+un1_trig_row_cry_2                                                              Net          -        -       -         -           1         
+user_module1.un1_trig_row_cry_3_0                                               CCU2C        CIN      In      0.000     1.963       -         
+user_module1.un1_trig_row_cry_3_0                                               CCU2C        COUT     Out     0.061     2.024       -         
+un1_trig_row_cry_4                                                              Net          -        -       -         -           1         
+user_module1.un1_trig_row_cry_5_0                                               CCU2C        CIN      In      0.000     2.024       -         
+user_module1.un1_trig_row_cry_5_0                                               CCU2C        COUT     Out     0.061     2.085       -         
+un1_trig_row_cry_6                                                              Net          -        -       -         -           1         
+user_module1.un1_trig_row_cry_7_0                                               CCU2C        CIN      In      0.000     2.085       -         
+user_module1.un1_trig_row_cry_7_0                                               CCU2C        COUT     Out     0.061     2.146       -         
+un1_trig_row_cry_8                                                              Net          -        -       -         -           1         
+user_module1.un1_trig_row_cry_9_0                                               CCU2C        CIN      In      0.000     2.146       -         
+user_module1.un1_trig_row_cry_9_0                                               CCU2C        COUT     Out     0.061     2.207       -         
+un1_trig_row_cry_10_cry                                                         Net          -        -       -         -           1         
+user_module1.un1_trig_row_cry_10_0                                              CCU2C        CIN      In      0.000     2.207       -         
+user_module1.un1_trig_row_cry_10_0                                              CCU2C        S0       Out     0.799     3.007       -         
+CO0                                                                             Net          -        -       -         -           3         
+user_module1.un1_trig_row_cry_10_0_RNIMMJG                                      ORCALUT4     A        In      0.000     3.007       -         
+user_module1.un1_trig_row_cry_10_0_RNIMMJG                                      ORCALUT4     Z        Out     0.708     3.715       -         
+ANC4_0_a2_0                                                                     Net          -        -       -         -           3         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un40_sum_cry_1_0      CCU2C        A0       In      0.000     3.715       -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un40_sum_cry_1_0      CCU2C        COUT     Out     0.900     4.614       -         
+mult1_un40_sum_cry_2_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un40_sum_cry_3_0      CCU2C        CIN      In      0.000     4.614       -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un40_sum_cry_3_0      CCU2C        COUT     Out     0.061     4.676       -         
+mult1_un40_sum_cry_4_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un40_sum_s_5_0        CCU2C        CIN      In      0.000     4.676       -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un40_sum_s_5_0        CCU2C        S0       Out     0.854     5.529       -         
+mult1_un40_sum_0[5]                                                             Net          -        -       -         -           5         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un47_sum_cry_1_0      CCU2C        A0       In      0.000     5.529       -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un47_sum_cry_1_0      CCU2C        COUT     Out     0.900     6.429       -         
+mult1_un47_sum_cry_2_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un47_sum_cry_3_0      CCU2C        CIN      In      0.000     6.429       -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un47_sum_cry_3_0      CCU2C        COUT     Out     0.061     6.490       -         
+mult1_un47_sum_cry_4_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un47_sum_s_5_0        CCU2C        CIN      In      0.000     6.490       -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un47_sum_s_5_0        CCU2C        S0       Out     0.860     7.349       -         
+mult1_un47_sum[5]                                                               Net          -        -       -         -           6         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un54_sum_cry_1_0      CCU2C        A0       In      0.000     7.349       -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un54_sum_cry_1_0      CCU2C        COUT     Out     0.900     8.249       -         
+mult1_un54_sum_cry_2_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un54_sum_cry_3_0      CCU2C        CIN      In      0.000     8.249       -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un54_sum_cry_3_0      CCU2C        COUT     Out     0.061     8.310       -         
+mult1_un54_sum_cry_4_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un54_sum_s_5_0        CCU2C        CIN      In      0.000     8.310       -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un54_sum_s_5_0        CCU2C        S0       Out     0.860     9.170       -         
+mult1_un54_sum[5]                                                               Net          -        -       -         -           6         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un61_sum_cry_1_0      CCU2C        A0       In      0.000     9.170       -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un61_sum_cry_1_0      CCU2C        COUT     Out     0.900     10.070      -         
+mult1_un61_sum_cry_2_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un61_sum_cry_3_0      CCU2C        CIN      In      0.000     10.070      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un61_sum_cry_3_0      CCU2C        COUT     Out     0.061     10.131      -         
+mult1_un61_sum_cry_4_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un61_sum_s_5_0        CCU2C        CIN      In      0.000     10.131      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un61_sum_s_5_0        CCU2C        S0       Out     0.860     10.991      -         
+mult1_un61_sum[5]                                                               Net          -        -       -         -           6         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un68_sum_cry_1_0      CCU2C        A0       In      0.000     10.991      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un68_sum_cry_1_0      CCU2C        COUT     Out     0.900     11.890      -         
+mult1_un68_sum_cry_2_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un68_sum_cry_3_0      CCU2C        CIN      In      0.000     11.890      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un68_sum_cry_3_0      CCU2C        COUT     Out     0.061     11.951      -         
+mult1_un68_sum_cry_4_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un68_sum_s_5_0        CCU2C        CIN      In      0.000     11.951      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un68_sum_s_5_0        CCU2C        S0       Out     0.860     12.811      -         
+mult1_un68_sum[5]                                                               Net          -        -       -         -           6         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un75_sum_cry_1_0      CCU2C        A0       In      0.000     12.811      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un75_sum_cry_1_0      CCU2C        COUT     Out     0.900     13.711      -         
+mult1_un75_sum_cry_2_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un75_sum_cry_3_0      CCU2C        CIN      In      0.000     13.711      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un75_sum_cry_3_0      CCU2C        COUT     Out     0.061     13.772      -         
+mult1_un75_sum_cry_4_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un75_sum_s_5_0        CCU2C        CIN      In      0.000     13.772      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un75_sum_s_5_0        CCU2C        S0       Out     0.860     14.632      -         
+mult1_un75_sum[5]                                                               Net          -        -       -         -           6         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un82_sum_cry_1_0      CCU2C        A0       In      0.000     14.632      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un82_sum_cry_1_0      CCU2C        COUT     Out     0.900     15.531      -         
+mult1_un82_sum_cry_2_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un82_sum_cry_3_0      CCU2C        CIN      In      0.000     15.531      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un82_sum_cry_3_0      CCU2C        COUT     Out     0.061     15.592      -         
+mult1_un82_sum_cry_4_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un82_sum_s_5_0        CCU2C        CIN      In      0.000     15.592      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un82_sum_s_5_0        CCU2C        S0       Out     0.860     16.452      -         
+mult1_un82_sum[5]                                                               Net          -        -       -         -           6         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un89_sum_cry_1_0      CCU2C        A0       In      0.000     16.452      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un89_sum_cry_1_0      CCU2C        COUT     Out     0.900     17.352      -         
+mult1_un89_sum_cry_2_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un89_sum_cry_3_0      CCU2C        CIN      In      0.000     17.352      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un89_sum_cry_3_0      CCU2C        COUT     Out     0.061     17.413      -         
+mult1_un89_sum_cry_4_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un89_sum_s_5_0        CCU2C        CIN      In      0.000     17.413      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un89_sum_s_5_0        CCU2C        S0       Out     0.872     18.285      -         
+mult1_un96_sum                                                                  Net          -        -       -         -           7         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un96_sum_cry_1_0      CCU2C        A1       In      0.000     18.285      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un96_sum_cry_1_0      CCU2C        COUT     Out     0.900     19.185      -         
+mult1_un96_sum_cry_1_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un96_sum_cry_2_0      CCU2C        CIN      In      0.000     19.185      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un96_sum_cry_2_0      CCU2C        COUT     Out     0.061     19.246      -         
+mult1_un96_sum_cry_3_0                                                          Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un96_sum_cry_4_0      CCU2C        CIN      In      0.000     19.246      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un96_sum_cry_4_0      CCU2C        S1       Out     0.860     20.105      -         
+mult1_un103_sum                                                                 Net          -        -       -         -           6         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un103_sum_cry_1_0     CCU2C        A1       In      0.000     20.105      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un103_sum_cry_1_0     CCU2C        COUT     Out     0.900     21.005      -         
+mult1_un103_sum_cry_1_0                                                         Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un103_sum_cry_2_0     CCU2C        CIN      In      0.000     21.005      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un103_sum_cry_2_0     CCU2C        COUT     Out     0.061     21.066      -         
+mult1_un103_sum_cry_3_0                                                         Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un103_sum_cry_4_0     CCU2C        CIN      In      0.000     21.066      -         
+user_module1.vga_trigger_scaled_1.if_generate_plus\.mult1_un103_sum_cry_4_0     CCU2C        S1       Out     0.698     21.764      -         
+mult1_un103_sum[5]                                                              Net          -        -       -         -           1         
+user_module1.vga_trigger_scaled_0[0]                                            FD1P3AX      D        In      0.000     21.764      -         
+==============================================================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 165MB peak: 169MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 165MB peak: 169MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lfe5u_25f-6
+
+Register bits: 368 of 24288 (2%)
+PIC Latch:       0
+I/O cells:       39
+Block Rams : 1 of 56 (1%)
+
+
+Details:
+CCU2C:          203
+DP16KD:         1
+FD1P3AX:        102
+FD1P3AY:        2
+FD1P3DX:        20
+FD1P3IX:        12
+FD1P3JX:        9
+FD1S3AX:        146
+FD1S3AY:        5
+FD1S3BX:        5
+FD1S3DX:        38
+FD1S3IX:        19
+FD1S3JX:        8
+GSR:            1
+IB:             5
+IFS1P3DX:       1
+INV:            34
+OB:             34
+OFS1P3BX:       1
+ORCALUT4:       370
+PFUMX:          3
+PUR:            1
+VHI:            9
+VLO:            8
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 37MB peak: 169MB)
+
+Process took 0h:00m:13s realtime, 0h:00m:12s cputime
+# Wed Oct 03 00:10:31 2018
+
+###########################################################]

@@ -1,0 +1,162 @@
+# Synopsys Constraint Checker, version maplat, Build 1682R, built Mar 10 2017
+# Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+# Written on Wed Oct 03 00:10:18 2018
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "FleaFPGA_Ohm_A5"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                                Ending                                  |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DVI_clkgen|CLKOS3_inferred_clock        DVI_clkgen|CLKOS3_inferred_clock        |     1.686            |     No paths         |     No paths         |     No paths                         
+DVI_clkgen|CLKOS2_inferred_clock        DVI_clkgen|CLKOS2_inferred_clock        |     2.989            |     No paths         |     No paths         |     No paths                         
+DVI_clkgen|CLKOS2_inferred_clock        DVI_clkgen|CLKOP_inferred_clock         |     Diff grp         |     No paths         |     No paths         |     No paths                         
+DVI_clkgen|CLKOP_inferred_clock         System                                  |     1.521            |     No paths         |     No paths         |     No paths                         
+DVI_clkgen|CLKOP_inferred_clock         DVI_clkgen|CLKOP_inferred_clock         |     1.521            |     No paths         |     No paths         |     No paths                         
+ADC_PLL|CLKOP_inferred_clock            DVI_clkgen|CLKOS3_inferred_clock        |     Diff grp         |     No paths         |     No paths         |     No paths                         
+ADC_PLL|CLKOP_inferred_clock            ADC_PLL|CLKOP_inferred_clock            |     2.034            |     No paths         |     No paths         |     No paths                         
+ADC_PLL|CLKOS_inferred_clock            DVI_clkgen|CLKOS2_inferred_clock        |     Diff grp         |     No paths         |     No paths         |     No paths                         
+ADC_PLL|CLKOS_inferred_clock            ADC_PLL|CLKOS_inferred_clock            |     1000.000         |     No paths         |     No paths         |     No paths                         
+vga_controller|v_sync_derived_clock     ADC_PLL|CLKOP_inferred_clock            |     Diff grp         |     No paths         |     No paths         |     No paths                         
+vga_controller|v_sync_derived_clock     ADC_PLL|CLKOS_inferred_clock            |     1000.000         |     No paths         |     No paths         |     No paths                         
+vga_controller|v_sync_derived_clock     vga_controller|v_sync_derived_clock     |     1000.000         |     No paths         |     No paths         |     No paths                         
+===========================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:ADC3_error
+p:ADC3_input
+p:Dram_Addr[0]
+p:Dram_Addr[1]
+p:Dram_Addr[2]
+p:Dram_Addr[3]
+p:Dram_Addr[4]
+p:Dram_Addr[5]
+p:Dram_Addr[6]
+p:Dram_Addr[7]
+p:Dram_Addr[8]
+p:Dram_Addr[9]
+p:Dram_Addr[10]
+p:Dram_Addr[11]
+p:Dram_Addr[12]
+p:Dram_BA[0]
+p:Dram_BA[1]
+p:Dram_CKE
+p:Dram_Clk
+p:Dram_DQMH
+p:Dram_DQML
+p:Dram_Data[0]
+p:Dram_Data[1]
+p:Dram_Data[2]
+p:Dram_Data[3]
+p:Dram_Data[4]
+p:Dram_Data[5]
+p:Dram_Data[6]
+p:Dram_Data[7]
+p:Dram_Data[8]
+p:Dram_Data[9]
+p:Dram_Data[10]
+p:Dram_Data[11]
+p:Dram_Data[12]
+p:Dram_Data[13]
+p:Dram_Data[14]
+p:Dram_Data[15]
+p:Dram_n_Cas
+p:Dram_n_Ras
+p:Dram_n_We
+p:Dram_n_cs
+p:GPIO_2
+p:GPIO_3
+p:GPIO_4
+p:GPIO_6
+p:GPIO_7
+p:GPIO_8
+p:GPIO_9
+p:GPIO_10
+p:GPIO_11
+p:GPIO_12
+p:GPIO_13
+p:GPIO_14
+p:GPIO_15
+p:GPIO_16
+p:GPIO_17
+p:GPIO_18
+p:GPIO_19
+p:GPIO_20
+p:GPIO_21
+p:GPIO_22
+p:GPIO_23
+p:GPIO_24
+p:GPIO_25
+p:GPIO_26
+p:GPIO_27
+p:GPIO_IDSC
+p:GPIO_IDSD
+p:LVDS_Blue[0]
+p:LVDS_Green[0]
+p:LVDS_Red[0]
+p:LVDS_ck[0]
+p:PS2_clk1
+p:PS2_clk2
+p:PS2_data1
+p:PS2_data2
+p:PS2_enable
+p:mmc_clk
+p:mmc_dat1
+p:mmc_dat2
+p:mmc_miso
+p:mmc_mosi
+p:mmc_n_cs
+p:n_led1
+p:slave_cts_i
+p:slave_rx_i
+p:slave_tx_o
+p:sys_clock
+p:sys_reset
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

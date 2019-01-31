@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.9_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  FleaFPGA_Ohm_A5  -multisrs  C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_comp.srs  -osyn  C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_mult.srs  -log  C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synlog\FleaDSO_FleaDSO_multi_srs_gen.srr 
+rc:0 success:1 runtime:1
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_comp.srs|io:i|time:1538489415|size:39664|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_mult.srs|io:o|time:1538489417|size:6780|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synlog\FleaDSO_FleaDSO_multi_srs_gen.srr|io:o|time:1538489417|size:519|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\bin\syn_nfilter.exe|io:i|time:1488989252|size:3128320|exec:1
+file:C:\lscc\diamond\3.9_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1488989520|size:3947520|exec:1

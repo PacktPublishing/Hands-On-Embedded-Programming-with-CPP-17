@@ -1,0 +1,26 @@
+SCUBA, Version Diamond (64-bit) 3.9.1.119
+Sat Feb 17 22:27:02 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.9_x64\ispfpga\bin\nt64\scuba.exe -w -n DVI_clkgen -lang vhdl -synth synplify -bus_exp 7 -bb -arch sa5p00 -type pll -fin 25 -fclkop 125 -fclkop_tol 2.0 -fclkos 125 -fclkos_tol 1.0 -phases 90 -fclkos2 25 -fclkos2_tol 0.2 -phases2 0 -fclkos3 50 -fclkos3_tol 0.0 -phases3 0 -phase_cntl STATIC -fb_mode 1 -bw HIGH -fdc C:/lscc/diamond/3.9_x64/examples/FleaDSO/DVI_clkgen/DVI_clkgen.fdc 
+    Circuit name     : DVI_clkgen
+    Module type      : pll
+    Module Version   : 5.7
+    Ports            : 
+	Inputs       : CLKI
+	Outputs      : CLKOP, CLKOS, CLKOS2, CLKOS3
+    I/O buffer       : not inserted
+    EDIF output      : DVI_clkgen.edn
+    VHDL output      : DVI_clkgen.vhd
+    VHDL template    : DVI_clkgen_tmpl.vhd
+    VHDL purpose     : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : DVI_clkgen.srp
+    Element Usage    :
+        EHXPLLL : 1
+    Estimated Resource Usage:

@@ -1,0 +1,64 @@
+#Start recording tcl command: 6/19/2014 16:56:52
+#Project Location: C:/lscc/diamond/3.1_x64/examples/FleaDSO; Project name: FleaDSO
+prj_project open "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO.ldf"
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO -task Bitgen
+pgr_project save "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO/FleaDSO.xcf"
+prj_src add -exclude "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO/FleaDSO.xcf"
+prj_src enable "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO/FleaDSO.xcf"
+pgr_project save "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO/FleaDSO.xcf"
+prj_src remove "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/DSO_RAMBUFFER_CH1.edn"
+prj_src remove "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/ADC_PLL.edn"
+prj_run Translate -impl FleaDSO
+prj_run PAR -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_dev set -part LCMXO2-7000HE-4TG144C
+pgr_project close
+prj_src remove "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/ADC_PLL.lpc"
+prj_run Export -impl FleaDSO
+prj_strgy set_value -strategy Strategy1 syn_default_enum_encode=Onehot syn_fsm_encoding=False {syn_pipelining_retiming=Pipelining and Retiming}
+prj_strgy set "Strategy1"
+prj_run Export -impl FleaDSO
+prj_strgy set_value -strategy Strategy1 par_cdp=1 par_cdr=1
+prj_run Export -impl FleaDSO
+prj_strgy set "Quick"
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+#Stop recording: 6/20/2014 03:27:46

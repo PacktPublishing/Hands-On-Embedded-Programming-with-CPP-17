@@ -1,0 +1,33 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+@N: MT206 |Auto Constrain mode is enabled
+@N: MF236 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":271:29:271:57|Generating a type div divider 
+@N: MF236 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":268:28:268:58|Generating a type div divider 
+@N: FX493 |Applying initial value "10000000000000" on instance user_module1.sample_rate[13:0].
+@N: FX493 |Applying initial value "0000000000" on instance u100.shift_red[9:0].
+@N: FX493 |Applying initial value "0000000000" on instance u100.shift_green[9:0].
+@N: FX493 |Applying initial value "0000000000" on instance u100.shift_blue[9:0].
+@N: FX493 |Applying initial value "0000011111" on instance u100.shift_clock[9:0].
+@N: FX493 |Applying initial value "0000000000" on instance u100.latched_red[9:0].
+@N: FX493 |Applying initial value "0000000000" on instance u100.latched_green[9:0].
+@N: FX493 |Applying initial value "0000000000" on instance u100.latched_blue[9:0].
+@N: MO231 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":163:3:163:4|Found counter in view:work.FleaFPGA_DSO(behavior) instance ADC_buffer_addr[9:0] 
+@N: MO231 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":163:3:163:4|Found counter in view:work.FleaFPGA_DSO(behavior) instance ADC_sample_divider[13:0] 
+@N: MF179 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":306:9:306:52|Found 9 by 9 bit equality operator ('==') un33_vga_disp_en (in view: work.FleaFPGA_DSO(behavior))
+@N: MF179 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":316:8:316:49|Found 9 by 9 bit equality operator ('==') un37_vga_disp_en (in view: work.FleaFPGA_DSO(behavior))
+@N: MF179 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":184:9:184:53|Found 9 by 9 bit equality operator ('==') un1_adc_rawout (in view: work.FleaFPGA_DSO(behavior))
+@N: MF179 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":285:8:285:47|Found 9 by 9 bit equality operator ('==') un11_vga_disp_en (in view: work.FleaFPGA_DSO(behavior))
+@N: MF179 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":178:8:178:39|Found 14 by 14 bit equality operator ('==') un6_adc_sample_divider (in view: work.FleaFPGA_DSO(behavior))
+@N: MF179 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":295:9:295:42|Found 10 by 10 bit equality operator ('==') un19_vga_disp_en (in view: work.FleaFPGA_DSO(behavior))
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":263:2:263:3|Removing sequential instance grid_column[0] (in view: work.FleaFPGA_DSO(behavior)) because it does not drive other instances.
+@N: MF578 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":222:2:222:3|Incompatible asynchronous control logic preventing generated clock conversion of user_module1.sample_button_count[3] (in view: work.FleaFPGA_Ohm_A5(arch)).
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":263:2:263:3|Removing sequential instance user_module1.vga_trigger_scaled[0] (in view: work.FleaFPGA_Ohm_A5(arch)) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":263:2:263:3|Removing sequential instance user_module1.vga_bufout_scaled[0] (in view: work.FleaFPGA_Ohm_A5(arch)) because it does not drive other instances.
+@N: MF322 |Retiming summary: 18 registers retimed to 67 
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: FX1056 |Writing EDF file: C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.edi
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+@N: MT615 |Found clock vga_controller|v_sync_derived_clock with period 1000.00ns 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack

@@ -1,0 +1,66 @@
+[Device]
+Family=ecp5u
+PartType=LFE5U-25F
+PartName=LFE5U-25F-6BG381C
+SpeedGrade=6
+Package=CABGA381
+OperatingCondition=COM
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=DDR_GENERIC
+CoreRevision=6.0
+ModuleName=ddr_out
+SourceFormat=vhdl
+ParameterFileVersion=1.0
+Date=02/13/2018
+Time=18:21:32
+
+[Parameters]
+Verilog=0
+VHDL=1
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+mode=Transmit
+trioddr=0
+io_type=LVCMOS25
+width=1
+freq_in=100
+bandwidth=200
+aligned=Centered
+pre-configuration=ENABLED
+mode2=Transmit
+trioddr2=0
+io_type2=LVCMOS25
+freq_in2=100
+gear=2:1
+aligned2=Centered
+width2=1
+DataLane=By Time
+EnECLK=0
+Interface=GDDRX1_TX.SCLK.Centered
+Delay=Bypass
+DelVal=
+EnInEdge=
+NumEdge=BOTH
+EnDynamic=0
+GenPll=0
+Freq=
+AFreq=
+Reference=0
+IOBUF=
+ReceiverSync=0
+EnDynamicAlign=
+DynamicAlign=
+MIPIFilter=0
+enClkIBuf=0
+ClkIBuf=LVDS
+
+[Command]
+cmd_line= -w -n ddr_out -lang vhdl -synth synplify -bus_exp 7 -bb -arch sa5p00 -type iol -mode Transmit -io_type LVCMOS25 -width 1 -freq_in 100 -gear 2 -del -1

@@ -1,0 +1,97 @@
+
+		#####  BEGIN RETIMING REPORT  #####
+
+Retiming summary : 18 registers retimed to 67
+
+Original and Pipelined registers replaced by retiming :
+		myuart.txcounter[0]
+		myuart.txcounter[1]
+		myuart.txcounter[2]
+		myuart.txcounter[3]
+		myuart.txcounter[4]
+		myuart.txcounter[5]
+		myuart.txcounter[6]
+		myuart.txcounter[7]
+		myuart.txcounter[8]
+		myuart.txcounter[9]
+		myuart.txcounter[10]
+		myuart.txcounter[11]
+		myuart.txcounter[12]
+		myuart.txcounter[13]
+		myuart.txcounter[14]
+		myuart.txcounter[15]
+		myuart.txstate[0]
+		myuart.txstate[1]
+
+New registers created by retiming :
+		myuart.txcounter_ret
+		myuart.txcounter_ret[0]
+		myuart.txcounter_ret_0
+		myuart.txcounter_ret_1
+		myuart.txcounter_ret_2
+		myuart.txcounter_ret_3
+		myuart.txcounter_ret_4
+		myuart.txcounter_ret_5
+		myuart.txcounter_ret_6
+		myuart.txcounter_ret_7
+		myuart.txcounter_ret_8
+		myuart.txcounter_ret_9
+		myuart.txcounter_ret_10
+		myuart.txcounter_ret_11
+		myuart.txcounter_ret_12
+		myuart.txcounter_ret_13
+		myuart.txcounter_ret_14
+		myuart.txcounter_ret_15
+		myuart.txcounter_ret_16
+		myuart.txcounter_ret_17
+		myuart.txcounter_ret_18
+		myuart.txcounter_ret_19
+		myuart.txcounter_ret_20
+		myuart.txcounter_ret_21
+		myuart.txcounter_ret_22
+		myuart.txcounter_ret_23
+		myuart.txcounter_ret_24
+		myuart.txcounter_ret_25
+		myuart.txcounter_ret_26
+		myuart.txcounter_ret_27
+		myuart.txcounter_ret_28
+		myuart.txcounter_ret_30
+		myuart.txcounter_ret_31
+		myuart.txcounter_ret_32
+		myuart.txcounter_ret_33
+		myuart.txcounter_ret_34
+		myuart.txcounter_ret_35
+		myuart.txcounter_ret_36
+		myuart.txcounter_ret_37
+		myuart.txcounter_ret_38
+		myuart.txcounter_ret_39
+		myuart.txcounter_ret_40
+		myuart.txcounter_ret_41
+		myuart.txcounter_ret_42
+		myuart.txcounter_ret_43
+		myuart.txcounter_ret_44
+		myuart.txcounter_ret_45
+		myuart.txcounter_ret_46
+		myuart.txcounter_ret_47
+		myuart.txcounter_ret_48
+		myuart.txcounter_ret_49
+		myuart.txcounter_ret_50
+		myuart.txcounter_ret_51
+		myuart.txcounter_ret_52
+		myuart.txcounter_ret_53
+		myuart.txcounter_ret_54
+		myuart.txcounter_ret_55
+		myuart.txcounter_ret_56
+		myuart.txcounter_ret_57
+		myuart.txcounter_ret_58
+		myuart.txcounter_ret_59
+		myuart.txcounter_ret_60
+		myuart.txcounter_ret_61
+		myuart.txstate_ret
+		myuart.txstate_ret_0
+		myuart.txstate_ret_1
+		myuart.txstate_ret_2
+
+
+		#####   END RETIMING REPORT  #####
+

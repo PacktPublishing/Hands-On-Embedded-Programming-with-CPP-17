@@ -1,0 +1,56 @@
+[Device]
+Family=ecp5u
+PartType=LFE5U-25F
+PartName=LFE5U-25F-6BG381C
+SpeedGrade=6
+Package=CABGA381
+OperatingCondition=COM
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=RAM_DP_TRUE
+CoreRevision=7.5
+ModuleName=DSO_RAMBUFFER_CH1
+SourceFormat=vhdl
+ParameterFileVersion=1.0
+Date=02/17/2018
+Time=21:14:56
+
+[Parameters]
+Verilog=0
+VHDL=1
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+RAddress=1024
+RData=9
+WAddress=1024
+WData=9
+ROutputEn=1
+RClockEn=0
+WOutputEn=1
+WClockEn=0
+enByte=0
+ByteSize=9
+Optimization=Speed
+Reset=Sync
+Reset1=Sync
+Init=0
+MemFile=
+MemFormat=bin
+EnECC=0
+Pipeline=0
+WriteA=Normal
+WriteB=Normal
+init_data=0
+
+[FilesGenerated]
+=mem
+
+[Command]
+cmd_line= -w -n DSO_RAMBUFFER_CH1 -lang vhdl -synth synplify -bus_exp 7 -bb -arch sa5p00 -type ramdp -device LFE5U-25F -aaddr_width 10 -widtha 9 -baddr_width 10 -widthb 9 -anum_words 1024 -bnum_words 1024 -outdataA REGISTERED -outdataB REGISTERED -cascade -1 -resetmode SYNC -sync_reset -mem_init0 -writemodeA NORMAL -writemodeB NORMAL

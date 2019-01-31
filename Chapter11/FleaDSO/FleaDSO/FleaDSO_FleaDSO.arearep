@@ -1,0 +1,84 @@
+----------------------------------------------------------------------
+Report for cell FleaFPGA_Ohm_A5.TECH
+Register bits:  20 of 24879 (0.080%)
+I/O cells:      37
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLL         1          100.0
+                            FD1S3AX         6          100.0
+                            FD1S3AY         5          100.0
+                            FD1S3IX         5          100.0
+                            FD1S3JX         4          100.0
+                                GSR         1          100.0
+                                 IB         3          100.0
+                               LUT4         5          100.0
+                                 OB        34          100.0
+                            ODDRX1F         4          100.0
+SUB MODULES
+                         DVI_clkgen         1
+                       FleaFPGA_DSO         1
+                            ddr_out         1
+                         ddr_out_U0         1
+                         ddr_out_U1         1
+                         ddr_out_U2         1
+                               dvid         1
+                              TOTAL        75
+----------------------------------------------------------------------
+Report for cell dvid.v1
+Instance Path : u100
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         6          100.0
+                            FD1S3AY         5          100.0
+                            FD1S3IX         5          100.0
+                            FD1S3JX         4          100.0
+                               LUT4         4           80.0
+                            ODDRX1F         4          100.0
+SUB MODULES
+                            ddr_out         1
+                         ddr_out_U0         1
+                         ddr_out_U1         1
+                         ddr_out_U2         1
+                              TOTAL        32
+----------------------------------------------------------------------
+Report for cell ddr_out.v1
+Instance Path : u100.u5
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            ODDRX1F         1           25.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell ddr_out_U0.v1
+Instance Path : u100.u4
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            ODDRX1F         1           25.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell ddr_out_U1.v1
+Instance Path : u100.u3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            ODDRX1F         1           25.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell ddr_out_U2.v1
+Instance Path : u100.u2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            ODDRX1F         1           25.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell FleaFPGA_DSO.v1
+Instance Path : user_module1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         1           20.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell DVI_clkgen.v1
+Instance Path : u0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLL         1          100.0
+                              TOTAL         1

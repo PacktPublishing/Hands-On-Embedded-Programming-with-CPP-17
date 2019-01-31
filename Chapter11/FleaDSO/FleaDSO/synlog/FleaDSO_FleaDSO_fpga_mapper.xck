@@ -1,0 +1,6 @@
+CKID0001:@|S:user_module1.U1.PLLInst_0@|E:user_module1.Green_out_1[0]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:u0.PLLInst_0@|E:myuart.txbuffer[17]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0003:@|S:u0.PLLInst_0@|E:u100.latched_blue[9]@|F:@syn_sample_clock_path1==CKID0003@|M:ClockId0003 
+CKID0004:@|S:user_module1.U1.PLLInst_0@|E:user_module1.ADC_lowspeed_raw_1[6]@|F:@syn_sample_clock_path1==CKID0004@|M:ClockId0004 
+CKID0005:@|S:u0.PLLInst_0@|E:u100.shift_blue[9]@|F:@syn_sample_clock_path2==CKID0005@|M:ClockId0005 
+CKID0006:@|S:user_module1.U2.v_sync@|E:user_module1.ADC_filter_shift@|F:@syn_sample_clock_path==CKID0006@|M:ClockId0006 

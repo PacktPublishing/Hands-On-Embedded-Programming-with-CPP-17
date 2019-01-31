@@ -1,0 +1,27 @@
+SCUBA, Version Diamond (64-bit) 3.9.1.119
+Tue Feb 13 18:21:34 2018
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+    Issued command   : C:\lscc\diamond\3.9_x64\ispfpga\bin\nt64\scuba.exe -w -n ddr_out -lang vhdl -synth synplify -bus_exp 7 -bb -arch sa5p00 -type iol -mode Transmit -io_type LVCMOS25 -width 1 -freq_in 100 -gear 2 -del -1 -fdc C:/lscc/diamond/3.9_x64/examples/Flea_Ohm_DVI_test/ddr_out/ddr_out.fdc 
+    Circuit name     : ddr_out
+    Module type      : iol
+    Module Version   : 5.8
+    Ports            : 
+	Inputs       : clkop, clkos, reset, data[1:0]
+	Outputs      : clkout, dout[0:0]
+    I/O buffer       : not inserted
+    EDIF output      : ddr_out.edn
+    VHDL output      : ddr_out.vhd
+    VHDL template    : ddr_out_tmpl.vhd
+    VHDL purpose     : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : ddr_out.srp
+    Element Usage    :
+             OB : 2
+        ODDRX1F : 2
+    Estimated Resource Usage:

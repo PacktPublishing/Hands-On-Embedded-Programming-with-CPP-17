@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="ADC_PLL" module="PLL" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2018 02 17 18:15:22.695" version="5.8" type="Module" synthesis="synplify" source_format="VHDL">
+  <Package>
+		<File name="ADC_PLL.lpc" type="lpc" modified="2018 02 17 18:15:20.841"/>
+		<File name="ADC_PLL.vhd" type="top_level_vhdl" modified="2018 02 17 18:15:21.045"/>
+		<File name="ADC_PLL_tmpl.vhd" type="template_vhdl" modified="2018 02 17 18:15:21.045"/>
+  </Package>
+</DiamondModule>

@@ -1,0 +1,74 @@
+@W: CD326 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":197:17:197:32|Port rxint of entity work.simple_uart is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":197:17:197:32|Port rxdata of entity work.simple_uart is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD326 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":197:17:197:32|Port txready of entity work.simple_uart is unconnected. If a port needs to remain unconnected, use the keyword open.
+@W: CD638 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":119:10:119:16|Signal clk_pcs is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD434 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\simple_uart.vhd":102:13:102:17|Signal reset in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\simple_uart.vhd":128:28:128:36|Signal rxcounter in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\simple_uart.vhd":183:19:183:22|Signal txgo in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CD434 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\simple_uart.vhd":183:24:183:32|Signal txcounter in the sensitivity list is not used in the process. Make sure all variables in the sensitivity list are referenced in the process.
+@W: CL260 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\simple_uart.vhd":185:2:185:3|Pruning register bit 18 of txbuffer(18 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CD638 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\DVI_D.vhd":49:8:49:14|Signal dummy20 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\DVI_D.vhd":51:8:51:14|Signal dummy21 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\DVI_D.vhd":53:8:53:14|Signal dummy22 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\DVI_D.vhd":55:8:55:14|Signal dummy23 is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CL168 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\DVI_clkgen\DVI_clkgen.vhd":53:4:53:17|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CD638 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":59:9:59:19|Signal sampler_raw is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CD638 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":61:9:61:22|Signal adc_currentraw is undriven. Either assign the signal a value or remove the signal declaration.
+@W: CL168 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\ADC_PLL\ADC_PLL.vhd":45:4:45:17|Removing instance scuba_vhi_inst because it does not drive other instances. To preserve this instance, use the syn_noprune synthesis directive.
+@W: CL271 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":263:2:263:3|Pruning unused bits 17 to 9 of vga_trigger_scaled_3(17 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL271 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":263:2:263:3|Pruning unused bits 17 to 9 of vga_bufout_scaled_3(17 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":263:2:263:3|Pruning register bit 3 of Blue_out(3 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL240 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":100:1:100:8|Signal mmc_mosi is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":99:1:99:7|Signal mmc_clk is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":52:1:52:9|Signal Dram_DQML is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":51:1:51:9|Signal Dram_DQMH is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":47:1:47:9|Signal Dram_Addr is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":46:1:46:7|Signal Dram_BA is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":45:1:45:9|Signal Dram_n_We is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":44:1:44:10|Signal Dram_n_Cas is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":43:1:43:10|Signal Dram_n_Ras is floating; a simulation mismatch is possible.
+@W: CL240 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":41:1:41:8|Signal Dram_Clk is floating; a simulation mismatch is possible.
+@W: CL167 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":197:17:197:32|Input txgo of instance myuart is floating
+@W: CL260 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\Simple_VGA_CRTC.vhd":80:4:80:5|Pruning register bit 9 of row(9 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":163:3:163:4|Optimizing register bit adc_rawout(13) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":163:3:163:4|Pruning register bit 13 of adc_rawout(13 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":263:2:263:3|Pruning register bits 5 to 0 of gridrow(8 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL190 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":163:3:163:4|Optimizing register bit adc_rawout(12) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":163:3:163:4|Pruning register bit 12 of adc_rawout(12 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":163:3:163:4|Optimizing register bit adc_rawout(11) to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":163:3:163:4|Pruning register bit 11 of adc_rawout(11 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":263:2:263:3|Pruning register bits 2 to 1 of Green_out(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":263:2:263:3|Pruning register bits 2 to 1 of Red_out(3 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":263:2:263:3|Pruning register bits 2 to 1 of Blue_out(2 downto 0). If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd":163:3:163:4|Pruning register bit 7 of ADC_lowspeed_raw(7 downto 0). If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":48:1:48:9|Inout Dram_Data is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":55:1:55:6|Inout GPIO_2 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":56:1:56:6|Inout GPIO_3 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":57:1:57:6|Inout GPIO_4 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":59:1:59:6|Inout GPIO_6 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":60:1:60:6|Inout GPIO_7 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":61:1:61:6|Inout GPIO_8 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":62:1:62:6|Inout GPIO_9 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":63:1:63:7|Inout GPIO_10 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":64:1:64:7|Inout GPIO_11 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":65:1:65:7|Inout GPIO_12 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":66:1:66:7|Inout GPIO_13 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":67:1:67:7|Inout GPIO_14 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":68:1:68:7|Inout GPIO_15 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":69:1:69:7|Inout GPIO_16 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":70:1:70:7|Inout GPIO_17 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":71:1:71:7|Inout GPIO_18 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":72:1:72:7|Inout GPIO_19 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":75:1:75:7|Inout GPIO_22 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":76:1:76:7|Inout GPIO_23 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":77:1:77:7|Inout GPIO_24 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":78:1:78:7|Inout GPIO_25 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":79:1:79:7|Inout GPIO_26 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":80:1:80:7|Inout GPIO_27 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":81:1:81:9|Inout GPIO_IDSD is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":82:1:82:9|Inout GPIO_IDSC is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":105:1:105:8|Inout PS2_clk1 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":106:1:106:9|Inout PS2_data1 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":108:1:108:8|Inout PS2_clk2 is unused
+@W: CL158 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":109:1:109:9|Inout PS2_data2 is unused
+

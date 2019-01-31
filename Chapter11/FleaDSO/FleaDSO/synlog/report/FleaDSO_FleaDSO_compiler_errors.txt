@@ -1,0 +1,2 @@
+@E: CD326 :"C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd":194:17:194:32|Port txgo of entity work.simple_uart is unconnected. If a port needs to remain unconnected, use the keyword open.
+

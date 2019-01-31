@@ -1,0 +1,13 @@
+C:\lscc\diamond\3.9_x64\synpbase\bin64\m_gen_lattice.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO   -part LFE5U_25F  -package BG381C  -grade -6    -maxfan 1000 -retiming -pipe -forcenogsr -fixgatedclocks 1 -fixgeneratedclocks 1 -RWCheckOnRam 1 -use_rename_in_edif 1 -Write_declared_clocks_only 1 -summaryfile C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synlog\report\FleaDSO_FleaDSO_premap.xml  -top_level_module  FleaFPGA_Ohm_A5  -oedif  C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.edi  -conchk_prepass  C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO_cck.rpt   -autoconstraint  -freq 1.000   C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_mult.srs  -flow prepass  -gcc_prepass  -osrd  C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_prem.srd  -devicelib  C:\lscc\diamond\3.9_x64\synpbase\lib\lucent\ecp5u.v  -devicelib  C:\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v  -ologparam  C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\syntmp\FleaDSO_FleaDSO.plg  -osyn  C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_prem.srd  -prjdir  C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\  -prjname  proj_1  -log  C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synlog\FleaDSO_FleaDSO_premap.srr 
+rc:1 success:1 runtime:1
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO.edi|io:o|time:1538488835|size:771109|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO_cck.rpt|io:o|time:1538489418|size:5585|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_mult.srs|io:i|time:1538489417|size:6780|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_prem.srd|io:o|time:1538489417|size:54078|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\lib\lucent\ecp5u.v|io:i|time:1488993244|size:89974|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\lib\lucent\pmi_def.v|io:i|time:1488993244|size:40584|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\syntmp\FleaDSO_FleaDSO.plg|io:o|time:1538489417|size:0|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synwork\FleaDSO_FleaDSO_prem.srd|io:o|time:1538489417|size:54078|exec:0
+file:C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synlog\FleaDSO_FleaDSO_premap.srr|io:o|time:1538489418|size:10153|exec:0
+file:C:\lscc\diamond\3.9_x64\synpbase\bin\m_gen_lattice.exe|io:i|time:1489166624|size:19190784|exec:1
+file:C:\lscc\diamond\3.9_x64\synpbase\bin64\m_gen_lattice.exe|io:i|time:1489168152|size:23049728|exec:1

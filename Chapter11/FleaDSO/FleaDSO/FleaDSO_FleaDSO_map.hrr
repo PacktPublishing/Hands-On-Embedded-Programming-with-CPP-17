@@ -1,0 +1,146 @@
+---------------------------------------------------
+Report for cell FleaFPGA_Ohm_A5
+   Instance path: FleaFPGA_Ohm_A5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     408.00        100.0
+                                 IOLGC	       2.00        100.0
+                                  LUT4	     405.00        100.0
+                                 IOREG	          2        100.0
+                                 IOBUF	         39        100.0
+                                PFUREG	        366        100.0
+                                RIPPLE	        203        100.0
+                                   EBR	          1        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                  dvid	          1        20.5
+                          FleaFPGA_DSO	          1        68.6
+                            DVI_clkgen	          1         0.1
+                           simple_uart	          1        10.7
+---------------------------------------------------
+Report for cell simple_uart
+   Instance path: FleaFPGA_Ohm_A5/myuart
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      43.83        10.7
+                                  LUT4	      40.00         9.9
+                                PFUREG	         86        23.5
+                                RIPPLE	         19         9.4
+---------------------------------------------------
+Report for cell dvid
+   Instance path: FleaFPGA_Ohm_A5/u100
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      83.83        20.5
+                                  LUT4	     181.00        44.7
+                                 IOBUF	          4        10.3
+                                PFUREG	         88        24.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             ddr_out_1	          1         0.1
+                             ddr_out_2	          1         0.1
+                               ddr_out	          1         0.1
+                             ddr_out_0	          1         0.1
+                          TDMS_encoder	          1         4.3
+                        TDMS_encoder_1	          1         5.0
+                        TDMS_encoder_0	          1         3.5
+---------------------------------------------------
+Report for cell ddr_out_2
+   Instance path: FleaFPGA_Ohm_A5/u100/u5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.1
+                                  LUT4	       1.00         0.2
+                                 IOBUF	          1         2.6
+---------------------------------------------------
+Report for cell ddr_out_1
+   Instance path: FleaFPGA_Ohm_A5/u100/u4
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.2
+                                 IOBUF	          1         2.6
+---------------------------------------------------
+Report for cell ddr_out_0
+   Instance path: FleaFPGA_Ohm_A5/u100/u3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.2
+                                 IOBUF	          1         2.6
+---------------------------------------------------
+Report for cell ddr_out
+   Instance path: FleaFPGA_Ohm_A5/u100/u2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.2
+                                 IOBUF	          1         2.6
+---------------------------------------------------
+Report for cell TDMS_encoder_0
+   Instance path: FleaFPGA_Ohm_A5/u100/u23
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      14.25         3.5
+                                  LUT4	      29.00         7.2
+                                PFUREG	         10         2.7
+---------------------------------------------------
+Report for cell TDMS_encoder_1
+   Instance path: FleaFPGA_Ohm_A5/u100/u22
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      20.58         5.0
+                                  LUT4	      42.00        10.4
+                                PFUREG	         10         2.7
+---------------------------------------------------
+Report for cell TDMS_encoder
+   Instance path: FleaFPGA_Ohm_A5/u100/u21
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      17.67         4.3
+                                  LUT4	      45.00        11.1
+                                PFUREG	         10         2.7
+---------------------------------------------------
+Report for cell DVI_clkgen
+   Instance path: FleaFPGA_Ohm_A5/u0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.25         0.1
+                                  LUT4	       1.00         0.2
+---------------------------------------------------
+Report for cell FleaFPGA_DSO
+   Instance path: FleaFPGA_Ohm_A5/user_module1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     280.08        68.6
+                                  LUT4	     183.00        45.2
+                                PFUREG	        192        52.5
+                                RIPPLE	        184        90.6
+                                   EBR	          1        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                     DSO_RAMBUFFER_CH1	          1         0.0
+                               ADC_PLL	          1         0.1
+                        vga_controller	          1         9.5
+---------------------------------------------------
+Report for cell DSO_RAMBUFFER_CH1
+   Instance path: FleaFPGA_Ohm_A5/user_module1/U3
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          1        100.0
+---------------------------------------------------
+Report for cell vga_controller
+   Instance path: FleaFPGA_Ohm_A5/user_module1/U2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      38.67         9.5
+                                  LUT4	      50.00        12.3
+                                PFUREG	         42        11.5
+                                RIPPLE	         12         5.9
+---------------------------------------------------
+Report for cell ADC_PLL
+   Instance path: FleaFPGA_Ohm_A5/user_module1/U1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       0.33         0.1
+                                  LUT4	       1.00         0.2

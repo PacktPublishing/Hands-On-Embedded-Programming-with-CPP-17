@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+The file contains the optimization information from mapper to be displayed as part of the summary report.
+*******************************************************************************************-->
+<report_table display_priority="3" name="Optimizations Summary">
+<parameter tooltip="Retiming summary: Registers Before / After retiming" name="Retiming">
+<data>18 / 67</data>
+<report_link name="more">
+<data>C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synlog\report\FleaDSO_FleaDSO_fpga_mapper_retiming.rpt</data>
+<title>START OF CLOCK OPTIMIZATION REPORT</title>
+</report_link>
+</parameter>
+<parameter tooltip="Non-gated/non-generated clock trees / Gated/generated clock trees" name="Combined Clock Conversion">
+<data>0 / 6</data>
+<report_link name="more">
+<data>C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\synlog\report\FleaDSO_FleaDSO_fpga_mapper_combined_clk.rpt</data>
+<title>START OF CLOCK OPTIMIZATION REPORT</title>
+</report_link>
+</parameter>
+</report_table>

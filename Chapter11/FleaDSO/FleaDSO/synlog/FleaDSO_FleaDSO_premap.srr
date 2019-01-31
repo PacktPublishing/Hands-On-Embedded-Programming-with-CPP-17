@@ -1,0 +1,90 @@
+# Wed Oct 03 00:10:17 2018
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1682R, Built Mar 10 2017 10:47:08
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO_scck.rpt 
+Printing clock  summary report in "C:\lscc\diamond\3.9_x64\examples\FleaDSO\FleaDSO\FleaDSO_FleaDSO_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: BN287 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":130:2:130:3|Register rxstate[0:4] with reset has an initial value of 1. Ignoring initial value.  
+@W: BN287 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":185:2:185:3|Register txstate[0:1] with reset has an initial value of 1. Ignoring initial value.  
+@W: BN132 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\fleafpga_dso.vhd":263:2:263:3|Removing sequential instance user_module1.addpixel2[8:0] because it is equivalent to instance user_module1.addpixel1[8:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":185:2:185:3|Removing sequential instance txready (in view: work.simple_uart(rtl)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":130:2:130:3|Removing sequential instance rxdata[7:0] (in view: work.simple_uart(rtl)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":130:2:130:3|Removing sequential instance rxint (in view: work.simple_uart(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":185:2:185:3|Removing sequential instance txint (in view: work.simple_uart(rtl)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":104:2:104:3|Removing sequential instance rxcounter[15:0] (in view: work.simple_uart(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":130:2:130:3|Removing sequential instance rxstate[0:4] (in view: work.simple_uart(rtl)) of type view:PrimLib.dffpatre(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":130:2:130:3|Removing sequential instance rxbuffer[8:0] (in view: work.simple_uart(rtl)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":104:2:104:3|Removing sequential instance rxclock (in view: work.simple_uart(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":64:2:64:3|Removing sequential instance rxd_sync2 (in view: work.simple_uart(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":64:2:64:3|Removing sequential instance rxd_sync (in view: work.simple_uart(rtl)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@W: BN114 :"c:\lscc\diamond\3.9_x64\examples\fleadso\ddr_out\ddr_out.vhd":52:4:52:16|Removing instance Inst3_ODDRX1F (in view: work.ddr_out_0(structure)) of black box view:work.ODDRX1F(syn_black_box) because it does not drive other instances.
+@W: BN114 :"c:\lscc\diamond\3.9_x64\examples\fleadso\ddr_out\ddr_out.vhd":52:4:52:16|Removing instance Inst3_ODDRX1F (in view: work.ddr_out_1(structure)) of black box view:work.ODDRX1F(syn_black_box) because it does not drive other instances.
+@W: BN114 :"c:\lscc\diamond\3.9_x64\examples\fleadso\ddr_out\ddr_out.vhd":52:4:52:16|Removing instance Inst3_ODDRX1F (in view: work.ddr_out_2(structure)) of black box view:work.ODDRX1F(syn_black_box) because it does not drive other instances.
+@W: BN114 :"c:\lscc\diamond\3.9_x64\examples\fleadso\ddr_out\ddr_out.vhd":52:4:52:16|Removing instance Inst3_ODDRX1F (in view: work.ddr_out_3(structure)) of black box view:work.ODDRX1F(syn_black_box) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=56  set on top level netlist FleaFPGA_Ohm_A5
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                   Requested     Requested     Clock                                           Clock                     Clock
+Clock                                   Frequency     Period        Type                                            Group                     Load 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ADC_PLL|CLKOP_inferred_clock            491.6 MHz     2.034         inferred                                        Autoconstr_clkgroup_3     45   
+ADC_PLL|CLKOS_inferred_clock            1.0 MHz       1000.000      inferred                                        Autoconstr_clkgroup_4     102  
+DVI_clkgen|CLKOP_inferred_clock         657.5 MHz     1.521         inferred                                        Autoconstr_clkgroup_2     40   
+DVI_clkgen|CLKOS2_inferred_clock        334.6 MHz     2.989         inferred                                        Autoconstr_clkgroup_1     72   
+DVI_clkgen|CLKOS3_inferred_clock        593.1 MHz     1.686         inferred                                        Autoconstr_clkgroup_0     38   
+System                                  1.0 MHz       1000.000      system                                          system_clkgroup           0    
+vga_controller|v_sync_derived_clock     1.0 MHz       1000.000      derived (from ADC_PLL|CLKOS_inferred_clock)     Autoconstr_clkgroup_4     50   
+===================================================================================================================================================
+
+@W: MT529 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_uart.vhd":82:2:82:3|Found inferred clock DVI_clkgen|CLKOS3_inferred_clock which controls 38 sequential elements including myuart.txcounter[15:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\tdms_encoder.vhd":76:6:76:7|Found inferred clock DVI_clkgen|CLKOS2_inferred_clock which controls 72 sequential elements including u100.u21.dc_bias[3:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\dvi_d.vhd":110:6:110:7|Found inferred clock DVI_clkgen|CLKOP_inferred_clock which controls 40 sequential elements including u100.shift_red[0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\lscc\diamond\3.9_x64\examples\fleadso\dso_rambuffer_ch1\dso_rambuffer_ch1.vhd":51:4:51:26|Found inferred clock ADC_PLL|CLKOP_inferred_clock which controls 45 sequential elements including user_module1.U3.DSO_RAMBUFFER_CH1_0_0_0. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+@W: MT529 :"c:\lscc\diamond\3.9_x64\examples\fleadso\source\simple_vga_crtc.vhd":80:4:80:5|Found inferred clock ADC_PLL|CLKOS_inferred_clock which controls 102 sequential elements including user_module1.U2.row_1[8:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 57MB peak: 143MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Oct 03 00:10:18 2018
+
+###########################################################]

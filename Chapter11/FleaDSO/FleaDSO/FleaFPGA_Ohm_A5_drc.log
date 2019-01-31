@@ -1,0 +1,123 @@
+Results of NGD DRC are available in FleaFPGA_Ohm_A5_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.9_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: Port 'CLKOS2' has no signal connected to it. Property 'FREQUENCY_PIN_CLKOS2' is ignored for instance 'PLLInst_0'.
+WARNING - synthesis: Port 'CLKOS' has no signal connected to it. Property 'FREQUENCY_PIN_CLKOS' is ignored for instance 'PLLInst_0'.
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'slave_rx_i' has no load.
+WARNING - synthesis: input pad net 'slave_rx_i' has no legal load.
+WARNING - synthesis: logical net 'slave_cts_i' has no load.
+WARNING - synthesis: input pad net 'slave_cts_i' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[15]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[15]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[14]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[14]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[13]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[13]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[12]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[12]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[11]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[11]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[10]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[10]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[9]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[9]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[8]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[8]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[7]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[7]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[6]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[6]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[5]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[5]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[4]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[4]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[3]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[3]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[2]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[2]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[1]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[1]' has no legal load.
+WARNING - synthesis: logical net 'Dram_Data[0]' has no load.
+WARNING - synthesis: input pad net 'Dram_Data[0]' has no legal load.
+WARNING - synthesis: logical net 'GPIO_2' has no load.
+WARNING - synthesis: input pad net 'GPIO_2' has no legal load.
+WARNING - synthesis: logical net 'GPIO_3' has no load.
+WARNING - synthesis: input pad net 'GPIO_3' has no legal load.
+WARNING - synthesis: logical net 'GPIO_4' has no load.
+WARNING - synthesis: input pad net 'GPIO_4' has no legal load.
+WARNING - synthesis: logical net 'GPIO_6' has no load.
+WARNING - synthesis: input pad net 'GPIO_6' has no legal load.
+WARNING - synthesis: logical net 'GPIO_7' has no load.
+WARNING - synthesis: input pad net 'GPIO_7' has no legal load.
+WARNING - synthesis: logical net 'GPIO_8' has no load.
+WARNING - synthesis: input pad net 'GPIO_8' has no legal load.
+WARNING - synthesis: logical net 'GPIO_9' has no load.
+WARNING - synthesis: input pad net 'GPIO_9' has no legal load.
+WARNING - synthesis: logical net 'GPIO_10' has no load.
+WARNING - synthesis: input pad net 'GPIO_10' has no legal load.
+WARNING - synthesis: logical net 'GPIO_11' has no load.
+WARNING - synthesis: input pad net 'GPIO_11' has no legal load.
+WARNING - synthesis: logical net 'GPIO_12' has no load.
+WARNING - synthesis: input pad net 'GPIO_12' has no legal load.
+WARNING - synthesis: logical net 'GPIO_13' has no load.
+WARNING - synthesis: input pad net 'GPIO_13' has no legal load.
+WARNING - synthesis: logical net 'GPIO_14' has no load.
+WARNING - synthesis: input pad net 'GPIO_14' has no legal load.
+WARNING - synthesis: logical net 'GPIO_15' has no load.
+WARNING - synthesis: input pad net 'GPIO_15' has no legal load.
+WARNING - synthesis: logical net 'GPIO_16' has no load.
+WARNING - synthesis: input pad net 'GPIO_16' has no legal load.
+WARNING - synthesis: logical net 'GPIO_17' has no load.
+WARNING - synthesis: input pad net 'GPIO_17' has no legal load.
+WARNING - synthesis: logical net 'GPIO_18' has no load.
+WARNING - synthesis: input pad net 'GPIO_18' has no legal load.
+WARNING - synthesis: logical net 'GPIO_19' has no load.
+WARNING - synthesis: input pad net 'GPIO_19' has no legal load.
+WARNING - synthesis: logical net 'GPIO_21' has no load.
+WARNING - synthesis: input pad net 'GPIO_21' has no legal load.
+WARNING - synthesis: logical net 'GPIO_22' has no load.
+WARNING - synthesis: input pad net 'GPIO_22' has no legal load.
+WARNING - synthesis: logical net 'GPIO_23' has no load.
+WARNING - synthesis: input pad net 'GPIO_23' has no legal load.
+WARNING - synthesis: logical net 'GPIO_24' has no load.
+WARNING - synthesis: input pad net 'GPIO_24' has no legal load.
+WARNING - synthesis: logical net 'GPIO_25' has no load.
+WARNING - synthesis: input pad net 'GPIO_25' has no legal load.
+WARNING - synthesis: logical net 'GPIO_26' has no load.
+WARNING - synthesis: input pad net 'GPIO_26' has no legal load.
+WARNING - synthesis: logical net 'GPIO_27' has no load.
+WARNING - synthesis: input pad net 'GPIO_27' has no legal load.
+WARNING - synthesis: logical net 'GPIO_IDSD' has no load.
+WARNING - synthesis: input pad net 'GPIO_IDSD' has no legal load.
+WARNING - synthesis: logical net 'GPIO_IDSC' has no load.
+WARNING - synthesis: input pad net 'GPIO_IDSC' has no legal load.
+WARNING - synthesis: logical net 'ADC0_input' has no load.
+WARNING - synthesis: input pad net 'ADC0_input' has no legal load.
+WARNING - synthesis: logical net 'mmc_dat1' has no load.
+WARNING - synthesis: input pad net 'mmc_dat1' has no legal load.
+WARNING - synthesis: logical net 'mmc_dat2' has no load.
+WARNING - synthesis: input pad net 'mmc_dat2' has no legal load.
+WARNING - synthesis: logical net 'mmc_miso' has no load.
+WARNING - synthesis: input pad net 'mmc_miso' has no legal load.
+WARNING - synthesis: logical net 'PS2_clk1' has no load.
+WARNING - synthesis: input pad net 'PS2_clk1' has no legal load.
+WARNING - synthesis: logical net 'PS2_data1' has no load.
+WARNING - synthesis: input pad net 'PS2_data1' has no legal load.
+WARNING - synthesis: logical net 'PS2_clk2' has no load.
+WARNING - synthesis: input pad net 'PS2_clk2' has no legal load.
+WARNING - synthesis: logical net 'PS2_data2' has no load.
+WARNING - synthesis: input pad net 'PS2_data2' has no legal load.
+WARNING - synthesis: logical net 'GPIO_20_c' has no load.
+WARNING - synthesis: DRC complete with 105 warnings.
+
+Design Results:
+     71 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file FleaDSO_FleaDSO.ngd.

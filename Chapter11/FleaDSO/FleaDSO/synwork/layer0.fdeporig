@@ -1,0 +1,88 @@
+#defaultlanguage:vhdl
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\lscc\\diamond\\3.9_x64\\examples\\FleaDSO\\FleaDSO\\synwork\\FleaDSO_FleaDSO_comp.srs|-top|FleaFPGA_Ohm_A5|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-dfltencoding|onehot|-sm|-encrypt|-pro|-lite|-ui|-fid2|-ram|-sharing|on|-ll|2000|-ignore_undefined_lib|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\bin64\\c_vhdl.exe":1489169076
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\location.map":1489190912
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std.vhd":1488989000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\snps_haps_pkg.vhd":1488989000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\std1164.vhd":1488989000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\numeric.vhd":1488989000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\umr_capim.vhd":1488989000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\arith.vhd":1488989000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\unsigned.vhd":1488989000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\synpbase\\lib\\vhd\\hyperents.vhd":1488989000
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\cae_library\\synthesis\\vhdl\\ecp5u.vhd":1480919226
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\examples\\FleaDSO\\source\\Simple_VGA_CRTC.vhd":1518851453
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\examples\\FleaDSO\\source\\TDMS_encoder.vhd":1471512560
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\examples\\FleaDSO\\source\\VGA.vhd":1518506423
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\examples\\FleaDSO\\source\\simple_uart.vhd":1538487178
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\examples\\FleaDSO\\DSO_RAMBUFFER_CH1\\DSO_RAMBUFFER_CH1.vhd":1518862498
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\examples\\FleaDSO\\ADC_PLL\\ADC_PLL.vhd":1519040247
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\examples\\FleaDSO\\source\\FleaFPGA_DSO.vhd":1538489409
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\examples\\FleaDSO\\ddr_out\\ddr_out.vhd":1518506494
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\examples\\FleaDSO\\DVI_clkgen\\DVI_clkgen.vhd":1518866822
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\examples\\FleaDSO\\source\\DVI_D.vhd":1461295053
+#CUR:"C:\\lscc\\diamond\\3.9_x64\\examples\\FleaDSO\\source\\FleaFPGA_2v5_DSO_toplevel.vhd":1538488194
+0 "C:\lscc\diamond\3.9_x64\cae_library\synthesis\vhdl\ecp5u.vhd" vhdl
+1 "C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\Simple_VGA_CRTC.vhd" vhdl
+2 "C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\TDMS_encoder.vhd" vhdl
+3 "C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\VGA.vhd" vhdl
+4 "C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\simple_uart.vhd" vhdl
+5 "C:\lscc\diamond\3.9_x64\examples\FleaDSO\DSO_RAMBUFFER_CH1\DSO_RAMBUFFER_CH1.vhd" vhdl
+6 "C:\lscc\diamond\3.9_x64\examples\FleaDSO\ADC_PLL\ADC_PLL.vhd" vhdl
+7 "C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_DSO.vhd" vhdl
+8 "C:\lscc\diamond\3.9_x64\examples\FleaDSO\ddr_out\ddr_out.vhd" vhdl
+9 "C:\lscc\diamond\3.9_x64\examples\FleaDSO\DVI_clkgen\DVI_clkgen.vhd" vhdl
+10 "C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\DVI_D.vhd" vhdl
+11 "C:\lscc\diamond\3.9_x64\examples\FleaDSO\source\FleaFPGA_2v5_DSO_toplevel.vhd" vhdl
+
+# Dependency Lists (Uses list)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 0 
+6 0 
+7 6 1 5 
+8 0 
+9 0 
+10 2 8 
+11 7 9 10 4 
+
+# Dependency Lists (Users Of)
+0 9 8 6 5 
+1 7 
+2 10 
+3 -1
+4 11 
+5 7 
+6 7 
+7 11 
+8 10 
+9 11 
+10 11 
+11 -1
+
+# Design Unit to File Association
+arch work vga_controller behavior 1
+module work vga_controller 1
+arch work tdms_encoder behavioral 2
+module work tdms_encoder 2
+arch work vga rtl 3
+module work vga 3
+arch work simple_uart rtl 4
+module work simple_uart 4
+arch work dso_rambuffer_ch1 structure 5
+module work dso_rambuffer_ch1 5
+arch work adc_pll structure 6
+module work adc_pll 6
+arch work fleafpga_dso behavior 7
+module work fleafpga_dso 7
+arch work ddr_out structure 8
+module work ddr_out 8
+arch work dvi_clkgen structure 9
+module work dvi_clkgen 9
+arch work dvid behavioral 10
+module work dvid 10
+arch work fleafpga_ohm_a5 arch 11
+module work fleafpga_ohm_a5 11

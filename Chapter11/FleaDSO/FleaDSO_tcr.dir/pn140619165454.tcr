@@ -1,0 +1,10 @@
+#Start recording tcl command: 6/19/2014 16:52:51
+#Project Location: C:/lscc/diamond/3.1_x64/examples/FleaDSO; Project name: FleaDSO
+prj_project open "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO.ldf"
+prj_src remove "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO/source/ADC_PLL.edn" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO/source/Simple_VGA_CRTC.vhd" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO/source/FleaFPGA_DSO.vhd" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO/source/FleaFPGA_2v5_DSO_toplevel.vhd" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO/source/DSO_RAMBUFFER_CH1.vhd" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO/source/DSO_RAMBUFFER_CH1.lpc" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO/source/DSO_RAMBUFFER_CH1.ipx" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO/source/DSO_RAMBUFFER_CH1.edn" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO/source/ADC_PLL.vhd" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO/source/ADC_PLL.lpc" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO/source/ADC_PLL.ipx"
+prj_src add "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/ADC_PLL.edn" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/ADC_PLL.lpc" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/ADC_PLL.ipx" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/ADC_PLL.vhd" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/DSO_RAMBUFFER_CH1.edn" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/DSO_RAMBUFFER_CH1.ipx" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/DSO_RAMBUFFER_CH1.lpc" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/DSO_RAMBUFFER_CH1.vhd" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/FleaFPGA_2v5_DSO_toplevel.vhd" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/FleaFPGA_DSO.vhd" "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/Simple_VGA_CRTC.vhd"
+prj_src add -exclude "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/FleaFPGA_2v5_DSO_toplevel.lpf"
+prj_src enable "C:/lscc/diamond/3.1_x64/examples/FleaDSO/source/FleaFPGA_2v5_DSO_toplevel.lpf"
+prj_src remove "C:/lscc/diamond/3.1_x64/examples/FleaDSO/FleaDSO.lpf"
+prj_strgy set "Quick"
+#Stop recording: 6/19/2014 16:54:54

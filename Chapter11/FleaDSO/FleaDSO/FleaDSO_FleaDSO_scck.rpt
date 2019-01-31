@@ -1,0 +1,34 @@
+# Synopsys Constraint Checker(syntax only), version maplat, Build 1682R, built Mar 10 2017
+# Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+# Written on Wed Oct 03 00:10:17 2018
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "FleaFPGA_Ohm_A5"
+Constraint File(s):      (none)
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+*************
+
+Start                                   Requested     Requested     Clock                                           Clock                     Clock
+Clock                                   Frequency     Period        Type                                            Group                     Load 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+ADC_PLL|CLKOP_inferred_clock            491.6 MHz     2.034         inferred                                        Autoconstr_clkgroup_3     45   
+ADC_PLL|CLKOS_inferred_clock            1.0 MHz       1000.000      inferred                                        Autoconstr_clkgroup_4     102  
+DVI_clkgen|CLKOP_inferred_clock         657.5 MHz     1.521         inferred                                        Autoconstr_clkgroup_2     40   
+DVI_clkgen|CLKOS2_inferred_clock        334.6 MHz     2.989         inferred                                        Autoconstr_clkgroup_1     72   
+DVI_clkgen|CLKOS3_inferred_clock        593.1 MHz     1.686         inferred                                        Autoconstr_clkgroup_0     38   
+System                                  1.0 MHz       1000.000      system                                          system_clkgroup           0    
+vga_controller|v_sync_derived_clock     1.0 MHz       1000.000      derived (from ADC_PLL|CLKOS_inferred_clock)     Autoconstr_clkgroup_4     50   
+===================================================================================================================================================

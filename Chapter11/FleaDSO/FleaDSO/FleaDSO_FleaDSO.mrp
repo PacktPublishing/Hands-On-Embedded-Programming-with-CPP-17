@@ -1,0 +1,1524 @@
+
+       Lattice Mapping Report File for Design Module 'FleaFPGA_Ohm_A5'
+
+
+Design Information
+------------------
+
+Command line:   map -a ECP5U -p LFE5U-25F -t CABGA381 -s 6 -oc Commercial
+     FleaDSO_FleaDSO.ngd -o FleaDSO_FleaDSO_map.ncd -pr FleaDSO_FleaDSO.prf -mp
+     FleaDSO_FleaDSO.mrp
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf -c 0
+     -gui -msgset C:/lscc/diamond/3.9_x64/examples/FleaDSO/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LFE5U-25FCABGA381
+Target Performance:   6
+Mapper:  sa5p00,  version:  Diamond (64-bit) 3.9.1.119
+Mapped on:  10/03/18  00:10:42
+
+Design Summary
+--------------
+
+   Number of registers:    368 out of 24879 (1%)
+      PFU registers:          366 out of 24288 (2%)
+      PIO registers:            2 out of   591 (0%)
+   Number of SLICEs:       408 out of 12144 (3%)
+      SLICEs as Logic/ROM:    408 out of 12144 (3%)
+      SLICEs as RAM:            0 out of  9108 (0%)
+      SLICEs as Carry:        203 out of 12144 (2%)
+   Number of LUT4s:        811 out of 24288 (3%)
+      Number used as logic LUTs:        405
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      406
+      Number used as shift registers:     0
+   Number of PIO sites used: 44 out of 197 (22%)
+      Number of PIO sites used for single ended IOs: 34
+      Number of PIO sites used for differential IOs: 10 (represented by 5 PIO
+     comps in NCD)
+   Number of IDDR/ODDR/TDDR cells used: 4 out of 591 (1%)
+      Number of IDDR cells:   0
+      Number of ODDR cells:   4
+      Number of TDDR cells:   0
+   Number of PIO using at least one IDDR/ODDR/TDDR: 4 (4 differential)
+      Number of PIO using IDDR only:        0 (0 differential)
+      Number of PIO using ODDR only:        4 (4 differential)
+      Number of PIO using TDDR only:        0 (0 differential)
+      Number of PIO using IDDR/ODDR:        0 (0 differential)
+      Number of PIO using IDDR/TDDR:        0 (0 differential)
+      Number of PIO using ODDR/TDDR:        0 (0 differential)
+      Number of PIO using IDDR/ODDR/TDDR:   0 (0 differential)
+   Number of block RAMs:  1 out of 56 (2%)
+   Number of GSRs:  1 out of 1 (100%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   DTR used :   No
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 4 (0%)
+   Number of DCC:  0 out of 60 (0%)
+   Number of DCS:  0 out of 2 (0%)
+   Number of PLLs:  2 out of 2 (100%)
+   Number of DDRDLLs:  0 out of 4 (0%)
+
+                                    Page 1
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Design Summary (cont)
+---------------------
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 10 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+
+        Number Of Mapped DSP Components:
+   --------------------------------
+   MULT18X18D          0
+   MULT9X9D            0
+   ALU54B              0
+   ALU24B              0
+   PRADD18A            0
+   PRADD9A             0
+   --------------------------------
+   Number of Used DSP MULT Sites:  0 out of 56 (0 %)
+   Number of Used DSP ALU Sites:  0 out of 28 (0 %)
+   Number of Used DSP PRADD Sites:  0 out of 56 (0 %)
+   Number of clocks:  7
+     Net sys_clock_c: 1 loads, 1 rising, 0 falling (Driver: PIO sys_clock )
+     Net user_module1.ADC_clk: 26 loads, 26 rising, 0 falling (Driver:
+     user_module1/U1/PLLInst_0 )
+     Net clk_50: 48 loads, 48 rising, 0 falling (Driver: u0/PLLInst_0 )
+     Net clk_dvi: 25 loads, 25 rising, 0 falling (Driver: u0/PLLInst_0 )
+     Net clk_vga: 24 loads, 24 rising, 0 falling (Driver: u0/PLLInst_0 )
+     Net user_module1.U2.v_sync_i: 28 loads, 28 rising, 0 falling (Driver:
+     user_module1/U2/v_sync )
+     Net user_module1/VGA_25MHz: 59 loads, 59 rising, 0 falling (Driver:
+     user_module1/U1/PLLInst_0 )
+   Number of Clock Enables:  10
+     Net myuart.N_106_i: 1 loads, 0 LSLICEs
+     Net myuart/un1_reset_inv_i: 10 loads, 10 LSLICEs
+     Net sys_reset_c: 4 loads, 4 LSLICEs
+     Net user_module1.vga_disp_en: 21 loads, 21 LSLICEs
+     Net user_module1/un5_samplerate_adj: 10 loads, 10 LSLICEs
+     Net user_module1/ADC_buffer_addre: 5 loads, 5 LSLICEs
+     Net user_module1/U2/un2_h_count_0_i: 5 loads, 5 LSLICEs
+     Net user_module1/U2/row_0_sqmuxa: 5 loads, 5 LSLICEs
+     Net user_module1/U2/column_0_sqmuxa: 5 loads, 5 LSLICEs
+     Net GPIO_21_c: 14 loads, 14 LSLICEs
+   Number of local set/reset loads for net u100/u5/GND merged into GSR:  1
+   Number of LSRs:  9
+     Net myuart/txstate_ret_0_RNI9HCI: 5 loads, 5 LSLICEs
+     Net myuart/txstate[1]: 1 loads, 1 LSLICEs
+     Net sys_reset_c: 38 loads, 34 LSLICEs
+     Net user_module1.vga_disp_en: 8 loads, 8 LSLICEs
+     Net user_module1/Green_out_0_sqmuxa: 1 loads, 1 LSLICEs
+     Net user_module1/sample_rate_RNIEBIJ[0]: 3 loads, 3 LSLICEs
+     Net user_module1/un5_trigger_adjlto6_RNIC4Q9: 5 loads, 5 LSLICEs
+     Net user_module1/un1_vga_bufout_scaled13_i: 2 loads, 2 LSLICEs
+     Net user_module1/N_390: 3 loads, 3 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+
+                                    Page 2
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Design Summary (cont)
+---------------------
+     Net user_module1.vga_disp_en: 76 loads
+     Net myuart/txcounter_1_sqmuxa_o: 46 loads
+     Net sys_reset_c: 46 loads
+     Net u100/shift_blue_3_1[9]: 29 loads
+     Net u100/shift_clock[0]: 29 loads
+     Net u100/shift_clock[1]: 29 loads
+     Net u100/shift_red_3_1[0]: 29 loads
+     Net u100/u21/dc_bias[3]: 23 loads
+     Net user_module1/U2/un2_h_count_0: 22 loads
+     Net vga_green[0]: 22 loads
+
+
+
+
+   Number of warnings:  103
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(12):
+     Semantic error in "IOBUF PORT "slave_rx_i" IO_TYPE=LVCMOS25 PULLMODE=NONE
+     ;": Port "slave_rx_i" does not exist in the design. This preference has
+     been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(14):
+     Semantic error in "IOBUF PORT "slave_cts_i" IO_TYPE=LVCMOS25 PULLMODE=NONE
+     ;": Port "slave_cts_i" does not exist in the design. This preference has
+     been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(25):
+     Semantic error in "IOBUF PORT "PS2_clk1" IO_TYPE=LVCMOS25 PULLMODE=UP ;":
+     Port "PS2_clk1" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(26):
+     Semantic error in "IOBUF PORT "PS2_data1" IO_TYPE=LVCMOS25 PULLMODE=UP ;":
+     Port "PS2_data1" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(29):
+     Semantic error in "IOBUF PORT "PS2_clk2" PULLMODE=UP IO_TYPE=LVCMOS25 ;":
+     Port "PS2_clk2" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(30):
+     Semantic error in "IOBUF PORT "PS2_data2" PULLMODE=UP IO_TYPE=LVCMOS25 ;":
+     Port "PS2_data2" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(37):
+     Semantic error in "IOBUF PORT "GPIO_2" IO_TYPE=LVCMOS33 PULLMODE=NONE ;":
+     Port "GPIO_2" does not exist in the design. This preference has been
+     disabled.
+
+                                    Page 3
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(38):
+     Semantic error in "IOBUF PORT "GPIO_3" IO_TYPE=LVCMOS33 PULLMODE=NONE ;":
+     Port "GPIO_3" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(39):
+     Semantic error in "IOBUF PORT "GPIO_4" IO_TYPE=LVCMOS33 ;": Port "GPIO_4"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(40):
+     Semantic error in "IOBUF PORT "GPIO_17" IO_TYPE=LVCMOS33 ;": Port "GPIO_17"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(41):
+     Semantic error in "IOBUF PORT "GPIO_27" IO_TYPE=LVCMOS33 ;": Port "GPIO_27"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(42):
+     Semantic error in "IOBUF PORT "GPIO_22" IO_TYPE=LVCMOS33 ;": Port "GPIO_22"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(43):
+     Semantic error in "IOBUF PORT "GPIO_10" IO_TYPE=LVCMOS33 ;": Port "GPIO_10"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(44):
+     Semantic error in "IOBUF PORT "GPIO_9" IO_TYPE=LVCMOS33 ;": Port "GPIO_9"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(45):
+     Semantic error in "IOBUF PORT "GPIO_11" IO_TYPE=LVCMOS33 ;": Port "GPIO_11"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(46):
+     Semantic error in "IOBUF PORT "GPIO_IDSD" IO_TYPE=LVCMOS33 PULLMODE=NONE
+     ;": Port "GPIO_IDSD" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(47):
+     Semantic error in "IOBUF PORT "GPIO_5" IO_TYPE=LVCMOS33 ;": Port "GPIO_5"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(48):
+     Semantic error in "IOBUF PORT "GPIO_6" IO_TYPE=LVCMOS33 ;": Port "GPIO_6"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(49):
+     Semantic error in "IOBUF PORT "GPIO_13" IO_TYPE=LVCMOS33 ;": Port "GPIO_13"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(50):
+     Semantic error in "IOBUF PORT "GPIO_19" IO_TYPE=LVCMOS33 ;": Port "GPIO_19"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(51):
+
+                                    Page 4
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Design Errors/Warnings (cont)
+-----------------------------
+     Semantic error in "IOBUF PORT "GPIO_26" IO_TYPE=LVCMOS33 ;": Port "GPIO_26"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(52):
+     Semantic error in "IOBUF PORT "GPIO_14" IO_TYPE=LVCMOS33 ;": Port "GPIO_14"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(53):
+     Semantic error in "IOBUF PORT "GPIO_15" IO_TYPE=LVCMOS33 ;": Port "GPIO_15"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(54):
+     Semantic error in "IOBUF PORT "GPIO_18" IO_TYPE=LVCMOS33 ;": Port "GPIO_18"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(55):
+     Semantic error in "IOBUF PORT "GPIO_23" IO_TYPE=LVCMOS33 ;": Port "GPIO_23"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(56):
+     Semantic error in "IOBUF PORT "GPIO_24" IO_TYPE=LVCMOS33 ;": Port "GPIO_24"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(57):
+     Semantic error in "IOBUF PORT "GPIO_25" IO_TYPE=LVCMOS33 ;": Port "GPIO_25"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(58):
+     Semantic error in "IOBUF PORT "GPIO_8" IO_TYPE=LVCMOS33 ;": Port "GPIO_8"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(59):
+     Semantic error in "IOBUF PORT "GPIO_7" IO_TYPE=LVCMOS33 ;": Port "GPIO_7"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(60):
+     Semantic error in "IOBUF PORT "GPIO_IDSC" IO_TYPE=LVCMOS33 PULLMODE=NONE
+     ;": Port "GPIO_IDSC" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(61):
+     Semantic error in "IOBUF PORT "GPIO_12" IO_TYPE=LVCMOS33 ;": Port "GPIO_12"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(62):
+     Semantic error in "IOBUF PORT "GPIO_16" IO_TYPE=LVCMOS33 ;": Port "GPIO_16"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(137):
+     Semantic error in "IOBUF PORT "Dram_Data[15]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[15]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(138):
+     Semantic error in "IOBUF PORT "Dram_Data[14]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[14]" does not exist in the design. This preference has been
+
+                                    Page 5
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Design Errors/Warnings (cont)
+-----------------------------
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(139):
+     Semantic error in "IOBUF PORT "Dram_Data[13]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[13]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(140):
+     Semantic error in "IOBUF PORT "Dram_Data[12]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[12]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(141):
+     Semantic error in "IOBUF PORT "Dram_Data[11]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[11]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(142):
+     Semantic error in "IOBUF PORT "Dram_Data[10]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[10]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(143):
+     Semantic error in "IOBUF PORT "Dram_Data[9]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[9]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(144):
+     Semantic error in "IOBUF PORT "Dram_Data[8]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[8]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(145):
+     Semantic error in "IOBUF PORT "Dram_Data[7]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[7]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(146):
+     Semantic error in "IOBUF PORT "Dram_Data[6]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[6]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(147):
+     Semantic error in "IOBUF PORT "Dram_Data[5]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[5]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(148):
+     Semantic error in "IOBUF PORT "Dram_Data[4]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[4]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(149):
+     Semantic error in "IOBUF PORT "Dram_Data[3]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[3]" does not exist in the design. This preference has been
+     disabled.
+
+                                    Page 6
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(150):
+     Semantic error in "IOBUF PORT "Dram_Data[2]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[2]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(151):
+     Semantic error in "IOBUF PORT "Dram_Data[1]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[1]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(152):
+     Semantic error in "IOBUF PORT "Dram_Data[0]" IO_TYPE=LVCMOS33 ;": Port
+     "Dram_Data[0]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(193):
+     Semantic error in "IOBUF PORT "mmc_miso" IO_TYPE=LVCMOS25 PULLMODE=NONE ;":
+     Port "mmc_miso" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(194):
+     Semantic error in "IOBUF PORT "mmc_dat1" IO_TYPE=LVCMOS33 PULLMODE=NONE ;":
+     Port "mmc_dat1" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(195):
+     Semantic error in "IOBUF PORT "mmc_dat2" IO_TYPE=LVCMOS33 PULLMODE=NONE ;":
+     Port "mmc_dat2" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf(215):
+     Semantic error in "IOBUF PORT "ADC0_input" IO_TYPE=LVCMOS33 ;": Port
+     "ADC0_input" does not exist in the design. This preference has been
+     disabled.
+WARNING - map: Using local reset signal 'u100/u5/GND' to infer global GSR net.
+WARNING - map: IO buffer missing for top level port slave_rx_i...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port slave_cts_i...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](15)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](14)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](13)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](12)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](11)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](10)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](9)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](8)...logic
+     will be discarded.
+
+                                    Page 7
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](7)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](6)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](5)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](4)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](3)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](2)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](1)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port Dram_Data[15:0](0)...logic
+     will be discarded.
+WARNING - map: IO buffer missing for top level port GPIO_2...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_3...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_4...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_6...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_7...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_8...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_9...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_10...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_11...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_12...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_13...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_14...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_15...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_16...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_17...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_18...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_19...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_22...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_23...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_24...logic will be
+     discarded.
+
+                                    Page 8
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Design Errors/Warnings (cont)
+-----------------------------
+WARNING - map: IO buffer missing for top level port GPIO_25...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_26...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_27...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_IDSD...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port GPIO_IDSC...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port mmc_dat1...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port mmc_dat2...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port mmc_miso...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port PS2_clk1...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port PS2_data1...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port PS2_clk2...logic will be
+     discarded.
+WARNING - map: IO buffer missing for top level port PS2_data2...logic will be
+     discarded.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| n_led1              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| sys_clock           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LVDS_ck[0]          | OUTPUT    | LVDS      |            |
++---------------------+-----------+-----------+------------+
+| LVDS_Blue[0]        | OUTPUT    | LVDS      |            |
++---------------------+-----------+-----------+------------+
+| LVDS_Green[0]       | OUTPUT    | LVDS      |            |
++---------------------+-----------+-----------+------------+
+| LVDS_Red[0]         | OUTPUT    | LVDS      |            |
++---------------------+-----------+-----------+------------+
+| PS2_enable          | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| mmc_mosi            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| mmc_clk             | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| mmc_n_cs            | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| ADC3_error          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ADC3_input          | INPUT     | LVCMOS33D | IN         |
++---------------------+-----------+-----------+------------+
+
+                                    Page 9
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+IO (PIO) Attributes (cont)
+--------------------------
+| GPIO_21             | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| GPIO_20             | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_DQML           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_DQMH           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_n_cs           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_Addr[12]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_Addr[11]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_Addr[10]       | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_Addr[9]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_Addr[8]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_Addr[7]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_Addr[6]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_Addr[5]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_Addr[4]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_Addr[3]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_Addr[2]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_Addr[1]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_Addr[0]        | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_BA[1]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_BA[0]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_n_We           | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_n_Cas          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_n_Ras          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_CKE            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| Dram_Clk            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| slave_tx_o          | OUTPUT    | LVCMOS25  | OUT        |
++---------------------+-----------+-----------+------------+
+| sys_reset           | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+                                   Page 10
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Removed logic
+-------------
+
+Block u100/VCC undriven or does not drive anything - clipped.
+Block u100/u21/VCC undriven or does not drive anything - clipped.
+Block u100/u22/VCC undriven or does not drive anything - clipped.
+Block u100/u23/VCC undriven or does not drive anything - clipped.
+Signal sys_reset_c_i was merged into signal sys_reset_c
+Signal GPIO_21_c_i was merged into signal GPIO_21_c
+Signal user_module1.vga_disp_en_i was merged into signal
+     user_module1.vga_disp_en
+Signal u100/u21/N_7_0_i was merged into signal u100/u21/dc_bias[3]
+Signal u100/u22/N_14_i was merged into signal u100/u22/dc_bias[3]
+Signal GND undriven or does not drive anything - clipped.
+Signal VCC undriven or does not drive anything - clipped.
+Signal user_module1/VCC undriven or does not drive anything - clipped.
+Signal user_module1/U2/VCC undriven or does not drive anything - clipped.
+Signal user_module1/U3/VCC undriven or does not drive anything - clipped.
+Signal user_module1/U3/GND undriven or does not drive anything - clipped.
+Signal myuart/VCC undriven or does not drive anything - clipped.
+Signal user_module1/un33_vga_disp_en_0_I_21_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un33_vga_disp_en_0_I_21_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un33_vga_disp_en_0_I_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un33_vga_disp_en_0_I_9_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un33_vga_disp_en_0_I_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un33_vga_disp_en_0_I_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_1 undriven or does not drive anything - clipped.
+Signal user_module1/un37_vga_disp_en_0_I_27_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un37_vga_disp_en_0_I_27_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/un37_vga_disp_en_0_I_21_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un37_vga_disp_en_0_I_21_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un37_vga_disp_en_0_I_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un37_vga_disp_en_0_I_9_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un37_vga_disp_en_0_I_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un37_vga_disp_en_0_I_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_2 undriven or does not drive anything - clipped.
+Signal user_module1/un1_adc_rawout_0_I_27_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_0_I_27_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_0_I_21_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_0_I_21_0_S0 undriven or does not drive
+     anything - clipped.
+
+                                   Page 11
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Removed logic (cont)
+--------------------
+Signal user_module1/un1_adc_rawout_0_I_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_0_I_9_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_0_I_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_0_I_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_3 undriven or does not drive anything - clipped.
+Signal user_module1/un11_vga_disp_en_0_I_27_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un11_vga_disp_en_0_I_27_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/un11_vga_disp_en_0_I_21_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un11_vga_disp_en_0_I_21_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un11_vga_disp_en_0_I_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un11_vga_disp_en_0_I_9_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un11_vga_disp_en_0_I_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un11_vga_disp_en_0_I_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_4 undriven or does not drive anything - clipped.
+Signal user_module1/un6_adc_sample_divider_0_I_15_0_S1 undriven or does not
+     drive anything - clipped.
+Signal user_module1/un6_adc_sample_divider_0_I_15_0_COUT undriven or does not
+     drive anything - clipped.
+Signal user_module1/un6_adc_sample_divider_0_I_9_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un6_adc_sample_divider_0_I_9_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un6_adc_sample_divider_0_I_33_0_S1 undriven or does not
+     drive anything - clipped.
+Signal user_module1/un6_adc_sample_divider_0_I_33_0_S0 undriven or does not
+     drive anything - clipped.
+Signal user_module1/un6_adc_sample_divider_0_I_21_0_S1 undriven or does not
+     drive anything - clipped.
+Signal user_module1/un6_adc_sample_divider_0_I_21_0_S0 undriven or does not
+     drive anything - clipped.
+Signal user_module1/un6_adc_sample_divider_0_I_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un6_adc_sample_divider_0_I_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_5 undriven or does not drive anything - clipped.
+Signal user_module1/un19_vga_disp_en_0_I_27_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un19_vga_disp_en_0_I_27_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/un19_vga_disp_en_0_I_21_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un19_vga_disp_en_0_I_21_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un19_vga_disp_en_0_I_9_0_S1 undriven or does not drive
+
+                                   Page 12
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal user_module1/un19_vga_disp_en_0_I_9_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un19_vga_disp_en_0_I_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un19_vga_disp_en_0_I_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_6 undriven or does not drive anything - clipped.
+Signal user_module1/un2_trig_lower_cry_8_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un2_trig_lower_cry_8_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/un2_trig_lower_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un2_trig_lower_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un2_trig_lower_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un2_trig_lower_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un2_trig_lower_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un2_trig_lower_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un2_trig_lower_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un2_trig_lower_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un2_trig_lower_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un2_trig_lower_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_7 undriven or does not drive anything - clipped.
+Signal user_module1/un1_adc_rawout_1_cry_8_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_1_cry_8_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_1_cry_7_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_1_cry_7_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_1_cry_5_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_1_cry_5_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_1_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_1_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_1_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_1_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_adc_rawout_1_cry_0_0_S0 undriven or does not drive
+
+                                   Page 13
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal user_module1/N_8 undriven or does not drive anything - clipped.
+Signal user_module1/un5_adc_rawout_cry_11_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/un5_adc_rawout_cry_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un5_adc_rawout_cry_3_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un5_adc_rawout_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un5_adc_rawout_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un5_adc_rawout_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un5_adc_rawout_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_9 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un54_sum_s_5_0_S1 undriven or does not drive anything
+     - clipped.
+Signal user_module1/mult1_un54_sum_s_5_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un54_sum_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un54_sum_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_10 undriven or does not drive anything - clipped.
+Signal user_module1/un1_trig_row_cry_10_0_S1 undriven or does not drive anything
+     - clipped.
+Signal user_module1/un1_trig_row_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_trig_row_cry_2_0_S1 undriven or does not drive anything
+     - clipped.
+Signal user_module1/un1_trig_row_cry_2_0_S0 undriven or does not drive anything
+     - clipped.
+Signal user_module1/N_11 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un47_sum_s_5_0_S1 undriven or does not drive anything
+     - clipped.
+Signal user_module1/mult1_un47_sum_s_5_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un47_sum_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un47_sum_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_12 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un40_sum_s_5_0_S1 undriven or does not drive anything
+     - clipped.
+Signal user_module1/mult1_un40_sum_s_5_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un40_sum_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un40_sum_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_13 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un96_sum_cry_4_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un96_sum_cry_1_0_S1 undriven or does not drive
+
+                                   Page 14
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal user_module1/mult1_un96_sum_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_14 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un61_sum_s_5_0_S1 undriven or does not drive anything
+     - clipped.
+Signal user_module1/mult1_un61_sum_s_5_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un61_sum_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un61_sum_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_15 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un68_sum_s_5_0_S1 undriven or does not drive anything
+     - clipped.
+Signal user_module1/mult1_un68_sum_s_5_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un68_sum_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un68_sum_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_16 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un75_sum_s_5_0_S1 undriven or does not drive anything
+     - clipped.
+Signal user_module1/mult1_un75_sum_s_5_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un75_sum_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un75_sum_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_17 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un82_sum_s_5_0_S1 undriven or does not drive anything
+     - clipped.
+Signal user_module1/mult1_un82_sum_s_5_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un82_sum_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un82_sum_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_18 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un89_sum_s_5_0_S1 undriven or does not drive anything
+     - clipped.
+Signal user_module1/mult1_un89_sum_s_5_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un89_sum_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un89_sum_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_20 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un103_sum_cry_4_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un103_sum_cry_4_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un103_sum_cry_2_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un103_sum_cry_2_0_S0 undriven or does not drive
+
+                                   Page 15
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal user_module1/mult1_un103_sum_cry_1_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un103_sum_cry_1_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_21 undriven or does not drive anything - clipped.
+Signal user_module1/un1_vga_bufout_cry_10_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_vga_bufout_cry_10_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_vga_bufout_cry_2_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_vga_bufout_cry_2_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_22 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un47_sum_s_5_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un47_sum_s_5_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un47_sum_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un47_sum_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_23 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un40_sum_s_5_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un40_sum_s_5_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un40_sum_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un40_sum_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_24 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un96_sum_cry_4_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un96_sum_cry_1_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un96_sum_cry_1_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_25 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un61_sum_s_5_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un61_sum_s_5_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un61_sum_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un61_sum_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_26 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un68_sum_s_5_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un68_sum_s_5_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un68_sum_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un68_sum_cry_0_0_S0_0 undriven or does not drive
+
+                                   Page 16
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal user_module1/N_27 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un75_sum_s_5_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un75_sum_s_5_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un75_sum_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un75_sum_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_28 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un82_sum_s_5_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un82_sum_s_5_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un82_sum_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un82_sum_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_30 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un89_sum_s_5_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un89_sum_s_5_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un89_sum_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un89_sum_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_31 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un54_sum_s_5_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un54_sum_s_5_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un54_sum_cry_0_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un54_sum_cry_0_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_32 undriven or does not drive anything - clipped.
+Signal user_module1/mult1_un103_sum_cry_4_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un103_sum_cry_4_0_COUT_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un103_sum_cry_2_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un103_sum_cry_2_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un103_sum_cry_1_0_S1_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/mult1_un103_sum_cry_1_0_S0_0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_33 undriven or does not drive anything - clipped.
+Signal user_module1/un1_grid_column_1_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_grid_column_1_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_grid_column_1_cry_0_0_S0 undriven or does not drive
+
+                                   Page 17
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal user_module1/N_35 undriven or does not drive anything - clipped.
+Signal user_module1/un2_trig_upper_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/un2_trig_upper_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un2_trig_upper_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_37 undriven or does not drive anything - clipped.
+Signal user_module1/un1_trig_lower_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_trig_lower_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un1_trig_lower_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_38 undriven or does not drive anything - clipped.
+Signal user_module1/adc_rawout_5_cry_9_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/adc_rawout_5_cry_0_0_S1 undriven or does not drive anything
+     - clipped.
+Signal user_module1/adc_rawout_5_cry_0_0_S0 undriven or does not drive anything
+     - clipped.
+Signal user_module1/N_40 undriven or does not drive anything - clipped.
+Signal user_module1/un2_trig_row_cry_7_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/un2_trig_row_cry_0_0_S1 undriven or does not drive anything
+     - clipped.
+Signal user_module1/un2_trig_row_cry_0_0_S0 undriven or does not drive anything
+     - clipped.
+Signal user_module1/N_41 undriven or does not drive anything - clipped.
+Signal user_module1/ADC_buffer_addr_s_0_S1[9] undriven or does not drive
+     anything - clipped.
+Signal user_module1/ADC_buffer_addr_s_0_COUT[9] undriven or does not drive
+     anything - clipped.
+Signal user_module1/ADC_buffer_addr_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_42 undriven or does not drive anything - clipped.
+Signal user_module1/ADC_sample_divider_s_0_S1[13] undriven or does not drive
+     anything - clipped.
+Signal user_module1/ADC_sample_divider_s_0_COUT[13] undriven or does not drive
+     anything - clipped.
+Signal user_module1/ADC_sample_divider_cry_0_S0[0] undriven or does not drive
+     anything - clipped.
+Signal user_module1/N_43 undriven or does not drive anything - clipped.
+Signal user_module1/U1/CLKINTFB undriven or does not drive anything - clipped.
+Signal user_module1/U1/REFCLK undriven or does not drive anything - clipped.
+Signal user_module1/U1/INTLOCK undriven or does not drive anything - clipped.
+Signal user_module1/U1/LOCK undriven or does not drive anything - clipped.
+Signal user_module1/U1/CLKOS3 undriven or does not drive anything - clipped.
+Signal user_module1/U1/CLKOS2 undriven or does not drive anything - clipped.
+Signal user_module1/U2/un4_v_count_s_9_0_S1 undriven or does not drive anything
+     - clipped.
+Signal user_module1/U2/un4_v_count_s_9_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/U2/un4_v_count_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+
+                                   Page 18
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Removed logic (cont)
+--------------------
+Signal user_module1/U2/un4_v_count_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U2/N_1 undriven or does not drive anything - clipped.
+Signal user_module1/U2/un5_h_count_s_9_0_S1 undriven or does not drive anything
+     - clipped.
+Signal user_module1/U2/un5_h_count_s_9_0_COUT undriven or does not drive
+     anything - clipped.
+Signal user_module1/U2/un5_h_count_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U2/un5_h_count_cry_0_0_S0 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U2/N_2 undriven or does not drive anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB17 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB16 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB15 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB14 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB13 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB12 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB11 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB10 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOB9 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA17 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA16 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA15 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA14 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA13 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA12 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA11 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA10 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0_DOA9 undriven or does not drive
+     anything - clipped.
+Signal user_module1/U3/QA_1[8] undriven or does not drive anything - clipped.
+Signal user_module1/U3/QA_1[7] undriven or does not drive anything - clipped.
+Signal user_module1/U3/QA_1[6] undriven or does not drive anything - clipped.
+Signal user_module1/U3/QA_1[5] undriven or does not drive anything - clipped.
+Signal user_module1/U3/QA_1[4] undriven or does not drive anything - clipped.
+Signal user_module1/U3/QA_1[3] undriven or does not drive anything - clipped.
+Signal user_module1/U3/QA_1[2] undriven or does not drive anything - clipped.
+Signal user_module1/U3/QA_1[1] undriven or does not drive anything - clipped.
+
+                                   Page 19
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Removed logic (cont)
+--------------------
+Signal user_module1/U3/QA_1[0] undriven or does not drive anything - clipped.
+Signal user_module1/un33_vga_disp_en_0_I_27_0_S1 undriven or does not drive
+     anything - clipped.
+Signal user_module1/un33_vga_disp_en_0_I_27_0_COUT undriven or does not drive
+     anything - clipped.
+Signal u0/CLKINTFB_0 undriven or does not drive anything - clipped.
+Signal u0/REFCLK undriven or does not drive anything - clipped.
+Signal u0/INTLOCK_0 undriven or does not drive anything - clipped.
+Signal u0/LOCK undriven or does not drive anything - clipped.
+Signal u0/clk_dvin undriven or does not drive anything - clipped.
+Signal myuart/un3_txcounter_s_15_s0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal myuart/un3_txcounter_s_15_s0_0_COUT undriven or does not drive anything -
+     clipped.
+Signal myuart/un3_txcounter_cry_0_s0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal myuart/un3_txcounter_cry_0_s0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal myuart/N_2 undriven or does not drive anything - clipped.
+Signal myuart/un3_txcounter_s_11_s1_0_S1 undriven or does not drive anything -
+     clipped.
+Signal myuart/un3_txcounter_s_11_s1_0_COUT undriven or does not drive anything -
+     clipped.
+Signal myuart/un3_txcounter_cry_0_s1_0_S1 undriven or does not drive anything -
+     clipped.
+Signal myuart/un3_txcounter_cry_0_s1_0_S0 undriven or does not drive anything -
+     clipped.
+Signal myuart/N_3 undriven or does not drive anything - clipped.
+Signal myuart/un3_txcounter_s_15_s1_0_S1 undriven or does not drive anything -
+     clipped.
+Signal myuart/un3_txcounter_s_15_s1_0_COUT undriven or does not drive anything -
+     clipped.
+Signal myuart/un3_txcounter_cry_12_s1_0_S1 undriven or does not drive anything -
+     clipped.
+Signal myuart/un3_txcounter_cry_12_s1_0_S0 undriven or does not drive anything -
+     clipped.
+Signal myuart/N_4 undriven or does not drive anything - clipped.
+Block sys_reset_pad_RNIL3R was optimized away.
+Block GPIO_21_pad_RNI5PD7 was optimized away.
+Block user_module1/U2/disp_ena_RNIR78E was optimized away.
+Block u100/u21/encoded_RNO[1] was optimized away.
+Block u100/u22/encoded_RNO[1] was optimized away.
+Block GND was optimized away.
+Block VCC was optimized away.
+Block user_module1/VCC was optimized away.
+Block user_module1/U2/VCC was optimized away.
+Block user_module1/U3/VCC was optimized away.
+Block user_module1/U3/GND was optimized away.
+Block myuart/VCC was optimized away.
+
+Memory Usage
+------------
+
+/user_module1/U3:
+    EBRs: 1
+    RAM SLICEs: 0
+
+                                   Page 20
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+Memory Usage (cont)
+-------------------
+    Logic SLICEs: 0
+    PFU Registers: 0
+    -Contains EBR DSO_RAMBUFFER_CH1_0_0_0:  TYPE= DP16KD,  Width_B= 9,  Depth_A=
+         1024,  Depth_B= 1024,  REGMODE_A= OUTREG,  REGMODE_B= OUTREG,
+         RESETMODE= SYNC,  ASYNC_RESET_RELEASE= SYNC,  WRITEMODE_A= NORMAL,
+         WRITEMODE_B= NORMAL,  GSR= DISABLED,  MEM_INIT_FILE= INIT_ALL_0s,
+         MEM_LPC_FILE= DSO_RAMBUFFER_CH1.lpc
+
+     
+
+PLL/DLL Summary
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                u0/PLLInst_0
+  PLL Type:                                         EHXPLLL
+  Input Clock:                             PIN      sys_clock_c
+  Input Clock2:                                     NONE
+  Input Clock select:                               NONE
+  Output Clock(P):                         NODE     clk_dvi
+  Output Clock(S):                                  NONE
+  Output Clock(S2):                        NODE     clk_vga
+  Output Clock(S3):                        NODE     clk_50
+  Feedback Signal:                         NODE     clk_dvi
+  Reset Signal:                                     NONE
+  Standby Signal:                          NODE     u0/GND
+  PLL LOCK signal:                                  NONE
+  PLL Internal LOCK Signal:                         NONE
+  Input Clock Frequency (MHz):                      25.0000
+  Output Clock(P) Frequency (MHz):                  125.0000
+  Output Clock(S) Frequency (MHz):                  NA
+  Output Clock(S2) Frequency (MHz):                 25.0000
+  Output Clock(S3) Frequency (MHz):                 50.0000
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              NONE
+  Pre Divider B Input:                              NONE
+  Pre Divider C Input:                              NONE
+  Pre Divider D Input:                              NONE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    5
+  CLKOP Divider:                                    4
+  CLKOS Divider:                                    4
+  CLKOS2 Divider:                                   20
+  CLKOS3 Divider:                                   10
+  Fractional N Divider:                             NONE
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 FALLING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                90
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+
+                                   Page 21
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+PLL/DLL Summary (cont)
+----------------------
+  CLKOS2 Trim Option Rising/Falling:                NONE
+  CLKOS2 Trim Option Delay:                         NONE
+  CLKOS3 Desired Phase Shift(degree):               0
+  CLKOS3 Trim Option Rising/Falling:                NONE
+  CLKOS3 Trim Option Delay:                         NONE
+PLL 2:                                     Pin/Node Value
+  PLL Instance Name:                                user_module1/U1/PLLInst_0
+  PLL Type:                                         EHXPLLL
+  Input Clock:                             NODE     clk_50
+  Input Clock2:                                     NONE
+  Input Clock select:                               NONE
+  Output Clock(P):                         NODE     user_module1.ADC_clk
+  Output Clock(S):                         NODE     user_module1/VGA_25MHz
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     user_module1.ADC_clk
+  Reset Signal:                                     NONE
+  Standby Signal:                          NODE     user_module1/U1/GND
+  PLL LOCK signal:                                  NONE
+  PLL Internal LOCK Signal:                         NONE
+  Input Clock Frequency (MHz):                      50.0000
+  Output Clock(P) Frequency (MHz):                  300.0000
+  Output Clock(S) Frequency (MHz):                  25.0000
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              NONE
+  Pre Divider B Input:                              NONE
+  Pre Divider C Input:                              NONE
+  Pre Divider D Input:                              NONE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    6
+  CLKOP Divider:                                    2
+  CLKOS Divider:                                    24
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             NONE
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 FALLING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS2 Trim Option Rising/Falling:                NONE
+  CLKOS2 Trim Option Delay:                         NONE
+  CLKOS3 Desired Phase Shift(degree):               0
+  CLKOS3 Trim Option Rising/Falling:                NONE
+  CLKOS3 Trim Option Delay:                         NONE
+
+
+
+
+                                   Page 22
+
+
+
+
+Design:  FleaFPGA_Ohm_A5                               Date:  10/03/18  00:10:42
+
+ASIC Components
+---------------
+
+Instance Name: u0/PLLInst_0
+         Type: EHXPLLL
+Instance Name: user_module1/U3/DSO_RAMBUFFER_CH1_0_0_0
+         Type: DP16KD
+Instance Name: user_module1/U1/PLLInst_0
+         Type: EHXPLLL
+
+GSR Usage
+---------
+
+GSR Component:
+   The local reset signal 'u100/u5/GND' of the design has been inferred as
+        Global Set Reset (GSR). The reset signal used for GSR control is
+        'u100/u5/GND'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 1 secs  
+   Total REAL Time: 2 secs  
+   Peak Memory Usage: 112 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 23
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

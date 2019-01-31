@@ -1,0 +1,80 @@
+# Makefile for the BMaC firmware integration test.
+#
+# Builds the BMaC ESP8266 node firmware 
+#
+# (c) Maya Posch
+
+#export TOP := $(CURDIR)
+
+GPP = g++
+GCC = gcc
+MAKEDIR = mkdir -p
+RM = rm
+AR = ar
+
+ROOT = test/node
+
+OUTPUT = bmac_esp8266
+OUTLIB = lib$(OUTPUT).a
+INCLUDE = -I $(ROOT)/ \
+			-I $(ROOT)/SmingCore/ \
+			-I $(ROOT)/SmingCore/network \
+			-I $(ROOT)/SmingCore/network/Http \
+			-I $(ROOT)/SmingCore/network/Http/Websocket \
+			-I $(ROOT)/SmingCore/network/libmosquitto \
+			-I $(ROOT)/SmingCore/network/libmosquitto/cpp \
+			-I $(ROOT)/SmingCore/wiring \
+			-I $(ROOT)/Libraries/BME280 \
+			-I $(ROOT)/esp8266/app
+#-DPOCO_WIN32_UTF8
+FLAGS := $(INCLUDE) -g3 -U__STRICT_ANSI__
+LIB := -L$(ROOT)/lib -l$(OUTPUT) -lmosquittopp -lmosquitto  -lnymphrpc \
+		-lPocoNet -lPocoUtil -lPocoFoundation -lPocoJSON -lstdc++fs \
+		-lssl -lcrypto
+LIB_WIN :=  -lws2_32
+ifeq ($(OS),Windows_NT)
+	LIB := $(LIB) $(LIB_WIN)
+endif
+
+include ./esp8266/version
+include ./Makefile-user.mk
+
+CPPFLAGS := $(FLAGS) -DVERSION="\"$(VERSION)\"" $(USER_CFLAGS) -std=c++17 -Wl,--gc-sections
+CFLAGS := -g3 
+CPP_SOURCES := $(wildcard $(ROOT)/SmingCore/*.cpp) \
+			$(wildcard $(ROOT)/SmingCore/network/*.cpp) \
+			$(wildcard $(ROOT)/SmingCore/network/Http/*.cpp) \
+			$(wildcard $(ROOT)/SmingCore/wiring/*.cpp) \
+			$(wildcard $(ROOT)/Libraries/BME280/*.cpp)
+FW_SOURCES := $(wildcard esp8266/app/*.cpp)
+CPP_OBJECTS := $(addprefix $(ROOT)/obj/,$(notdir) $(CPP_SOURCES:.cpp=.o))
+FW_OBJECTS := $(addprefix $(ROOT)/obj/,$(notdir) $(FW_SOURCES:.cpp=.o))
+
+all: makedir $(FW_OBJECTS) $(CPP_OBJECTS) $(ROOT)/lib/$(OUTLIB) $(ROOT)/bin/$(OUTPUT)
+	
+$(ROOT)/obj/%.o: %.cpp
+	$(GPP) -c -o $@ $< $(CPPFLAGS)
+	
+$(ROOT)/obj/%.o: %.c
+	$(GCC) -c -o $@ $< $(CFLAGS)
+	
+$(ROOT)/lib/$(OUTLIB): $(CPP_OBJECTS)
+	-rm -f $@
+	$(AR) rcs $@ $^
+	
+$(ROOT)/bin/$(OUTPUT):
+	-rm -f $@
+	$(GPP) -o $@ $(CPPFLAGS) $(FW_SOURCES) $(LIB)
+	
+makedir:
+	$(MAKEDIR) $(ROOT)/bin
+	$(MAKEDIR) $(ROOT)/lib
+	$(MAKEDIR) $(ROOT)/obj
+	$(MAKEDIR) $(ROOT)/obj/$(ROOT)/SmingCore/network
+	$(MAKEDIR) $(ROOT)/obj/$(ROOT)/SmingCore/wiring
+	$(MAKEDIR) $(ROOT)/obj/$(ROOT)/Libraries/BME280
+	$(MAKEDIR) $(ROOT)/obj/esp8266/app
+
+clean:
+	$(RM) $(CPP_OBJECTS) $(FW_OBJECTS)
+	

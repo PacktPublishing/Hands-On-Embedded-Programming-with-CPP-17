@@ -1,0 +1,111 @@
+#Start recording tcl command: 2/17/2018 18:11:17
+#Project Location: C:/lscc/diamond/3.9_x64/examples/FleaDSO; Project name: FleaDSO
+prj_project open "C:/lscc/diamond/3.9_x64/examples/FleaDSO/FleaDSO.ldf"
+prj_src add "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ddr_out/ddr_out.sbx"
+prj_src add "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DVI_clkgen/DVI_clkgen.sbx"
+prj_src add "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5_Top.vhd" "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/Flea_zero_A2_top.vhd" "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/TDMS_encoder.vhd" "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/DVI_D.vhd"
+prj_src exclude "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5_Top.vhd"
+prj_src exclude "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/Flea_zero_A2_top.vhd"
+prj_dev set -part LFE5U-25F-6BG381C
+prj_src enable "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ddr_out/ddr_out.sbx"
+prj_src enable "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DVI_clkgen/DVI_clkgen.sbx"
+prj_dev set -part LCMXO2-7000HE-6TG144C
+prj_dev set -part LCMXO2-7000HE-4TG144C
+prj_dev set -part LFE5U-25F-6BG381C
+prj_src enable "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ddr_out/ddr_out.sbx" "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DVI_clkgen/DVI_clkgen.sbx"
+prj_src exclude "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/DSO_RAMBUFFER_CH1.lpc"
+prj_src exclude "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/DSO_RAMBUFFER_CH1.vhd"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DSO_RAMBUFFER_CH1"
+source "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DSO_RAMBUFFER_CH1/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+prj_src add "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DSO_RAMBUFFER_CH1/DSO_RAMBUFFER_CH1.sbx"
+prj_src exclude "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/ADC_PLL.vhd"
+prj_src add -exclude "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf"
+prj_src enable "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/FleaFPGA_Ohm_A5.lpf"
+prj_run Translate -impl FleaDSO
+prj_run Synthesis -impl FleaDSO
+prj_run Translate -impl FleaDSO
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL"
+source "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+prj_src add "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/ADC_PLL.sbx"
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ddr_out/ddr_out.sbx"
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/ADC_PLL.sbx"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL"
+source "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+prj_run Synthesis -impl FleaDSO
+prj_run Translate -impl FleaDSO
+prj_run Map -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+pgr_project open "C:/lscc/diamond/3.9_x64/examples/FleaDSO/FleaDSO/FleaDSO.xcf"
+pgr_project save "C:/lscc/diamond/3.9_x64/examples/FleaDSO/FleaDSO/FleaDSO.xcf"
+pgr_project save "C:/lscc/diamond/3.9_x64/examples/FleaDSO/FleaDSO/FleaDSO.xcf"
+pgr_project close
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DVI_clkgen/DVI_clkgen.sbx"
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DVI_clkgen/DVI_clkgen.sbx"
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DVI_clkgen/DVI_clkgen.sbx"
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DVI_clkgen/DVI_clkgen.sbx"
+prj_src add "C:/lscc/diamond/3.9_x64/examples/FleaDSO/source/VGA.vhd"
+prj_run Export -impl FleaDSO
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/ADC_PLL.sbx"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL"
+source "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DVI_clkgen/DVI_clkgen.sbx"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DVI_clkgen"
+source "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DVI_clkgen/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+prj_run Export -impl FleaDSO
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/ADC_PLL.sbx"
+prj_run Export -impl FleaDSO
+prj_run Translate -impl FleaDSO
+prj_run PAR -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_strgy set "Strategy1"
+prj_strgy set_value -strategy Strategy1 syn_area=False
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/ADC_PLL.sbx"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL"
+source "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Translate -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/DVI_clkgen/DVI_clkgen.sbx"
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/ADC_PLL.sbx"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL"
+source "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+sbp_design open -dsgn "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/ADC_PLL.sbx"
+set currentPath [pwd];set tmp_autopath $auto_path
+cd "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL"
+source "C:/lscc/diamond/3.9_x64/examples/FleaDSO/ADC_PLL/generate_core.tcl"
+set auto_path $tmp_autopath;cd $currentPath
+prj_run Export -impl FleaDSO
+prj_run Export -impl FleaDSO
+#Stop recording: 2/18/2018 00:28:32
