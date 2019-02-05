@@ -2,7 +2,7 @@
 
 <a href="https://www.packtpub.com/application-development/hands-embedded-programming-c17?utm_source=github&utm_medium=repository&utm_campaign=9781788629300 "><img src="https://dz13w8afd47il.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B09897.png" alt="Hands-On Embedded Programming with C++17" height="256px" align="right"></a>
 
-This is the code repository for [Hands-On Embedded Programming with C++17](https://www.packtpub.com/application-development/hands-embedded-programming-c17?utm_source=github&utm_medium=repository&utm_campaign=9781788629300 ), published by Packt.
+This is the code repository for [Hands-On Embedded Programming with C++17](https://www.packtpub.com/application-development/hands-embedded-programming-c17?utm_source=github&utm_medium=repository&utm_campaign=9781788629300), published by Packt.
 
 **Create versatile and robust embedded solutions for MCUs and RTOSes with modern C++**
 
@@ -10,13 +10,13 @@ This is the code repository for [Hands-On Embedded Programming with C++17](https
 C++ is a great choice for embedded development, most notably, because it does not add any bloat, extends maintainability, and offers many advantages over different programming languages. Hands-On Embedded Programming with C++17 will show you how C++ can be used to build robust and concurrent systems that leverage the available hardware resources.
 
 This book covers the following exciting features:
-Choose the correct type of embedded platform to use for a project 
-Develop drivers for OS-based embedded systems 
-Use concurrency and memory management with various microcontroller units (MCUs) 
-Debug and test cross-platform code with Linux 
-Implement an infotainment system using a Linux-based single board computer 
-Extend an existing embedded system with a Qt-based GUI 
-Communicate with the FPGA side of a hybrid FPGA/SoC system 
+* Choose the correct type of embedded platform to use for a project 
+* Develop drivers for OS-based embedded systems 
+* Use concurrency and memory management with various microcontroller units (MCUs) 
+* Debug and test cross-platform code with Linux 
+* Implement an infotainment system using a Linux-based single board computer 
+* Extend an existing embedded system with a Qt-based GUI 
+* Communicate with the FPGA side of a hybrid FPGA/SoC system 
 
 If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1788629302) today!
 
@@ -54,16 +54,10 @@ With the following software and hardware list you can run all code files present
 | 10 | GCC ARM Linux (cross-)toolchain. Recent version | Windows, Mac OS X, and Linux (Any) |
 | 11 | GCC ARM Linux (cross-)toolchain. Recent version | Windows, Mac OS X, and Linux (Any) |
 
-We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it]().
-
 ### Related products
-* C++ High Performance [[Packt]](https://www.packtpub.com/application-development/c-high-performance?utm_source=github&utm_medium=repository&utm_campaign=9781787120952 ) [[Amazon]](https://www.amazon.com/dp/1787120953)
+* C++ High Performance [[Packt]](https://www.packtpub.com/application-development/c-high-performance?utm_source=github&utm_medium=repository&utm_campaign=9781787120952) [[Amazon]](https://www.amazon.com/dp/1787120953)
 
-* The Modern C++ Challenge [[Packt]](https://www.packtpub.com/application-development/modern-c-challenge?utm_source=github&utm_medium=repository&utm_campaign=9781788993869 ) [[Amazon]](https://www.amazon.com/dp/1788993861)
-
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
-
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
+* The Modern C++ Challenge [[Packt]](https://www.packtpub.com/application-development/modern-c-challenge?utm_source=github&utm_medium=repository&utm_campaign=9781788993869) [[Amazon]](https://www.amazon.com/dp/1788993861)
 
 ## Get to Know the Author
 **Maya Posch**
@@ -73,30 +67,10 @@ Describing herself as a C developer who happens to like C++ and Ada, she likes t
 
 She also enjoys FPGA development, AI, and robotics research, in addition to creative writing, music, and drawing.
 
-****
-0
+## Other books by the author
+[Expert C++ Programming](https://www.packtpub.com/application-development/expert-c-programming?utm_source=github&utm_medium=repository&utm_campaign=9781788831390)
 
-****
-0
-
-****
-0
-
-****
-0
-
-## Other books by the authors
-[Expert C++ Programming](https://www.packtpub.com/application-development/expert-c-programming?utm_source=github&utm_medium=repository&utm_campaign=9781788831390 )
-
-[Mastering C++ Multithreading](https://www.packtpub.com/application-development/mastering-c-multithreading?utm_source=github&utm_medium=repository&utm_campaign=9781787121706 )
-
-[]()
-
-[]()
-
-[]()
+[Mastering C++ Multithreading](https://www.packtpub.com/application-development/mastering-c-multithreading?utm_source=github&utm_medium=repository&utm_campaign=9781787121706)
 
 ### Suggestions and Feedback
 [Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
-
-
