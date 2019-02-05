@@ -46,13 +46,13 @@ With the following software and hardware list you can run all code files present
 | 2 | C++ compiler (GCC, Clang). Recent version. | Windows, Mac OS X, and Linux (Any) |
 | 3 | GCC ARM Linux (cross-)toolchain. Recent version | Windows, Mac OS X, and Linux (Any) |
 | 4 | GCC ARM Linux (cross-)toolchain. Recent version | Windows, Mac OS X, and Linux (Any) |
-| 5 | GCC ARM Linux (cross-)toolchain. Recent version | Windows, Mac OS X, and Linux (Any) |
-| 6 | GCC ARM Linux (cross-)toolchain. Recent version | Windows, Mac OS X, and Linux (Any) |
-| 7 | GCC ARM Linux (cross-)toolchain. Recent version | Windows, Mac OS X, and Linux (Any) |
-| 8 | GCC ARM Linux (cross-)toolchain. Recent version | Windows, Mac OS X, and Linux (Any) |
-| 9 | GCC ARM Linux (cross-)toolchain. Recent version | Windows, Mac OS X, and Linux (Any) |
-| 10 | GCC ARM Linux (cross-)toolchain. Recent version | Windows, Mac OS X, and Linux (Any) |
-| 11 | GCC ARM Linux (cross-)toolchain. Recent version | Windows, Mac OS X, and Linux (Any) |
+| 5 | GCC ARM Linux (cross-)toolchain. Recent version | OS supported by Sming (Windows, Linux, OS X/MacOS). |
+| 6 | GCC ARM Linux (cross-)toolchain. Recent version | Preferably Linux, else Windows, BSD or MacOS. |
+| 7 | GCC ARM Linux (cross-)toolchain. Recent version | Preferably Linux, else Windows, BSD or MacOS. |
+| 8 | GCC ARM Linux (cross-)toolchain. Recent version | Linux (x86/ARM). |
+| 9 | GCC ARM Linux (cross-)toolchain. Recent version | OS supported by Sming. |
+| 10 | GCC ARM Linux (cross-)toolchain. Recent version | Linux (x86/ARM). |
+| 11 | GCC ARM Linux (cross-)toolchain. Recent version | Windows is easiest, Linux and BSD also work. |
 
 ### Related products
 * C++ High Performance [[Packt]](https://www.packtpub.com/application-development/c-high-performance?utm_source=github&utm_medium=repository&utm_campaign=9781787120952) [[Amazon]](https://www.amazon.com/dp/1787120953)
