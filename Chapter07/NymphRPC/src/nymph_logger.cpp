@@ -21,6 +21,8 @@
 
 using namespace Poco;
 
+using namespace std;
+
 
 // >>> NYMPH LOGGER CHANNEL <<<
 // --- CONSTRUCTOR ---

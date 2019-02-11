@@ -29,23 +29,21 @@
 #include "nymph_logger.h"
 #include "nymph_session.h"
 
-using namespace std;
-
 
 class NymphRemoteClient {
 	static Poco::Mutex methodsMutex;
 	static Poco::Mutex callbacksMutex;
 	static Poco::Mutex sessionsMutex;
-	static map<int, NymphSession*> sessions;
+	static std::map<int, NymphSession*> sessions;
 	static long timeout;
-	static string loggerName;
+	static std::string loggerName;
 	static bool synced;
-	static string serializedMethods;
+	static std::string serializedMethods;
 	static uint32_t nextMethodId;
 	
-	static map<string, NymphMethod>& callbacks();
-	static map<string, NymphMethod>& methods();
-	static map<uint32_t, NymphMethod*>& methodsIds();
+	static std::map<std::string, NymphMethod>& callbacks();
+	static std::map<std::string, NymphMethod>& methods();
+	static std::map<uint32_t, NymphMethod*>& methodsIds();
 	
 	static NymphMessage* syncMethods(int session, NymphMessage* msg, void* data);
 	
@@ -54,14 +52,14 @@ public:
 	static void setLogger(logFnc logger, int level);
 	static bool start(int port = 4004);
 	static bool shutdown();
-	static bool registerMethod(string name, NymphMethod method);
+	static bool registerMethod(std::string name, NymphMethod method);
 	static bool callMethodCallback(int handle, uint32_t methodId, NymphMessage* msg, NymphMessage* &response);
-	static bool removeMethod(string name);
+	static bool removeMethod(std::string name);
 	
-	static bool registerCallback(string name, NymphMethod method);
-	static bool callCallback(int handle, string name, 
-								vector<NymphType*> &values, string &result);
-	static bool removeCallback(string name);
+	static bool registerCallback(std::string name, NymphMethod method);
+	static bool callCallback(int handle, std::string name, 
+								std::vector<NymphType*> &values, std::string &result);
+	static bool removeCallback(std::string name);
 	
 	static bool addSession(int handle, NymphSession* session);
 	static bool removeSession(int handle);

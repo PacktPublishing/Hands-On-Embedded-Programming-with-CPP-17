@@ -22,14 +22,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
     connect(ui->actionQuit, SIGNAL(triggered()), this, SLOT(quit()));
     
     // Set up UI connections.
-    connect(ui->playBluetoothButton, SIGNAL(pressed), this, SLOT(playBluetooth));
-    connect(ui->stopBluetoothButton, SIGNAL(pressed), this, SLOT(stopBluetooth));
-    connect(ui->playLocalAudioButton, SIGNAL(pressed), this, SLOT(playLocalFile));
-    connect(ui->stopLocalAudioButton, SIGNAL(pressed), this, SLOT(stopLocalFile));
-    connect(ui->playOnlineStreamButton, SIGNAL(pressed), this, SLOT(playOnlineStream));
-    connect(ui->stopOnlineStreamButton, SIGNAL(pressed), this, SLOT(stopOnlineStream));
-    connect(ui->recordMessageButton, SIGNAL(pressed), this, SLOT(recordMessage));
-    connect(ui->playBackMessage, SIGNAL(pressed), this, SLOT(playMessage));
+    connect(ui->playBluetoothButton, SIGNAL(pressed()), this, SLOT(playBluetooth()));
+    connect(ui->stopBluetoothButton, SIGNAL(pressed()), this, SLOT(stopBluetooth()));
+    connect(ui->playLocalAudioButton, SIGNAL(pressed()), this, SLOT(playLocalFile()));
+    connect(ui->stopLocalAudioButton, SIGNAL(pressed()), this, SLOT(stopLocalFile()));
+    connect(ui->playOnlineStreamButton, SIGNAL(pressed()), this, SLOT(playOnlineStream()));
+    connect(ui->stopOnlineStreamButton, SIGNAL(pressed()), this, SLOT(stopOnlineStream()));
+    connect(ui->recordMessageButton, SIGNAL(pressed()), this, SLOT(recordMessage()));
+    connect(ui->playBackMessage, SIGNAL(pressed()), this, SLOT(playMessage()));
     
     // Defaults
     silence = 0;
@@ -68,14 +68,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent),
     connect(thread, SIGNAL(finished()), thread, SLOT(deleteLater()));
     
     connect(vi, SIGNAL(error(QString)), this, SLOT(errorString(QString)));
-    connect(vi, SIGNAL(playBluetooth), this, SLOT(playBluetooth));
-    connect(vi, SIGNAL(stopBluetooth), this, SLOT(stopBluetooth));
-    connect(vi, SIGNAL(playLocal), this, SLOT(playLocalFile));
-    connect(vi, SIGNAL(stopLocal), this, SLOT(stopLocalFile));
-    connect(vi, SIGNAL(playRemote), this, SLOT(playOnlineStream));
-    connect(vi, SIGNAL(stopRemote), this, SLOT(stopOnlineStream));
-    connect(vi, SIGNAL(recordMessage), this, SLOT(recordMessage));
-    connect(vi, SIGNAL(playMessage), this, SLOT(playMessage));
+    connect(vi, SIGNAL(playBluetooth()), this, SLOT(playBluetooth()));
+    connect(vi, SIGNAL(stopBluetooth()), this, SLOT(stopBluetooth()));
+    connect(vi, SIGNAL(playLocal()), this, SLOT(playLocalFile()));
+    connect(vi, SIGNAL(stopLocal()), this, SLOT(stopLocalFile()));
+    connect(vi, SIGNAL(playRemote()), this, SLOT(playOnlineStream()));
+    connect(vi, SIGNAL(stopRemote()), this, SLOT(stopOnlineStream()));
+    connect(vi, SIGNAL(recordMessage()), this, SLOT(recordMessage()));
+    connect(vi, SIGNAL(playMessage()), this, SLOT(playMessage()));
     
     thread->start();
 }

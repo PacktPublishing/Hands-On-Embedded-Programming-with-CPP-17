@@ -21,9 +21,12 @@
 
 using namespace Poco;
 
+using namespace std;
+
 
 // Static initialisations.
 string NymphServer::loggerName = "NymphServer";
+Poco::Net::ServerSocket NymphServer::ss;
 Net::TCPServer* NymphServer::server;
 bool NymphServer::running;
 
@@ -31,9 +34,12 @@ bool NymphServer::running;
 // --- START ---
 bool NymphServer::start(int port) {
 	try {
+		// Create a server socket that listens on all interfaces, IPv4 and IPv6.
+		// Assign it to the new TCPServer.
+		ss.bind6(port, true, false); // Port, SO_REUSEADDR, IPv6-only.
+		ss.listen();
 		server = new Net::TCPServer(new Net::TCPServerConnectionFactoryImpl<NymphSession>(),
-								port
-								);
+									ss);
 		server->start();
 	}
 	catch (Net::NetException& e) {

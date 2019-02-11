@@ -16,6 +16,8 @@
 #include "nymph_logger.h"
 #include "nymph_listener.h"
 
+using namespace std;
+
 #include <Poco/NumberFormatter.h>
 
 using namespace Poco;

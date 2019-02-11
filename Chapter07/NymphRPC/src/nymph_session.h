@@ -19,14 +19,12 @@
 
 #include <string>
 
-using namespace std;
-
 #include <Poco/Net/TCPServerConnection.h>
 #include <Poco/Mutex.h>
 
 
 class NymphSession : public Poco::Net::TCPServerConnection {
-	string loggerName;
+	std::string loggerName;
 	int handle;
 	static int lastSessionHandle;
 	static Poco::Mutex handleMutex;
@@ -34,7 +32,7 @@ class NymphSession : public Poco::Net::TCPServerConnection {
 public:
 	NymphSession(const Poco::Net::StreamSocket& socket);
 	void run();
-	bool send(string& msg, string &result);
+	bool send(std::string& msg, std::string &result);
 };
 
 #endif

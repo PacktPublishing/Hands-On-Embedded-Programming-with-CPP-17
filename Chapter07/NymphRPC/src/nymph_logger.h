@@ -20,8 +20,6 @@
 
 #include <string>
 
-using namespace std;
-
 
 enum NymphLogLevels {
 	NYMPH_LOG_LEVEL_FATAL = 1,
@@ -70,7 +68,7 @@ enum NymphLogLevels {
 
 
 // Function pointer typedef for the function-based logger.
-typedef void (*logFnc)(int, string);
+typedef void (*logFnc)(int, std::string);
 
 
 class NymphLoggerChannel : public Poco::Channel {
@@ -96,7 +94,7 @@ public:
 	static void setLoggerFunction(logFnc function);
 	static void setLogLevel(Poco::Message::Priority priority);
 	static Poco::Logger& logger();
-	static Poco::Logger& logger(string &name);
+	static Poco::Logger& logger(std::string &name);
 	//static void log(string message);
 };
 

@@ -20,6 +20,8 @@
 
 using namespace Poco;
 
+using namespace std;
+
 
 // Static initialisations.
 int NymphSession::lastSessionHandle = 0;

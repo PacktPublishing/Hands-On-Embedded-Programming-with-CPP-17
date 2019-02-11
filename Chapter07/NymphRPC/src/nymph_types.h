@@ -25,8 +25,6 @@
 #include <vector>
 #include <cstdint>
 
-using namespace std;
-
 
 enum NymphInternalTypes {
 	NYMPH_TYPE_NULL          	= 0x00,
@@ -78,52 +76,52 @@ enum NymphTypes {
 
 // >>> UTILITY METHODS <<<
 //
-inline uint8_t getUInt8(string* binary, int &index) {
+inline uint8_t getUInt8(std::string* binary, int &index) {
 	return (uint8_t) (*binary)[index++];
 }
 
 
-inline uint16_t getUInt16(string* binary, int &index) {
+inline uint16_t getUInt16(std::string* binary, int &index) {
 	uint16_t val = *((uint16_t*) &((*binary)[index]));
 	index += 2;
 	return val;
 }
 
 
-inline uint32_t getUInt32(string* binary, int &index) {
+inline uint32_t getUInt32(std::string* binary, int &index) {
 	uint32_t val = *((uint32_t*) &((*binary)[index]));
 	index += 4;
 	return val;
 }
 
 
-inline uint64_t getUInt64(string* binary, int &index) {
+inline uint64_t getUInt64(std::string* binary, int &index) {
 	uint64_t val = *((uint64_t*) &((*binary)[index]));
 	index += 8;
 	return val;
 }
 
 
-inline int8_t getSInt8(string* binary, int &index) {
+inline int8_t getSInt8(std::string* binary, int &index) {
 	return (int8_t) (*binary)[index++];
 }
 
 
-inline int16_t getSInt16(string* binary, int &index) {
+inline int16_t getSInt16(std::string* binary, int &index) {
 	int16_t val = *((int16_t*) &((*binary)[index]));
 	index += 2;
 	return val;
 }
 
 
-inline int32_t getSInt32(string* binary, int &index) {
+inline int32_t getSInt32(std::string* binary, int &index) {
 	int32_t val = *((int32_t*) &((*binary)[index]));
 	index += 4;
 	return val;
 }
 
 
-inline int64_t getSInt64(string* binary, int &index) {
+inline int64_t getSInt64(std::string* binary, int &index) {
 	int64_t val = *((int64_t*) &((*binary)[index]));
 	index += 8;
 	return val;
@@ -136,9 +134,9 @@ class NymphType {
 public:
 	virtual ~NymphType() {}
 	virtual NymphTypes type() = 0;
-	virtual string toString(bool quotes = false) = 0;
-	virtual string serialize() = 0;
-	virtual bool deserialize(string* binary, int &index) = 0;
+	virtual std::string toString(bool quotes = false) = 0;
+	virtual std::string serialize() = 0;
+	virtual bool deserialize(std::string* binary, int &index) = 0;
 	virtual bool empty() = 0;
 	virtual uint32_t binarySize() = 0;
 };
@@ -156,16 +154,16 @@ struct NymphPair {
 class NymphNull : public NymphType {
 public:
 	NymphTypes type() { return NYMPH_NULL; }
-	string toString(bool quotes = false) { return string(); }
-	string serialize() { return string(); }
-	bool deserialize(string* binary, int &index) { return true; }
+	std::string toString(bool quotes = false) { return std::string(); }
+	std::string serialize() { return std::string(); }
+	bool deserialize(std::string* binary, int &index) { return true; }
 	bool empty() { return true; }
 	uint32_t binarySize() { return 0; }
 };
 
 
 class NymphArray : public NymphType {
-	vector<NymphType*> values;
+	std::vector<NymphType*> values;
 	bool isEmpty;
 	uint32_t binSize; // For pre-allocating.
 	
@@ -173,11 +171,11 @@ public:
 	NymphArray() { isEmpty = true; binSize = 0; }
 	~NymphArray();
 	NymphTypes type() { return NYMPH_ARRAY; }
-	string toString(bool quotes = false);
-	vector<NymphType*> getValues() { return values; }
+	std::string toString(bool quotes = false);
+	std::vector<NymphType*> getValues() { return values; }
 	void addValue(NymphType* value);
-	string serialize();
-	bool deserialize(string* binary, int &index);
+	std::string serialize();
+	bool deserialize(std::string* binary, int &index);
 	bool empty() { return isEmpty; }
 	uint32_t binarySize() { return (10 + binSize); }
 };
@@ -189,14 +187,14 @@ class NymphBoolean : public NymphType {
 	
 public:
 	NymphBoolean(bool value) { this->value = value; }
-	NymphBoolean(string* value, int &index) { deserialize(value, index); }
-	NymphBoolean(string value);
+	NymphBoolean(std::string* value, int &index) { deserialize(value, index); }
+	NymphBoolean(std::string value);
 	NymphTypes type() { return NYMPH_BOOL; }
-	string toString(bool quotes = false);
+	std::string toString(bool quotes = false);
 	void setValue(bool value);
 	bool getValue();
-	string serialize();
-	bool deserialize(string* binary, int &index);
+	std::string serialize();
+	bool deserialize(std::string* binary, int &index);
 	bool empty() { return isEmpty; }
 	uint32_t binarySize() { return 1; }
 };
@@ -208,13 +206,13 @@ class NymphUint8 : public NymphType {
 	
 public:
 	NymphUint8(uint8_t value) { this->value = value; }
-	NymphUint8(string* value, int &index) { deserialize(value, index); }
+	NymphUint8(std::string* value, int &index) { deserialize(value, index); }
 	NymphTypes type() { return NYMPH_UINT8; }
-	string toString(bool quotes = false);
+	std::string toString(bool quotes = false);
 	void setValue(uint8_t value) { this->value = value; isEmpty = false; }
 	uint8_t getValue() { return value; }
-	string serialize();
-	bool deserialize(string* binary, int &index);
+	std::string serialize();
+	bool deserialize(std::string* binary, int &index);
 	bool empty() { return isEmpty; }
 	uint32_t binarySize() { return 2; }
 };
@@ -226,13 +224,13 @@ class NymphSint8 : public NymphType {
 	
 public:
 	NymphSint8(int8_t value) { this->value = value; }
-	NymphSint8(string* value, int &index) { deserialize(value, index); }
+	NymphSint8(std::string* value, int &index) { deserialize(value, index); }
 	NymphTypes type() { return NYMPH_SINT8; }
-	string toString(bool quotes = false);
+	std::string toString(bool quotes = false);
 	void setValue(int8_t value);
 	int8_t getValue() { return value; }
-	string serialize();
-	bool deserialize(string* binary, int &index);
+	std::string serialize();
+	bool deserialize(std::string* binary, int &index);
 	bool empty() { return isEmpty; }
 	uint32_t binarySize() { return 2; }
 };
@@ -244,13 +242,13 @@ class NymphUint16 : public NymphType {
 	
 public:
 	NymphUint16(uint16_t value) { this->value = value; }
-	NymphUint16(string* value, int &index) { deserialize(value, index); }
+	NymphUint16(std::string* value, int &index) { deserialize(value, index); }
 	NymphTypes type() { return NYMPH_UINT16; }
-	string toString(bool quotes = false);
+	std::string toString(bool quotes = false);
 	void setValue(uint16_t value) { this->value = value; isEmpty = false; }
 	uint16_t getValue() { return value; }
-	string serialize();
-	bool deserialize(string* binary, int &index);
+	std::string serialize();
+	bool deserialize(std::string* binary, int &index);
 	bool empty() { return isEmpty; }
 	uint32_t binarySize() { return 3; }
 };
@@ -262,13 +260,13 @@ class NymphSint16 : public NymphType {
 	
 public:
 	NymphSint16(int16_t value) { this->value = value; }
-	NymphSint16(string* value, int &index) { deserialize(value, index); }
+	NymphSint16(std::string* value, int &index) { deserialize(value, index); }
 	NymphTypes type() { return NYMPH_SINT16; }
-	string toString(bool quotes = false);
+	std::string toString(bool quotes = false);
 	void setValue(int16_t value) { this->value = value; isEmpty = false; }
 	int16_t getValue() { return value; }
-	string serialize();
-	bool deserialize(string* binary, int &index);
+	std::string serialize();
+	bool deserialize(std::string* binary, int &index);
 	bool empty() { return isEmpty; }
 	uint32_t binarySize() { return 3; }
 };
@@ -280,13 +278,13 @@ class NymphUint32 : public NymphType {
 	
 public:
 	NymphUint32(uint32_t value) { this->value = value; }
-	NymphUint32(string* value, int &index) { deserialize(value, index); }
+	NymphUint32(std::string* value, int &index) { deserialize(value, index); }
 	NymphTypes type() { return NYMPH_UINT32; }
-	string toString(bool quotes = false);
+	std::string toString(bool quotes = false);
 	void setValue(uint32_t value) { this->value = value; isEmpty = false; }
 	uint32_t getValue() { return value; }
-	string serialize();
-	bool deserialize(string* binary, int &index);
+	std::string serialize();
+	bool deserialize(std::string* binary, int &index);
 	bool empty() { return isEmpty; }
 	uint32_t binarySize() { return 5; }
 };
@@ -298,13 +296,13 @@ class NymphSint32 : public NymphType {
 	
 public:
 	NymphSint32(int32_t value) { this->value = value; }
-	NymphSint32(string* value, int &index) { deserialize(value, index); }
+	NymphSint32(std::string* value, int &index) { deserialize(value, index); }
 	NymphTypes type() { return NYMPH_SINT32; }
-	string toString(bool quotes = false);
+	std::string toString(bool quotes = false);
 	void setValue(int32_t value) { this->value = value; isEmpty = false; }
 	int32_t getValue() { return value; }
-	string serialize();
-	bool deserialize(string* binary, int &index);
+	std::string serialize();
+	bool deserialize(std::string* binary, int &index);
 	bool empty() { return isEmpty; }
 	uint32_t binarySize() { return 5; }
 };
@@ -316,13 +314,13 @@ class NymphUint64 : public NymphType {
 	
 public:
 	NymphUint64(uint64_t value) { this->value = value; }
-	NymphUint64(string* value, int &index) { deserialize(value, index); }
+	NymphUint64(std::string* value, int &index) { deserialize(value, index); }
 	NymphTypes type() { return NYMPH_UINT64; }
-	string toString(bool quotes = false);
+	std::string toString(bool quotes = false);
 	void setValue(int64_t value) { this->value = value; isEmpty = false; }
 	uint64_t getValue() { return value; }
-	string serialize();
-	bool deserialize(string* binary, int &index);
+	std::string serialize();
+	bool deserialize(std::string* binary, int &index);
 	bool empty() { return isEmpty; }
 	uint32_t binarySize() { return 9; }
 };
@@ -334,13 +332,13 @@ class NymphSint64 : public NymphType {
 	
 public:
 	NymphSint64(int64_t value) { this->value = value; }
-	NymphSint64(string* value, int &index) { deserialize(value, index); }
+	NymphSint64(std::string* value, int &index) { deserialize(value, index); }
 	NymphTypes type() { return NYMPH_SINT64; }
-	string toString(bool quotes = false);
+	std::string toString(bool quotes = false);
 	void setValue(int64_t value) { this->value = value; isEmpty = false; }
 	int64_t getValue() { return value; }
-	string serialize();
-	bool deserialize(string* binary, int &index);
+	std::string serialize();
+	bool deserialize(std::string* binary, int &index);
 	bool empty() { return isEmpty; }
 	uint32_t binarySize() { return 9; }
 };
@@ -352,11 +350,11 @@ class NymphDouble : public NymphType {
 	
 public:
 	NymphDouble(double value) { this->value = value; }
-	NymphDouble(string* value, int &index) { deserialize(value, index); }
+	NymphDouble(std::string* value, int &index) { deserialize(value, index); }
 	NymphTypes type() { return NYMPH_DOUBLE; }
-	string toString(bool quotes = false);
-	string serialize();
-	bool deserialize(string* binary, int &index);
+	std::string toString(bool quotes = false);
+	std::string serialize();
+	bool deserialize(std::string* binary, int &index);
 	bool empty() { return isEmpty; }
 	void setValue(double value) { this->value = value; }
 	double getValue() { return value; }
@@ -370,11 +368,11 @@ class NymphFloat : public NymphType {
 	
 public:
 	NymphFloat(float value) { this->value = value; }
-	NymphFloat(string* value, int &index) { deserialize(value, index); }
+	NymphFloat(std::string* value, int &index) { deserialize(value, index); }
 	NymphTypes type() { return NYMPH_FLOAT; }
-	string toString(bool quotes = false);
-	string serialize();
-	bool deserialize(string* binary, int &index);
+	std::string toString(bool quotes = false);
+	std::string serialize();
+	bool deserialize(std::string* binary, int &index);
 	bool empty() { return isEmpty; }
 	void setValue(float value) { this->value = value; }
 	float getValue() { return value; }
@@ -384,38 +382,38 @@ public:
 
 
 class NymphString : public NymphType {
-	string value;
+	std::string value;
 	bool emptyString;
 	bool isEmpty;
 	uint32_t binSize;
 	
 public:
 	NymphString() { isEmpty = true; emptyString = true; binSize = 0; }
-	NymphString(string value);
-	NymphString(string* value, int &index) { deserialize(value, index); }
+	NymphString(std::string value);
+	NymphString(std::string* value, int &index) { deserialize(value, index); }
 	NymphTypes type() { return NYMPH_STRING; }
-	string toString(bool quotes = false);
-	string serialize();
-	bool deserialize(string* binary, int &index);
+	std::string toString(bool quotes = false);
+	std::string serialize();
+	bool deserialize(std::string* binary, int &index);
 	bool empty() { return isEmpty; }
-	void setValue(string value);
-	string getValue() { return value; }
+	void setValue(std::string value);
+	std::string getValue() { return value; }
 	void setEmptyString(bool val = true) { isEmpty = false; emptyString = val; }
 	uint32_t binarySize() { return binSize; }
 };
 
 
 class NymphStruct : public NymphType {
-	vector<NymphPair> pairs;
+	std::vector<NymphPair> pairs;
 	bool isEmpty;
 	uint32_t binSize; // For pre-allocating.
 	
 public:
 	NymphStruct() { isEmpty = true; binSize = 0; }
 	NymphTypes type() { return NYMPH_STRUCT; }
-	string toString(bool quotes = false);
-	string serialize();
-	bool deserialize(string* binary, int &index);
+	std::string toString(bool quotes = false);
+	std::string serialize();
+	bool deserialize(std::string* binary, int &index);
 	bool empty() { return isEmpty; }
 	uint32_t binarySize() { return binSize; }
 };
@@ -429,18 +427,18 @@ public:
 	NymphTable() { isEmpty = true; }
 	~NymphTable();
 	NymphTypes type() { return NYMPH_TABLE; }
-	string toString(bool quotes = false);
-	string serialize();
-	bool deserialize(string binary);
+	std::string toString(bool quotes = false);
+	std::string serialize();
+	bool deserialize(std::string binary);
 	bool empty() { return isEmpty; }
 	void addValue(NymphType* value, int &index); { values.push_back(value); isEmpty = false; }
 	vector<NymphType*> getValues() { return values; }
 	void setValues(vector<NymphType*> values) { this->values = values; isEmpty = false; }
-	bool getJson(string &json, string &result);
-	string getJson();
-	bool setJson(string &json, string &result);
-	bool setJsonObject(JSON::Object::Ptr &json, string &result);
-	JSON::Object::Ptr getJsonObject(string &result);
+	bool getJson(std::string &json, std::string &result);
+	std::string getJson();
+	bool setJson(std::string &json, std::string &result);
+	bool setJsonObject(JSON::Object::Ptr &json, std::string &result);
+	JSON::Object::Ptr getJsonObject(std::string &result);
 }; */
 
 #endif

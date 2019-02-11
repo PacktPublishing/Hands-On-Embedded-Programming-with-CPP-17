@@ -30,6 +30,7 @@ signals:
     void playMessage();
     
     void error(QString err);
+    void finished();
     
 public slots:
     void run();

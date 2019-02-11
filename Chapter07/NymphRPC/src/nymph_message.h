@@ -21,8 +21,6 @@
 
 #include <vector>
 
-using namespace std;
-
 
 enum {
 	NYMPH_MESSAGE_REPLY = 0x01,		// Message is a reply.
@@ -33,12 +31,12 @@ enum {
 
 struct NymphException {
 	uint32_t id;
-	string value;
+	std::string value;
 };
 
 
 class NymphMessage {
-	vector<NymphType*> values;
+	std::vector<NymphType*> values;
 	uint32_t command;
 	uint32_t flags;
 	uint32_t methodId;
@@ -48,17 +46,17 @@ class NymphMessage {
 	NymphException exception;
 	bool hasResult;
 	bool responseOwned;
-	string callbackName;
+	std::string callbackName;
 	NymphType* response;
-	string loggerName;
+	std::string loggerName;
 	
 public:
 	NymphMessage();
 	NymphMessage(uint32_t methodId);
-	NymphMessage(string* binmsg);
+	NymphMessage(std::string* binmsg);
 	~NymphMessage();
 	bool addValue(NymphType* value);
-	bool finish(string &output);
+	bool finish(std::string &output);
 	int getState() { return state; }
 	void setInReplyTo(uint64_t msgId);
 	bool isCallback() { return flags & NYMPH_MESSAGE_CALLBACK; }
@@ -66,15 +64,15 @@ public:
 	uint64_t getMessageId() { return messageId; }
 	void setResultValue(NymphType* value);
 	NymphType* getResponse() { return response; responseOwned = false; }
-	vector<NymphType*> parameters() { return values; }
+	std::vector<NymphType*> parameters() { return values; }
 	uint32_t getMethodId() { return methodId; }
 	NymphMessage* getReplyMessage();
 	NymphException getException() { return exception; }
-	string getCallbackName() { return callbackName; }
+	std::string getCallbackName() { return callbackName; }
 	bool isReply() { return flags & NYMPH_MESSAGE_REPLY; }
 	bool isException() { return flags & NYMPH_MESSAGE_EXCEPTION; }
-	bool setException(int exceptionId, string value);
-	bool setCallback(string name);
+	bool setException(int exceptionId, std::string value);
+	bool setCallback(std::string name);
 };
 
 #endif

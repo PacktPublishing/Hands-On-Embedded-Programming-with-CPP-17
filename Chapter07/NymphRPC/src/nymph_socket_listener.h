@@ -27,8 +27,6 @@
 #include <map>
 #include <string>
 
-using namespace std;
-
 // TYPES
 
 struct NymphSocket {
@@ -53,11 +51,11 @@ struct NymphRequest {
 
 
 class NymphSocketListener : public Poco::Runnable {
-	string loggerName;
+	std::string loggerName;
 	bool listen;
 	NymphSocket nymphSocket;
 	Poco::Net::StreamSocket* socket;
-	map<uint64_t, NymphRequest*> messages;
+	std::map<uint64_t, NymphRequest*> messages;
 	Poco::Mutex messagesMutex;
 	bool init;
 	Poco::Condition* readyCond;

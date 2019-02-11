@@ -21,8 +21,6 @@
 #include <vector>
 #include <string>
 
-using namespace std;
-
 #include <Poco/Mutex.h>
 
 #include "nymph_socket_listener.h"
@@ -34,7 +32,7 @@ typedef void (*NymphCallbackMethod)(NymphMessage* msg, void* data);
 
 
 struct NymphCallback {
-	string name;				// Callback method name.
+	std::string name;				// Callback method name.
 	NymphCallbackMethod method;	// The callback.
 	void* data;					// Custom user data.
 };
@@ -44,11 +42,11 @@ struct NymphCallback {
 
 
 class NymphListener {
-	static map<int, NymphSocketListener*> listeners;
+	static std::map<int, NymphSocketListener*> listeners;
 	static Poco::Mutex listenersMutex;
-	static string loggerName;
+	static std::string loggerName;
 	
-	static map<string, NymphCallback>& callbacks();
+	static std::map<std::string, NymphCallback>& callbacks();
 	static Poco::Mutex& callbacksMutex();
 	
 public:
@@ -60,7 +58,7 @@ public:
 	static bool removeMessage(int handle, int64_t messageId);
 	static bool addCallback(NymphCallback callback);
 	static bool callCallback(NymphMessage* msg, void* data);
-	static bool removeCallback(string name);
+	static bool removeCallback(std::string name);
 };
 
 #endif

@@ -28,8 +28,6 @@
 #include <vector>
 #include <string>
 
-using namespace std;
-
 
 class NymphRemoteClient;
 
@@ -41,25 +39,25 @@ class NymphMethod {
 	friend class NymphRemoteClient;
 	friend class NymphRemoteServer;
 	
-	string name;
+	std::string name;
 	uint32_t id;
-	vector<NymphTypes> parameters;
+	std::vector<NymphTypes> parameters;
 	NymphMethodCallback callback;
 	NymphTypes returnType;
-	string loggerName;
-	string serialized;
+	std::string loggerName;
+	std::string serialized;
 	bool isCallback;
 	
 	void setId(uint32_t id);
 	
 public:
-	NymphMethod(string name, vector<NymphTypes> parameters, NymphTypes retType);
+	NymphMethod(std::string name, std::vector<NymphTypes> parameters, NymphTypes retType);
 	void setCallback(NymphMethodCallback callback);
 	NymphMessage* callCallback(int handle, NymphMessage* msg);
-	bool call(Poco::Net::StreamSocket* socket, NymphRequest* &request, vector<NymphType*> &values, string &result);
-	bool call(NymphSession* session, vector<NymphType*> &values, string &result);
+	bool call(Poco::Net::StreamSocket* socket, NymphRequest* &request, std::vector<NymphType*> &values, std::string &result);
+	bool call(NymphSession* session, std::vector<NymphType*> &values, std::string &result);
 	uint32_t getId() { return id; }
-	string getSerialized() { return serialized; }
+	std::string getSerialized() { return serialized; }
 	bool enableCallback(bool state = true) { isCallback = state; return true; }
 };
 

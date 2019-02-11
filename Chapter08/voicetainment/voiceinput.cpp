@@ -32,14 +32,21 @@ VoiceInput::VoiceInput(QObject *parent) : QObject(parent) {
 void VoiceInput::run() {
     // Perform keyword search until registered trigger detected.
     // Detect command, then activate procedure.
-    //ad_rec_t *ad;
     const int32 buffsize = 2048;
     int16 adbuf[buffsize];
     uint8 utt_started, in_speech;
-    uint32 k = 0;
+    qint64 k = 0;
     char const* hyp;
     
-    static ps_decoder_t *ps;
+    cmd_ln_t* config = cmd_ln_init(NULL,    // Load the configuration structure
+                                   ps_args(),  //  Passes the default values
+                                   TRUE,   
+                                   "-hmm", MODELDIR "/en-us/en-us",  // path to the standard english language model
+                                   "-lm", MODELDIR "/en-us/en-us.lm.bin",                                         // custom language model (file must be present)
+                                   "-dict", 
+                                   MODELDIR "/en-us/cmudict-en-us.dict",                                    // custom dictionary (file must be present)
+                                   NULL);
+    ps_decoder_t *ps = ps_init(config);
     
     state = true;
     
@@ -64,17 +71,11 @@ void VoiceInput::run() {
     audioInput = new QAudioInput(format, this);
     audioInput->setBufferSize(buffsize * 2);   
     audioDevice = audioInput->start();
-
-    if (ps_start_utt(ps) < 0) {
-        E_FATAL("Failed to start utterance\n");
-    }
-    
-    utt_started = FALSE;
-    E_INFO("Ready....\n");
     
     // Set keyword to search for. Keyword is 'computer'.
-    const char* keyfile = "COMPUTER/3.16227766016838e-13/\n";
-    if (ps_set_kws(ps, "keyword_search", keyfile) != 0) {
+    //const char* keyfile = "COMPUTER/3.16227766016838e-13/\n";
+    const char* keyphrase = "computer";
+    if (ps_set_keyphrase(ps, "keyword_search", keyphrase) != 0) {
         return;
     }
     
@@ -82,27 +83,36 @@ void VoiceInput::run() {
         return;
     }
     
-    const char* gramfile = "grammar asr;\
+    if (ps_start_utt(ps) < 0) {
+        E_FATAL("Failed to start utterance\n");
+    }
+    
+    utt_started = FALSE;
+    E_INFO("Ready....\n");
+    
+    const char* gramfile = "#JSGF V1.0; grammar asr;\
             \
             public <rule> = <action> [<preposition>] [<objects>] [<preposition>] [<objects>];\
             \
-            <action> = STOP | PLAY | RECORD;\
+            <action> = stop | play | record;\
             \
-            <objects> = BLUETOOTH | LOCAL | REMOTE | MESSAGE;\
+            <objects> = bluetooth | local | remote | message;\
             \
-            <preposition> = FROM | TO;";
+            <preposition> = from | to;";
     ps_set_jsgf_string(ps, "jsgf", gramfile);
 
     // Start reading audio samples and process them, first listening for the
     // keyword.
     bool kws = true;
+    uint32 samplesReady = 0;
     for (;;) {        
         // Read in the available bytes from the audio device buffer.
-        if ((k = audioDevice->read((char*) &adbuf, 4096))) {
+        if ((k = audioDevice->read((char*) &adbuf, 4096)) < 0) {
             E_FATAL("Failed to read audio.\n");
         }
         
-        ps_process_raw(ps, adbuf, k, FALSE, FALSE);
+        samplesReady = k / 2;
+        ps_process_raw(ps, adbuf, samplesReady, FALSE, FALSE);
         in_speech = ps_get_in_speech(ps);
         
         if (in_speech && !utt_started) {
